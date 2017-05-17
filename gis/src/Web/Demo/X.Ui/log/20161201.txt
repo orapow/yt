@@ -1,0 +1,16 @@
+
+时间：2016-12-01 14:24:52,575 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\zfw\bw\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0006"}
+{"needus":1} 
+时间：96340361 
+
+时间：2016-12-01 14:28:28,453 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\zfw\bw\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"用户登陆超时 ","code":"0x0006"}
+{"needus":1} 
+时间：96556239 

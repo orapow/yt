@@ -1,0 +1,15 @@
+D:\Pro\ytgis\src\X.Data\bin\Release\X.Data.dll.config
+D:\Pro\ytgis\src\X.Data\bin\Release\X.Data.dll
+D:\Pro\ytgis\src\X.Data\bin\Release\X.Data.pdb
+D:\Pro\ytgis\src\X.Data\obj\Release\X.Data.dll
+D:\Pro\ytgis\src\X.Data\obj\Release\X.Data.pdb
+D:\Pro\ytgis\src\X.Data\obj\Release\X.Data.csprojResolveAssemblyReference.cache
+D:\Pro\ytgis\src\X.Data\bin\Release\X.Core.dll
+D:\Pro\ytgis\src\X.Data\bin\Release\NVelocity.dll
+D:\Pro\ytgis\src\Web\X.Data\bin\Release\X.Data.dll.config
+D:\Pro\ytgis\src\Web\X.Data\bin\Release\X.Data.dll
+D:\Pro\ytgis\src\Web\X.Data\bin\Release\X.Data.pdb
+D:\Pro\ytgis\src\Web\X.Data\bin\Release\NVelocity.dll
+D:\Pro\ytgis\src\Web\X.Data\obj\Release\X.Data.csprojResolveAssemblyReference.cache
+D:\Pro\ytgis\src\Web\X.Data\obj\Release\X.Data.dll
+D:\Pro\ytgis\src\Web\X.Data\obj\Release\X.Data.pdb

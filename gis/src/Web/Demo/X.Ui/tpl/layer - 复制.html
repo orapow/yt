@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    #parse("com/_head.html")
+    <title>楼层演示</title>
+    <style type="text/css">
+        body { position: relative; margin: 0; padding: 0; text-align: center; moz-user-select: -moz-none; -moz-user-select: none; -o-user-select: none; -khtml-user-select: none; /* you could also put this in a class */ -webkit-user-select: none; /* and add the CSS class here instead */ -ms-user-select: none; user-select: none; /**禁止选中文字*/ }
+        .imgs { position: relative; left: 0; top: 0; transform-origin: 0 0; }
+        .imgs img { width: 100%; height: 100%; }
+        .bt { width: 14px; display: block; border: 1px solid #ccc; border-radius: 5px; padding: 5px 10px; margin-bottom: 5px; cursor: pointer; background: white; font-size: 14px; }
+        .bt.on { background-color: #ff6a00; color: white; }
+        .btns { position: absolute; top: 40px; right: 0px; }
+        .switchs { position: absolute; top: 0; left: 0; right: inherit; }
+        .pts .p::before { height: 30px; width: 1px; content: ''; display: block; top: 20px; position: absolute; left: 10px; }
+        .pts .p { position: absolute; left: 50px; top: 60px; width: 20px; height: 20px; cursor: pointer; z-index: 1; }
+        .pts .p::after { height: 8px; width: 8px; content: ''; top: 50px; position: absolute; left: 6px; }
+        .p.p1, .p.p1::after, .p.p1::before { background-color: red; }
+        .p.p2, .p.p2::after, .p.p2::before { background-color: blue; }
+        .p.p3, .p.p3::after, .p.p3::before { background-color: chocolate; }
+        .p.p4, .p.p4::after, .p.p4::before { background-color: darkviolet; }
+        .p.p5, .p.p5::after, .p.p5::before { background-color: green; }
+        .btns.op { right: 0; top: 0; }
+        .op .bt { display: inline-block; margin-left: 5px; }
+        .detail { display: none; position: absolute; bottom: 0px; left: 0; font-size: 12px; text-align: left; line-height: 20px; border-radius: 10px; border: 1px solid #ccc; padding: 10px; background: white; }
+        canvas { position: absolute; left: 0; top: 0; }
+        canvas.draw { z-index: 99; }
+        #cav_map { z-index: 10; }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="imgs">
+            <img src="" id="fl_img" alt="图片加载中" usemap="#cav_map" />
+            <map name="cav_map" id="cav_map"></map>
+            <canvas id="cav_img"></canvas>
+            <div class="pts"></div>
+        </div>
+        <div class="btns op">
+            <span class="bt" onclick="remove_floor();"><i class="icon-remove"></i></span><span class="bt" onclick="edit_floor(true);"><i class="icon-edit"></i></span><span class="bt" onclick="edit_floor();"><i class="icon-plus"></i></span>
+        </div>
+        <div class="btns fls"></div>
+        <div class="switchs">
+            <span class="bt" onclick="opendraw(1)" title="点"><i class="icon-map-marker"></i></span>
+            <span class="bt" onclick="opendraw(2)" title="线"><i class="icon-pencil"></i></span>
+            <span class="bt" onclick="opendraw(3)" title="面"><i class="icon-folder-close-alt"></i></span>
+            <span class="bt" onclick="opendraw(4)" title="圆"><i class="icon-circle-blank"></i></span>
+        </div>
+        <!--<div class="detail">
+            类型：消防栓<br />
+            编号：S-120341<br />
+            水枪数：2<br />
+            水压：0.15Mpa<br />
+            等级：4级<br />
+            上次维护日期：2016-09-09<br />
+            责任人：周<br />
+            电话：182726387272
+        </div>-->
+    </div>
+    <script type="text/javascript">
+        var sc = 1;
+        var move = false;
+        var ul = null;
+        var w = 0, h = 0;
+        var pt = null;
+        var ctx = null;
+
+        var Ymap = (function ($) {
+            var layers = [];
+            var dom = null;
+
+            var y = {
+                init: function (el) {
+                    dom = $(el);
+                    dom.append("")
+                },
+                addlayer: function (url) {
+                    layers.push(url);
+                }
+            }
+
+        })(jQuery);
+
+        var draw = (function ($) {
+            var dom = null;
+            var type = 1;//1、点 2、面 3、线 4、圆
+            var tps = [];
+            var pts = null;
+            var pt = null;
+            var callback = null;//回调
+            var start = false;
+            var cxt = null;
+            var style = { fillcolor: "#0000FF", fillop: 0.4, stockcolor: "#ff0000", stockop: 0.8 }
+            var w = 0, h = 0;
+            var o = {};
+            var click_tr = null;
+
+            var d = {
+                init: function (el, st) {
+                    dom = $(el);
+                    pts = dom.find(".pts");
+                    if (pts == null) {
+                        pts = $('<div class="pts"></div>');
+                        dom.append(pts);
+                    }
+                    style = jQuery.extend(style, st);
+                    $(document).bind({
+                        "mousemove": dom_mousemove,
+                        "click": function () {
+                            click_tr = setTimeout(function (e) { dom_click(e); }, 200, event);
+                        },
+                        "dblclick": function () { if (click_tr) clearTimeout(click_tr); dom_dblclick(); },
+                    });
+                },
+                open: function (tp, cb) {
+                    if (start) { alert("请先停止其它工具"); return; }
+                    type = tp;
+                    callback = cb;
+                    tps = [];
+                    start = true;
+                    w = dom.width();
+                    h = dom.height();
+                    if (tp == 1) {
+                        pt = $("<div data-tp='1' class='p p1'></div>");
+                        pts.append(pt);
+                    } else {
+                        var ct = $('<canvas width="' + w + '" height="' + h + '" class="draw"></canvas>');
+                        dom.append(ct);
+                        ctx = ct[0].getContext("2d");
+                        ctx.fillStyle = hextorgba(style.fillcolor, style.fillop);
+                        ctx.strokeStyle = hextorgba(style.stockcolor, style.stockop);
+                        ctx.lineWidth = 3;
+                    }
+                },
+                stop: function () {
+                    start = false;
+                    try {
+                        console.log(type);
+                        callback(tps, type);
+                        callback = null;
+                    } catch (e) { }
+                    tps = [];
+                    if (type != 1) {
+                        $("canvas.draw").remove();
+                        o = {};
+                    }
+                }
+            };
+
+            function hextorgba(h, a) {
+                var c = "rgba(";
+                c += parseInt(h[1] + h[2], 16) + ",";
+                c += parseInt(h[3] + h[4], 16) + ",";
+                c += parseInt(h[5] + h[6], 16) + ",";
+                c += a + ")";
+                return c;
+            }
+
+            function getdist(p1, p2) {
+                return Math.abs(Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2)));
+            }
+
+            function dom_mousemove() {
+                if (!start) return;
+                switch (type) {
+                    case 1:
+                        if (pt == null) return;
+                        pt.css({
+                            left: event.offsetX - 10,
+                            top: event.offsetY - 60
+                        });
+                    case 2:
+                    case 3:
+                        ctx.clearRect(0, 0, w, h);
+                        ctx.beginPath();
+                        for (var t in tps) {
+                            var _p = tps[t];
+                            if (t == 0) ctx.moveTo(_p.x, _p.y);
+                            else ctx.lineTo(_p.x, _p.y);
+                        }
+                        ctx.lineTo(event.offsetX, event.offsetY);
+                        if (type == 3) {
+                            ctx.fill();
+                            if (tps.length > 2) ctx.closePath();
+                        }
+                        ctx.stroke();
+                        break;
+                    case 4:
+                        if (!o.x) return;
+                        ctx.clearRect(0, 0, w, h);
+                        ctx.beginPath();
+                        ctx.arc(o.x, o.y, getdist(o, { x: event.offsetX, y: event.offsetY }), Math.PI * 2, false);
+                        ctx.stroke();
+                        ctx.fill();
+                        break;
+                }
+            }
+
+            function dom_click(e) {
+                if (!start) return;
+                var p = { x: e.offsetX, y: e.offsetY };
+                tps.push(p);
+                switch (type) {
+                    case 1:
+                        d.stop();
+                        break;
+                    case 2:
+                    case 3:
+                        break;
+                    case 4:
+                        if (o.x) draw.stop();
+                        else o = p;
+                        break;
+                }
+            }
+
+            function dom_dblclick() {
+                tps.push({ x: event.offsetX, y: event.offsetY });
+                draw.stop();
+            }
+
+            return d;
+
+        })(jQuery);
+
+        $(function () {
+            ul = $(".imgs");
+            var x = 0, y = 0;
+
+            draw.init(ul);
+
+            $(".body").bind({
+                "mousedown": function (e) {
+                    var pos = ul.offset();
+                    x = e.clientX - pos.left;
+                    y = e.clientY - pos.top;
+                    move = true;
+                    $(this).css("cursor", "move");
+                    e.preventDefault()
+                },
+                "mousemove": function (e) {
+                    if (move) ul.css({ "top": e.clientY - y, "left": e.clientX - x });
+                },
+                "mouseup": function () {
+                    move = false;
+                    $(this).css("cursor", "");
+                }
+            });
+            ul.on("mousewheel", function () {
+                set_zoom(-event.deltaY / 100);
+            });
+            w = $(window).width();
+            h = $(window).height();
+            $(".body").css({
+                width: w,
+                height: h
+            });
+            $(".btns.fls").delegate(".bt.fl", "click", function () {
+                $(".btns .bt").removeClass("on");
+                $(this).addClass("on");
+                var url = $(this).attr("data-src");
+                var img = new Image();
+                img.onload = function () {
+                    $("#fl_img").attr("src", url);
+                    $(".imgs").css({
+                        width: img.width,
+                        height: img.height
+                    });
+                    $("#cav_img").attr("width", img.width).attr("height", img.height);
+                    ctx = document.getElementById("cav_img").getContext("2d");
+                    ctx.fillStyle = "rgba(128, 100, 162,0.5)";
+                    ctx.strokeStyle = "blue";
+                    set_zoom(0);
+                    load_point();
+                }
+                img.src = url;
+            });
+            $(".pts").delegate(".p", "click", function () {
+                //pt = $(this);
+                //event.stopPropagation();
+                //alert("房间id:" + $(this).attr("data-id"));
+                edit_point($(this).attr("data-id"));
+            })
+            load_floor();
+        });
+
+        function opendraw(t) {
+            draw.open(t, function (p, t) {
+                save_point({ ps: p, tp: t });
+            });
+            event.stopPropagation();
+        }
+        function set_zoom(t) {
+            if ((ul.width() * sc < 30 || ul.height() * sc < 30) && t < 0) return;
+            var pos = {};
+            if (t == 0) {
+                var uw = w / ul.width();
+                var uh = h / ul.height();
+                sc = Math.min(uw, uh);
+                pos = {
+                    x: uw == sc ? 0 : (w - ul.width() * sc) / 2,
+                    y: uh == sc ? 0 : (h - ul.height() * sc) / 2
+                }
+            }
+            else {
+                var p = ul.position();
+                var _w = ul.width() * sc;
+                var _h = ul.height() * sc;
+                sc += t * 0.05;
+                pos = {
+                    x: p.left - (event.clientX - p.left) / _w * (ul.width() * sc - _w),
+                    y: p.top - (event.clientY - p.top) / _h * (ul.height() * sc - _h)
+                };
+            }
+            ul.css({
+                left: pos.x,
+                top: pos.y,
+                "transform": "scale(" + sc + ")"
+            });
+        }
+        function save_point(p) {
+            x.doapi("point.save", {
+                id: p.id,
+                fid: $(".bt.fl.on").attr("data-id"),
+                px: p.ps[0].x,
+                tp: p.tp,
+                py: p.ps[0].y,
+                ps: JSON.stringify(p.ps)
+            }, function (d) {
+                if (!d.issucc) return;
+                edit_point(d.msg);
+            });
+            pt = null;
+        }
+        function load_point() {
+            var pts = $(".pts");
+            x.doapi("point.load", { fid: $(".bt.fl.on").attr("data-id") }, function (d) {
+                if (!d.issucc) return;
+                if (pts) pts.html("");
+                if (ctx) ctx.clearRect(0, 0, w, h);
+                var map = $("#cav_map");
+                for (var c in d.items) {
+                    var f = d.items[c];
+                    var tps = JSON.parse(f.pts);
+                    var st = JSON.parse(f.st || "{}");
+                    if (f.tp != 1) {
+                        ctx.fillStyle = hextorgba(st.fc, st.fp);
+                        ctx.strokeStyle = hextorgba(st.bc, st.bp);
+                        ctx.lineWidth = st.bw || 2;
+                    }
+                    switch (f.tp) {
+                        case 1:
+                            pts.append("<div class='p p1' data-id='" + f.id + "' style='left:" + tps[0].x + "px;top:" + tps[0].y + "px'></div>");
+                            break;
+                        case 2:
+                        case 3:
+                            ctx.beginPath();
+                            var coord = "";
+                            for (var t in tps) {
+                                var _p = tps[t];
+                                if (coord) coord += ",";
+                                coord += _p.x + "," + _p.y;
+                                if (t == 0) ctx.moveTo(_p.x, _p.y);
+                                else ctx.lineTo(_p.x, _p.y);
+                            }
+                            if (f.tp == 3) {
+                                ctx.fill();
+                                if (tps.length > 1) ctx.closePath();
+                            }
+                            ctx.stroke();
+                            map.append('<area shape="poligon" coords="' + coord + '" title="' + f.name + '" href="#" alt="' + f.name + '" onclick="alert(\'asdfa\')" />')
+                            break;
+                        case 4:
+                            ctx.beginPath();
+                            ctx.arc(tps[0].x, tps[0].y, getdist(tps[0], tps[1]), Math.PI * 2, false);
+                            ctx.stroke();
+                            ctx.fill();
+                            map.append('<area shape="circle" coords="' + tps[0].x + "," + tps[0].y + ',' + getdist(tps[0], tps[1]) + '" href="#" alt="' + f.name + '" title="' + f.name + '" onclick="alert(\'asdfa\')" />')
+                            break;
+                    }
+                }
+            }, false);
+        }
+        function load_floor() {
+            var fls = $(".btns.fls");
+            x.doapi("floor.load", { gid: "$gid" }, function (d) {
+                if (!d.issucc) return;
+                fls.html("");
+                for (var c in d.items) {
+                    var f = d.items[c];
+                    fls.append("<span class=\"bt fl\" data-src='" + f.bgimg + "' data-id='" + f.id + "'>" + f.name + "</span>")
+                }
+                $(".btns .bt.fl:last-child").click();
+            }, false);
+        }
+        function remove_floor() {
+            var id = $(".bt.fl.on").attr("data-id");
+            x.confirm("是否要删除当前楼层，楼层相应的数据点也会被删除？", function () {
+                x.doapi("floor.del", { id: id }, function (d) { load_floor(); });
+            });
+        }
+        function edit_point(id) {
+            x.openwin("/point/edit-" + id + ".html", "坐标信息", function () {
+                load_point();
+            }, { w: 400, h: 300 })
+        }
+        function edit_floor(ised) {
+            var id = "";
+            if (ised) id = $(".bt.fl.on").attr("data-id");
+            x.openwin("/floor/edit-${gid}-" + id + ".html", "楼层信息", function () {
+                load_floor();
+            }, { w: 400, h: 300 })
+        }
+        function hextorgba(h, a) {
+            var c = "rgba(";
+            c += parseInt(h[1] + h[2], 16) + ",";
+            c += parseInt(h[3] + h[4], 16) + ",";
+            c += parseInt(h[5] + h[6], 16) + ",";
+            c += a + ")";
+            return c;
+        }
+        function getdist(p1, p2) {
+            return Math.abs(Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2)));
+        }
+
+    </script>
+</body>
+</html>

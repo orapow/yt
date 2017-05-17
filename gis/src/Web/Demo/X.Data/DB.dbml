@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="yt.gis" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=yt.gis;Integrated Security=True" SettingsObjectName="X.Data.Properties.Settings" SettingsPropertyName="yt_gisConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.x_video" Member="x_video">
+    <Type Name="x_video">
+      <Column Name="video_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="grid_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(260)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="x_grid_x_video" Member="x_grid" ThisKey="grid_id" OtherKey="grid_id" Type="x_grid" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_gps" Member="x_gps">
+    <Type Name="x_gps">
+      <Column Name="gps_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="grid_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="no" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(260)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="online" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="x_gps_x_gps_log" Member="x_gps_log" ThisKey="gps_id" OtherKey="gps_id" Type="x_gps_log" />
+      <Association Name="x_grid_x_gps" Member="x_grid" ThisKey="grid_id" OtherKey="grid_id" Type="x_grid" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_gps_log" Member="x_gps_log">
+    <Type Name="x_gps_log">
+      <Column Name="gps_log_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="gps_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="no" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lng" Type="System.Decimal" DbType="Decimal(18,8)" CanBeNull="true" />
+      <Column Name="lat" Type="System.Decimal" DbType="Decimal(18,8)" CanBeNull="true" />
+      <Association Name="x_gps_x_gps_log" Member="x_gps" ThisKey="gps_id" OtherKey="gps_id" Type="x_gps" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_pick" Member="x_pick">
+    <Type Name="x_pick">
+      <Column Name="pick_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="grid_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Association Name="x_grid_x_pick" Member="x_grid" ThisKey="grid_id" OtherKey="grid_id" Type="x_grid" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_dict" Member="x_dict">
+    <Type Name="x_dict">
+      <Column Name="dict_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="img" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="jp" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="upval" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_floor" Member="x_floor">
+    <Type Name="x_floor">
+      <Column Name="floor_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="grid_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="value" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bgimg" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Association Name="x_floor_x_point" Member="x_point" ThisKey="floor_id" OtherKey="floor_id" Type="x_point" />
+      <Association Name="x_grid_x_floor" Member="x_grid" ThisKey="grid_id" OtherKey="grid_id" Type="x_grid" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_point" Member="x_point">
+    <Type Name="x_point">
+      <Column Name="point_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="floor_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="pointx" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pointy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="style" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="points" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="x_floor_x_point" Member="x_floor" ThisKey="floor_id" OtherKey="floor_id" Type="x_floor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_grid" Member="x_grid">
+    <Type Name="x_grid">
+      <Column Name="grid_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="lng" Type="System.Decimal" DbType="Decimal(18,8)" CanBeNull="true" />
+      <Column Name="lat" Type="System.Decimal" DbType="Decimal(18,8)" CanBeNull="true" />
+      <Column Name="style" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="points" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="x_grid_x_video" Member="x_video" ThisKey="grid_id" OtherKey="grid_id" Type="x_video" />
+      <Association Name="x_grid_x_gps" Member="x_gps" ThisKey="grid_id" OtherKey="grid_id" Type="x_gps" />
+      <Association Name="x_grid_x_pick" Member="x_pick" ThisKey="grid_id" OtherKey="grid_id" Type="x_pick" />
+      <Association Name="x_grid_x_floor" Member="x_floor" ThisKey="grid_id" OtherKey="grid_id" Type="x_floor" />
+      <Association Name="x_grid_x_poi" Member="x_poi" ThisKey="grid_id" OtherKey="grid_id" Type="x_poi" />
+    </Type>
+  </Table>
+  <Table Name="dbo.x_poi" Member="x_poi">
+    <Type Name="x_poi">
+      <Column Name="poi_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="grid_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(260)" CanBeNull="true" />
+      <Column Name="img" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="addr" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="tel" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Association Name="x_grid_x_poi" Member="x_grid" ThisKey="grid_id" OtherKey="grid_id" Type="x_grid" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

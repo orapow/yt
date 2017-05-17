@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>添加椭圆</title>
+    <style type="text/css">
+        body, html, #mapDiv { width: 100%; height: 100%; overflow: hidden; margin: 0; font-family: "微软雅黑"; }
+    </style>
+</head>
+<body onLoad="onLoad()">
+    <div id="mapDiv"></div>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script type="text/javascript">
+        var map;
+        function onLoad() {
+            //初始化地图对象
+            map = new YMap("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new YLngLat(116.40969, 39.89945), 11);
+            //允许鼠标滚轮缩放地图
+            map.enableHandleMouseScroll();
+
+            var config = {
+                strokeColor: "blue",	//圆边线颜色
+                fillColor: "#FFFFFF",	//填充颜色。
+                strokeWeight: "5px",	//圆边线线的宽度，以像素为单位
+                strokeOpacity: 0.5,	//圆边线线的透明度，取值范围0 - 1
+                fillOpacity: 0.5,			//填充的透明度，取值范围0 - 1
+                strokeStyle: "solid"	//圆边线线的样式，solid或dashed
+            };
+            var bounds = new YBounds(116.36231, 39.87784, 116.43954, 39.92841);
+            //创建椭圆对象
+            var ellipse = new YEllipse(bounds, config);
+            //向地图上添加椭圆
+            map.addOverLay(ellipse);
+
+        }
+    </script>
+</body>
+</html>

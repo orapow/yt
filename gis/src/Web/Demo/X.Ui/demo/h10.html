@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>添加自定义信息窗</title>
+    <style type="text/css">
+        body, html, #mapDiv { width: 100%; height: 100%; overflow: hidden; margin: 0; font-family: "微软雅黑"; }
+    </style>
+</head>
+<body onLoad="onLoad()">
+    <div id="mapDiv"></div>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script type="text/javascript">
+        var map;
+        function onLoad() {
+            //初始化地图对象
+            map = new YMap("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new YLngLat(116.40969, 39.89945), 11);
+            //允许鼠标滚轮缩放地图
+            map.enableHandleMouseScroll();
+
+            //创建标注对象
+            marker = new YMarker(new YLngLat(116.40969, 39.94940));
+            //向上地图上添加标注
+            map.addOverLay(marker);
+            //注册标注的点击事件
+            YEvent.addListener(marker, "click", onClick);
+        }
+
+        function onClose() {
+            map.removeOverLay(customerWinInfo);
+        }
+
+        function onClick() {
+            var html = [];
+            html.push('<div style="background:#CCCC99;height:20px;color:#000;width:135px;">');
+            html.push('     <span style="width:100px;float:left;margin-left:2px;background:">自定义信息窗口</span><span  style="width:30px;float:right;margin-right:2px;" onclick="onClose();">关闭</span>');
+            html.push('</div>');
+            html.push('<div id="deliver-legend-ctrl" style="background:#fff;border:1px solid #C0C0C0;">');
+            html.push(' <table cellspacing="0" cellspadding="0" style="width:130px;border:1px solid #ff0000;">');
+            html.push('     <tr align="center" style="height:10px;">');
+            html.push('         <td></td>');
+            html.push('         <td><a herf="javascript:void(0);"></a></td>');
+            html.push('     </tr>');
+            html.push('     <tr align="center">');
+            html.push('         <td>经度:</td>');
+            html.push('         <td>' + marker.getLngLat().getLng() + '</td>');
+            html.push('     </tr>');
+            html.push('     <tr align="center">');
+            html.push('         <td>纬度:</td>');
+            html.push('         <td>' + marker.getLngLat().getLat() + '</td>');
+            html.push('     </tr>');
+            html.push('     <tr style="height:10px;">');
+            html.push('         <td></td>');
+            html.push('         <td><a herf="javascript:void(0);"></a></td>');
+            html.push('     </tr>');
+            html.push(' </table>');
+            html.push('</div>');
+
+            var config = {
+                offset: new YPixel(0, 0),
+                position: marker.getLngLat()
+            };
+            customerWinInfo = new YLabel(config);
+            customerWinInfo.setTitle('');
+            customerWinInfo.setLabel(html.join(''));
+            customerWinInfo.getObject().style.zIndex = 10000;
+            map.addOverLay(customerWinInfo);
+            var obj = customerWinInfo.getObject();
+            var width = parseInt(obj.offsetWidth);
+            var height = parseInt(obj.offsetHeight);
+            var icon = this.getIcon();
+            var anchor_icon = icon.getAnchor();
+            var pixel = new YPixel(width / -2, height / -2 - anchor_icon[1]);
+            customerWinInfo.setOffset(pixel);
+        }
+
+    </script>
+</body>
+</html>

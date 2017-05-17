@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Pub\ytgis\web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App.ashx">
+      <publishTime>11/14/2015 18:51:03</publishTime>
+    </File>
+    <File Include="bin/Enyim.Caching.dll">
+      <publishTime>11/14/2015 18:51:01</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/14/2015 18:51:01</publishTime>
+    </File>
+    <File Include="bin/NVelocity.dll">
+      <publishTime>11/14/2015 18:51:01</publishTime>
+    </File>
+    <File Include="bin/X.App.dll">
+      <publishTime>03/18/2017 11:16:02</publishTime>
+    </File>
+    <File Include="bin/X.Core.dll">
+      <publishTime>09/26/2016 09:08:09</publishTime>
+    </File>
+    <File Include="bin/X.Data.dll">
+      <publishTime>03/18/2017 11:16:02</publishTime>
+    </File>
+    <File Include="bin/X.Json.dll">
+      <publishTime>10/13/2016 13:31:44</publishTime>
+    </File>
+    <File Include="bin/X.Ui.dll">
+      <publishTime>03/18/2017 11:16:03</publishTime>
+    </File>
+    <File Include="bin/X.Web.dll">
+      <publishTime>03/18/2017 11:16:02</publishTime>
+    </File>
+    <File Include="dat/cfg.x">
+      <publishTime>03/14/2017 23:09:44</publishTime>
+    </File>
+    <File Include="demo/a1.html">
+      <publishTime>03/09/2017 23:26:15</publishTime>
+    </File>
+    <File Include="demo/a2.html">
+      <publishTime>03/09/2017 15:03:52</publishTime>
+    </File>
+    <File Include="demo/a3.html">
+      <publishTime>03/09/2017 15:07:00</publishTime>
+    </File>
+    <File Include="demo/b1.html">
+      <publishTime>03/11/2017 22:28:55</publishTime>
+    </File>
+    <File Include="demo/b2.html">
+      <publishTime>03/09/2017 23:01:37</publishTime>
+    </File>
+    <File Include="demo/b3.html">
+      <publishTime>03/09/2017 15:19:30</publishTime>
+    </File>
+    <File Include="demo/b4.html">
+      <publishTime>03/11/2017 22:25:56</publishTime>
+    </File>
+    <File Include="demo/c1.html">
+      <publishTime>03/09/2017 15:18:21</publishTime>
+    </File>
+    <File Include="demo/c3.html">
+      <publishTime>03/09/2017 15:21:07</publishTime>
+    </File>
+    <File Include="demo/c4.html">
+      <publishTime>03/09/2017 15:25:00</publishTime>
+    </File>
+    <File Include="demo/c5.html">
+      <publishTime>03/09/2017 15:24:42</publishTime>
+    </File>
+    <File Include="demo/c6.html">
+      <publishTime>03/09/2017 15:24:32</publishTime>
+    </File>
+    <File Include="demo/c7.html">
+      <publishTime>03/09/2017 15:27:11</publishTime>
+    </File>
+    <File Include="demo/c8.html">
+      <publishTime>03/09/2017 15:29:41</publishTime>
+    </File>
+    <File Include="demo/d1.html">
+      <publishTime>03/09/2017 15:31:36</publishTime>
+    </File>
+    <File Include="demo/d2.html">
+      <publishTime>03/09/2017 15:34:41</publishTime>
+    </File>
+    <File Include="demo/d3.html">
+      <publishTime>03/09/2017 15:35:04</publishTime>
+    </File>
+    <File Include="demo/e1.html">
+      <publishTime>03/09/2017 15:36:48</publishTime>
+    </File>
+    <File Include="demo/e2.html">
+      <publishTime>03/09/2017 15:48:26</publishTime>
+    </File>
+    <File Include="demo/e3.html">
+      <publishTime>03/09/2017 15:51:13</publishTime>
+    </File>
+    <File Include="demo/f1.html">
+      <publishTime>03/09/2017 16:03:21</publishTime>
+    </File>
+    <File Include="demo/f2.html">
+      <publishTime>03/09/2017 16:04:49</publishTime>
+    </File>
+    <File Include="demo/f3.html">
+      <publishTime>03/09/2017 16:07:55</publishTime>
+    </File>
+    <File Include="demo/f4.html">
+      <publishTime>03/09/2017 16:09:25</publishTime>
+    </File>
+    <File Include="demo/f5.html">
+      <publishTime>03/09/2017 16:14:35</publishTime>
+    </File>
+    <File Include="demo/g1.html">
+      <publishTime>03/09/2017 16:17:15</publishTime>
+    </File>
+    <File Include="demo/g2.html">
+      <publishTime>03/09/2017 16:18:29</publishTime>
+    </File>
+    <File Include="demo/g3.html">
+      <publishTime>03/09/2017 16:19:13</publishTime>
+    </File>
+    <File Include="demo/h1.html">
+      <publishTime>03/09/2017 16:21:22</publishTime>
+    </File>
+    <File Include="demo/h10.html">
+      <publishTime>03/09/2017 16:33:09</publishTime>
+    </File>
+    <File Include="demo/h11.html">
+      <publishTime>03/09/2017 16:35:14</publishTime>
+    </File>
+    <File Include="demo/h12.html">
+      <publishTime>03/09/2017 16:36:00</publishTime>
+    </File>
+    <File Include="demo/h2.html">
+      <publishTime>03/09/2017 16:25:56</publishTime>
+    </File>
+    <File Include="demo/h3.html">
+      <publishTime>03/09/2017 16:25:50</publishTime>
+    </File>
+    <File Include="demo/h4.html">
+      <publishTime>03/09/2017 16:27:42</publishTime>
+    </File>
+    <File Include="demo/h5.html">
+      <publishTime>03/09/2017 16:28:39</publishTime>
+    </File>
+    <File Include="demo/h6.html">
+      <publishTime>03/09/2017 16:29:31</publishTime>
+    </File>
+    <File Include="demo/h7.html">
+      <publishTime>03/09/2017 16:30:14</publishTime>
+    </File>
+    <File Include="demo/h8.html">
+      <publishTime>03/09/2017 16:31:41</publishTime>
+    </File>
+    <File Include="demo/h9.html">
+      <publishTime>03/09/2017 16:31:38</publishTime>
+    </File>
+    <File Include="demo/i1.html">
+      <publishTime>03/09/2017 22:23:30</publishTime>
+    </File>
+    <File Include="demo/i2.html">
+      <publishTime>03/09/2017 22:30:29</publishTime>
+    </File>
+    <File Include="demo/i3.html">
+      <publishTime>03/09/2017 22:32:49</publishTime>
+    </File>
+    <File Include="demo/i4.html">
+      <publishTime>03/09/2017 22:34:31</publishTime>
+    </File>
+    <File Include="demo/i5.html">
+      <publishTime>03/09/2017 22:38:12</publishTime>
+    </File>
+    <File Include="demo/index.html">
+      <publishTime>03/12/2017 21:02:32</publishTime>
+    </File>
+    <File Include="demo/j1.html">
+      <publishTime>03/09/2017 22:42:00</publishTime>
+    </File>
+    <File Include="demo/j2.html">
+      <publishTime>03/09/2017 22:44:44</publishTime>
+    </File>
+    <File Include="demo/j3.html">
+      <publishTime>03/09/2017 22:47:18</publishTime>
+    </File>
+    <File Include="demo/j4.html">
+      <publishTime>03/09/2017 22:49:05</publishTime>
+    </File>
+    <File Include="demo/j5.html">
+      <publishTime>03/09/2017 22:51:13</publishTime>
+    </File>
+    <File Include="demo/k1.html">
+      <publishTime>03/09/2017 23:05:15</publishTime>
+    </File>
+    <File Include="demo/k2.html">
+      <publishTime>03/09/2017 23:05:23</publishTime>
+    </File>
+    <File Include="demo/res/base.css">
+      <publishTime>03/09/2017 06:43:54</publishTime>
+    </File>
+    <File Include="demo/res/codemirror.css">
+      <publishTime>03/09/2017 06:15:27</publishTime>
+    </File>
+    <File Include="demo/res/codemirror.min.js">
+      <publishTime>03/09/2017 06:16:25</publishTime>
+    </File>
+    <File Include="demo/res/logo.png">
+      <publishTime>03/09/2017 23:18:09</publishTime>
+    </File>
+    <File Include="demo/res/result.png">
+      <publishTime>03/09/2017 06:13:58</publishTime>
+    </File>
+    <File Include="demo/res/ZeroClipboard.js">
+      <publishTime>03/09/2017 23:28:59</publishTime>
+    </File>
+    <File Include="demo/res/ZeroClipboard.swf">
+      <publishTime>03/09/2017 23:28:37</publishTime>
+    </File>
+    <File Include="demo/t.html">
+      <publishTime>03/12/2017 16:21:36</publishTime>
+    </File>
+    <File Include="global.asax">
+      <publishTime>11/14/2015 18:51:07</publishTime>
+    </File>
+    <File Include="layers/1.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/2.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/3.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/4.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/5.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/6.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/b1.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="layers/b2.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="map.html">
+      <publishTime>01/22/2017 18:49:19</publishTime>
+    </File>
+    <File Include="res/css/base.css">
+      <publishTime>03/14/2017 23:02:00</publishTime>
+    </File>
+    <File Include="res/css/bs.min.css">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/font/FontAwesome.otf">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/font/icon.eot">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/font/icon.svg">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/font/icon.ttf">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/font/icon.woff">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/icon.min.css">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/css/map.css">
+      <publishTime>01/12/2017 14:04:17</publishTime>
+    </File>
+    <File Include="res/img/1.jpg">
+      <publishTime>03/11/2017 08:51:15</publishTime>
+    </File>
+    <File Include="res/img/dialog.bg.png">
+      <publishTime>08/17/2016 10:00:10</publishTime>
+    </File>
+    <File Include="res/img/loading.gif">
+      <publishTime>08/17/2016 10:00:10</publishTime>
+    </File>
+    <File Include="res/img/map/1.jpg">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/2.jpg">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/3.jpg">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/404.png">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/bg.psd">
+      <publishTime>03/11/2017 23:27:29</publishTime>
+    </File>
+    <File Include="res/img/map/bgImg.gif">
+      <publishTime>03/11/2017 23:27:30</publishTime>
+    </File>
+    <File Include="res/img/map/cluster/cluster0.png">
+      <publishTime>03/12/2017 14:52:13</publishTime>
+    </File>
+    <File Include="res/img/map/cluster/cluster1.png">
+      <publishTime>03/12/2017 14:52:13</publishTime>
+    </File>
+    <File Include="res/img/map/cluster/cluster2.png">
+      <publishTime>03/12/2017 14:52:13</publishTime>
+    </File>
+    <File Include="res/img/map/cluster/cluster3.png">
+      <publishTime>03/12/2017 14:52:13</publishTime>
+    </File>
+    <File Include="res/img/map/cluster/cluster4.png">
+      <publishTime>03/12/2017 14:52:13</publishTime>
+    </File>
+    <File Include="res/img/map/img404.png">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/infowin/infoWinClose.gif">
+      <publishTime>03/12/2017 07:55:13</publishTime>
+    </File>
+    <File Include="res/img/map/infowin/infoWinDown.png">
+      <publishTime>03/12/2017 07:55:13</publishTime>
+    </File>
+    <File Include="res/img/map/infowin/infoWinShadow.png">
+      <publishTime>03/12/2017 07:55:13</publishTime>
+    </File>
+    <File Include="res/img/map/infoWinShadow.png">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/logo.png">
+      <publishTime>03/12/2017 14:39:36</publishTime>
+    </File>
+    <File Include="res/img/map/mapctrls.png">
+      <publishTime>03/12/2017 15:35:11</publishTime>
+    </File>
+    <File Include="res/img/map/mapNav.png">
+      <publishTime>03/11/2017 22:48:09</publishTime>
+    </File>
+    <File Include="res/img/map/marker.png">
+      <publishTime>03/11/2017 22:48:10</publishTime>
+    </File>
+    <File Include="res/img/map/markerA.png">
+      <publishTime>03/09/2017 16:22:53</publishTime>
+    </File>
+    <File Include="res/img/map/mask.gif">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/navtool.png">
+      <publishTime>01/07/2017 15:02:28</publishTime>
+    </File>
+    <File Include="res/img/map/overviewClose.png">
+      <publishTime>03/11/2017 23:27:29</publishTime>
+    </File>
+    <File Include="res/img/map/overviewOpen.png">
+      <publishTime>03/11/2017 23:27:30</publishTime>
+    </File>
+    <File Include="res/img/map/ter404.png">
+      <publishTime>03/11/2017 22:48:08</publishTime>
+    </File>
+    <File Include="res/img/map/wms/marker.png">
+      <publishTime>03/09/2017 15:43:54</publishTime>
+    </File>
+    <File Include="res/img/no.jpg">
+      <publishTime>08/17/2016 10:00:10</publishTime>
+    </File>
+    <File Include="res/img/no_pic.png">
+      <publishTime>08/17/2016 10:00:10</publishTime>
+    </File>
+    <File Include="res/img/tip.jpg">
+      <publishTime>08/17/2016 10:00:10</publishTime>
+    </File>
+    <File Include="res/js/area.js">
+      <publishTime>01/12/2017 14:32:29</publishTime>
+    </File>
+    <File Include="res/js/bs.min.js">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/js/citydata.json">
+      <publishTime>01/13/2017 15:50:30</publishTime>
+    </File>
+    <File Include="res/js/esl.js">
+      <publishTime>03/17/2017 21:23:59</publishTime>
+    </File>
+    <File Include="res/js/jquery.min.js">
+      <publishTime>11/14/2015 18:51:04</publishTime>
+    </File>
+    <File Include="res/js/jq_214.js">
+      <publishTime>02/26/2017 20:13:33</publishTime>
+    </File>
+    <File Include="res/js/map - 复制.js">
+      <publishTime>03/12/2017 09:10:39</publishTime>
+    </File>
+    <File Include="res/js/map.js">
+      <publishTime>03/12/2017 15:49:50</publishTime>
+    </File>
+    <File Include="res/js/map1.js">
+      <publishTime>03/11/2017 17:34:05</publishTime>
+    </File>
+    <File Include="res/js/maptool.js">
+      <publishTime>03/09/2017 23:05:12</publishTime>
+    </File>
+    <File Include="res/js/tdt.js">
+      <publishTime>03/12/2017 16:21:25</publishTime>
+    </File>
+    <File Include="res/js/x.desk.js">
+      <publishTime>02/26/2017 20:44:24</publishTime>
+    </File>
+    <File Include="res/js/x.form.js">
+      <publishTime>03/14/2017 22:52:57</publishTime>
+    </File>
+    <File Include="res/js/x.grid.js">
+      <publishTime>03/14/2017 22:52:58</publishTime>
+    </File>
+    <File Include="res/js/x.js">
+      <publishTime>03/14/2017 22:52:57</publishTime>
+    </File>
+    <File Include="res/js/zrender/animation/Animation.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/animation/Clip.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/animation/easing.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/config.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/dep/excanvas.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/dep/excanvas2.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/dep/excanvas3.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/Group.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/Handler.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/Layer.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/Bar.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/Base.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/Bubble.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/DynamicLine.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/Ring.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/Spin.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/loadingEffect/Whirling.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/macro.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/mixin/Eventful.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/mixin/Transformable.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/Painter.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Base.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/BezierCurve.js">
+      <publishTime>03/17/2017 21:22:53</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Circle.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Droplet.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Ellipse.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Heart.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Image.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Isogon.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Line.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Path.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Polygon.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Polyline.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Rectangle.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Ring.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Rose.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Sector.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/ShapeBundle.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Star.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Text.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/Trochoid.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/util/dashedLineTo.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/util/PathProxy.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/util/smoothBezier.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/shape/util/smoothSpline.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/Storage.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/area.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/color.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/computeBoundingBox.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/curve.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/env.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/event.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/guid.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/http.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/log.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/math.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/matrix.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/util.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/tool/vector.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/js/zrender/zrender.js">
+      <publishTime>03/17/2017 21:22:54</publishTime>
+    </File>
+    <File Include="res/layers/1.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/2.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/3.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/4.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/5.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/6.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/b1.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="res/layers/b2.jpg">
+      <publishTime>02/26/2017 20:14:34</publishTime>
+    </File>
+    <File Include="tpl/119.html">
+      <publishTime>03/15/2017 09:09:05</publishTime>
+    </File>
+    <File Include="tpl/com/err.html">
+      <publishTime>04/22/2016 10:52:12</publishTime>
+    </File>
+    <File Include="tpl/com/getpos.html">
+      <publishTime>01/08/2017 14:12:45</publishTime>
+    </File>
+    <File Include="tpl/com/_head.html">
+      <publishTime>03/14/2017 23:01:37</publishTime>
+    </File>
+    <File Include="tpl/demo.html">
+      <publishTime>03/13/2017 10:10:30</publishTime>
+    </File>
+    <File Include="tpl/feature.html">
+      <publishTime>03/12/2017 20:51:24</publishTime>
+    </File>
+    <File Include="tpl/floor/edit.html">
+      <publishTime>03/14/2017 23:39:18</publishTime>
+    </File>
+    <File Include="tpl/index - 复制.html">
+      <publishTime>03/11/2017 12:01:47</publishTime>
+    </File>
+    <File Include="tpl/index.html">
+      <publishTime>03/12/2017 22:17:39</publishTime>
+    </File>
+    <File Include="tpl/layer - 复制.html">
+      <publishTime>03/17/2017 19:36:07</publishTime>
+    </File>
+    <File Include="tpl/layer.html">
+      <publishTime>03/18/2017 11:15:17</publishTime>
+    </File>
+    <File Include="tpl/point/edit.html">
+      <publishTime>03/18/2017 11:02:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/18/2017 11:16:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

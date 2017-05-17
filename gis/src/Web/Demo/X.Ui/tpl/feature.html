@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Ytgis - $cfg.name</title>
+    <meta http-equiv="x-ua-compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <style type="text/css">
+        body { margin: 0; padding: 0; font: 14px/1.6 'Microsoft YaHei',Tahoma,Verdana,'Simsun'; color: #333; }
+        a { text-decoration: none; }
+        .w1100 { width: 1100px; margin: 0 auto; }
+        .clr { clear: both; }
+        .top { height: 30px; border-bottom: 1px solid #e7e8ed; background: #f7f8fa; font-size: 12px; line-height: 30px; color: #53555a; }
+        .top a { display: inline-block; margin-left: 5px; }
+        .rt { float: right; }
+        .lt { float: left; }
+        .nav { min-height: 100px; line-height: 100px; font-size: 16px; }
+        .nav a { padding: 0 15px; color: #333; line-height: 34px; display: inline-block; }
+        .nav a.on { border-radius: 2px; background: #e9280c; color: #fff; }
+        .banner { margin: 0 auto; max-width: 1440px; min-width: 1200px; text-align: center; }
+        .panel { margin-bottom: 40px; }
+        .panel h1 { text-align: center; font-weight: normal; border-bottom: 1px solid #ccc; }
+        .panel h1 span { line-height: 45px; padding: 10px 15px; border-bottom: 4px solid #666; display: inline-block; margin-bottom: -2px; }
+        .panel p { padding: 15px; line-height: 26px; text-indent: 2em; }
+        .panel img { max-width: 800px; margin: 0 auto; display: block; }
+        .foot { border-top: 1px solid #ccc; padding: 5px 0; margin-top: 15px; }
+        .foot p { font-size: 12px; color: #A5A5A5; text-align: center; line-height: 22px; }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="w1100">
+            <div class="lt">欢迎使用YtGis</div><div class="rt">联系电话：0551-63641115<a href="http://www.591map.net/" target="_blank">亿图官网</a><a href="http://www.591map.net/aboutus/1-view-32.html" target="_blank">资质证书</a><a href="http://www.591map.net/aboutus/1-view-31.html" target="_blank">联系我们</a><a href="http://wpa.qq.com/msgrd?v=3&uin=526935490&site=qq&menu=yes" target="_blank">在线咨询</a></div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="w1100">
+            <div class="lt"><img src="logo" /></div><div class="rt"> <a href="/index.html">网站首页</a><a href="/demo.html" target="_blank">在线浏览</a><a href="/demo/index.html" target="_blank">在线示例</a><a href="">类库参考</a><a href="http://www.591map.net/news/showlist-class-70.html" target="_blank">客户案例</a><a href="/feature.html" class="on">功能特色</a><a href="http://www.591map.net/aboutus/1-view-29.html" target="_blank">关于我们</a></div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="http://www.591map.net/common/images/theme/default/sub_banner.gif" />
+    </div>
+    <div class="panel w1100">
+        <h1><span>二三维一体化</span></h1>
+        <div class="ct">
+            <p>
+                二三维一体化平台中所管理的数据为一套数据，即二维与三维数据在数据模型和数据结构上保持一体化，这样避免了多套数据造成的管理成本。而且在二三维一体化平台中，不论是二维还是三维都可以支持标准的空间地图服务（OGC服务），不同的服务类似不同的数据图层，用户可以根据自己的需求自由支配。
+                对用户来说，二维与三维界面不再是不同系统的不同窗口，而只是一个系统向用户提供的不同显示选择，用户可以选择是在二维环境下应用还是在三维环境下应用。
+                在一个工作空间内，用户可以基于一套数据构建二维的地图、三维的场景，应用一套分析功能，并可方便地对地图或者场景进行排版输出。
+                无论是在二维地图，还是三维地图，用户都可以直接对地图数据进行操作，包括查询浏览统计等，且在二维下的操作当切换到三维时仍能保持操作结果，同样的在三维下的操作也可以同步到二维，这样提高了用户体验以及丰富用户了解相关信息的。
+            </p>
+            <img src="http://www.ntgis.com/uploads/allimg/140320/1-140320101Q0A9.jpg" />
+        </div>
+    </div>
+    <div class="panel w1100">
+        <h1><span>热区加载</span></h1>
+        <div class="ct">
+            <p>
+                热区即当鼠标移动到 WebGIS 地图上的实体上时，实体的轮廓会勾画出来并提示实体的名称信息。热区效果能极大的增强用户体验，同时也给浏览地图带来极大的方便。作为一个地理信息服务平台，若待显示的实体轮廓和名称信息采用从数据库服务器中读取，则对于大容量并发访问的Web 应用系统来说会带来系统性能的严重下降。
+                在本系统实现的方案中，热区的信息是存储在一个个的 JS 文件中，包括实体轮廓的坐标等信息都是通过加载JS 脚本的方式读取到客户端。为实现校园三维模型数据和地理信息数据的无缝结合，WebGIS 平台采用统一坐标系实现栅格图片和相应区域内的栅格数据的一一对应。同时考虑系统的性能，只加载当前地图显示区域的热区信息，以此来提高地图响应和浏览的速度。热区的显示还需要借助客户端画图技术VML/SVG 来共同实现。VML/SVG 根据实体轮廓的坐标和实体的标题属性，动态绘制实体轮廓以及显示实体信息。
+            </p>
+            <img src="http://www.ntgis.com/uploads/allimg/140320/1-14032010392b04.jpg" />
+        </div>
+    </div>
+    <div class="panel w1100">
+        <h1><span>支持多标准多来源</span></h1>
+        <div class="ct">
+            <p>
+                支持的格式有：XML、GML、 GeoJSON、GeoRSS、JSON、KML、WFS、WKT
+                支持地图来源：GoogleMap，KaMap，MSVirtualEarth，QQ地图，世纪高通地图，阿里云地图，51地图，搜狗地图，百度地图，天地图
+            </p>
+            <img src="http://www.ntgis.com/uploads/allimg/140320/1-140320105206248.jpg" />
+        </div>
+    </div>
+    <div class="panel w1100">
+        <h1><span>轻量空间分析</span></h1>
+        <div class="ct">
+            <p>
+                缓冲区分析
+                缓冲区分析是针对点、线、面等地理实体，自动在其周围建立一定宽度范围的缓冲区多边形。
+                邻近度描述了地理空间中两个地物距离相近的程度，其确定是空间分析的一个重要手段。交通沿线或河流沿线的地物有其独特的重要性，公共设施的服务半径，大型水库建设引起的搬迁，铁路、公路以及航运河道对其所穿过区域经济发展的重要性等，均是一个邻近度问题。缓冲区分析是解决邻近度问题的空间分析工具之一。 所谓缓冲区就是地理空间目标的一种影响范围或服务范围。
+
+                叠加分析
+                大部分GIS软件是以分层的方式组织地理景观，将地理景观按主题分层提取，同一地区的整个数据层集表达了该地区地理景观的内容。地理信息系统的叠加分析是将有关主题层组成的数据层面，进行叠加产生一个新数据层面的操作，其结果综合了原来两层或多层要素所具有的属性。叠加分析不仅包含空间关系的比较，还包含属性关系的比较。叠加分析可以分为以下几类：视觉信息叠加、点与多边形叠加、线与多边形叠加、多边形叠加、栅格图层叠加。
+
+                网络分析
+                对地理网络（如交通网络）、城市基础设施网络（如各种网线、电力线、电话线、供排水管线等）进行地理分析和模型化，是地理信息系统中网络分析功能的主要目的。网络分析是运筹学模型中的一个基本模型，它的根本目的是研究、筹划一项网络工程如何安排，并使其运行效果最好，如一定资源的最佳分配，从一地到另一地的运输费用最低等。
+                网络分析包括：路径分析（寻求最佳路径）、地址匹配（实质是对地理位置的查询）以及资源分配。
+
+                空间统计分析
+                GIS得以广泛应用的重要技术支撑之一就是空间统计与分析。例如， 在区域环境质量现状评价工作中，可将地理信息与大气、土壤、水、噪声等环境要素的监测数据结合在一起，利用GIS软件的空间分析模块，对整个区域的环境质量现状进行客观、全面的评价，以反映出区域中受污染的程度以及空间分布情况。通过叠加分析，可以提取该区域内大气污染分布图、噪声分布图;通过缓冲区分析，可显示污染源影响范围等。可以预见，在构建和谐社会的过程中，GIS和空间分析技术必将发挥越来越广泛和深刻的作用。
+                常用的空间统计分析方法有：常规统计分析、空间自相关分析、回归分析、趋势分析及专家打分模型等。
+            </p>
+            <img src="http://www.ntgis.com/uploads/allimg/140320/1-140320105IEM.jpg" />
+        </div>
+    </div>
+    <div class="panel w1100">
+        <h1><span>完美结合硬件</span></h1>
+        <div class="ct">
+            <p>
+                GIS系统提供GIS功能与空间数据，在系统业务中主要使用地理信息平台。地理信息平台是以信息网络为基础，以电子地图为核心，以地理信息技术为支撑，以服务于业务可视化管理、综合分析和决策支持为目标的重要信息化基础设施。
+                基于GIS的视频监控指挥平台的工作原理主要是使用GIS系统提供的地理信息服务接口与功能组件，实现视频监控指挥特定的视频业务需求，将电子地图引用到视频监控中，提高视频可视化操作。使用空间数据进行视频图像与地理空间的数据分析，提高监控效果。
+                gps定位主要是为船舶、汽车、飞机等运动物体进行定位导航。例如：
+                ①船舶远洋gps定位和进港引水
+                ②飞机航路引导和进场降落
+                ⑦汽车自主gps定位
+                ④地面牛辆跟踪和城市智能交通管理
+                ⑤紧急救生
+                ⑥个人旅游及野外探险
+                ⑦个人通讯终端(与手机，PDA，电子地图等集成一体)
+            </p>
+            <img src="http://www.ntgis.com/uploads/allimg/140320/1-140320110629126.jpg" />
+        </div>
+    </div>
+    <div class="foot">
+        <div class="w1100">
+            <p>国家测绘资质证：乙测资字34901109 国家高新技术企业 ISO9001认证 皖ICP备08102112号</p>
+            <p>Copyright©2009-2017 合肥亿图网络科技有限公司</p>
+        </div>
+    </div>
+</body>
+</html>

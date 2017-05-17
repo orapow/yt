@@ -1,0 +1,4 @@
+C:\Pro\yt\gis\src\X.Gis\bin\Debug\X.Gis.dll
+C:\Pro\yt\gis\src\X.Gis\bin\Debug\X.Gis.pdb
+C:\Pro\yt\gis\src\X.Gis\obj\Debug\X.Gis.dll
+C:\Pro\yt\gis\src\X.Gis\obj\Debug\X.Gis.pdb

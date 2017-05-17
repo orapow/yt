@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDF02671-B20C-43C4-82A8-BE744FC5E2F4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X.Ui</RootNamespace>
+    <AssemblyName>X.Ui</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Enyim.Caching">
+      <HintPath>..\..\..\..\lib\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\..\..\lib\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="X.Json">
+      <HintPath>..\..\..\..\lib\X.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demo\b4.html" />
+    <Content Include="demo\t.html" />
+    <Content Include="demo\h12.html" />
+    <Content Include="demo\h11.html" />
+    <Content Include="demo\h10.html" />
+    <Content Include="demo\k2.html" />
+    <Content Include="demo\k1.html" />
+    <Content Include="demo\j5.html" />
+    <Content Include="demo\j4.html" />
+    <Content Include="demo\j3.html" />
+    <Content Include="demo\j2.html" />
+    <Content Include="demo\j1.html" />
+    <Content Include="demo\i5.html" />
+    <Content Include="demo\i4.html" />
+    <Content Include="demo\i3.html" />
+    <Content Include="demo\i2.html" />
+    <Content Include="demo\i1.html" />
+    <Content Include="demo\h9.html" />
+    <Content Include="demo\h8.html" />
+    <Content Include="demo\h7.html" />
+    <Content Include="demo\h6.html" />
+    <Content Include="demo\h5.html" />
+    <Content Include="demo\h4.html" />
+    <Content Include="demo\h3.html" />
+    <Content Include="demo\h2.html" />
+    <Content Include="demo\h1.html" />
+    <Content Include="demo\g3.html" />
+    <Content Include="demo\g2.html" />
+    <Content Include="demo\g1.html" />
+    <Content Include="demo\f5.html" />
+    <Content Include="demo\f4.html" />
+    <Content Include="demo\f3.html" />
+    <Content Include="demo\f2.html" />
+    <Content Include="demo\f1.html" />
+    <Content Include="demo\e3.html" />
+    <Content Include="demo\e2.html" />
+    <Content Include="demo\e1.html" />
+    <Content Include="demo\d3.html" />
+    <Content Include="demo\d2.html" />
+    <Content Include="demo\d1.html" />
+    <Content Include="demo\c8.html" />
+    <Content Include="demo\c7.html" />
+    <Content Include="demo\c6.html" />
+    <Content Include="demo\c5.html" />
+    <Content Include="demo\c4.html" />
+    <Content Include="demo\c3.html" />
+    <Content Include="demo\c1.html" />
+    <Content Include="demo\b3.html" />
+    <Content Include="demo\b2.html" />
+    <Content Include="demo\b1.html" />
+    <Content Include="demo\a3.html" />
+    <Content Include="demo\a2.html" />
+    <Content Include="demo\a1.html" />
+    <Content Include="demo\index.html" />
+    <Content Include="demo\res\base.css" />
+    <Content Include="demo\res\codemirror.css" />
+    <Content Include="demo\res\codemirror.min.js" />
+    <Content Include="demo\res\logo.png" />
+    <Content Include="demo\res\result.png" />
+    <Content Include="demo\res\ZeroClipboard.js" />
+    <Content Include="demo\res\ZeroClipboard.swf" />
+    <Content Include="global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dat\cfg.x" />
+    <None Include="dat\urls.x" />
+    <Content Include="App.ashx" />
+    <None Include="dat\codes.x" />
+    <Content Include="res\img\1.jpg" />
+    <Content Include="res\img\map\1.jpg" />
+    <Content Include="res\img\map\2.jpg" />
+    <Content Include="res\img\map\3.jpg" />
+    <Content Include="res\img\map\404.png" />
+    <Content Include="res\img\map\bgImg.gif" />
+    <Content Include="res\img\map\circle.png" />
+    <Content Include="res\img\map\cluster\cluster0.png" />
+    <Content Include="res\img\map\cluster\cluster1.png" />
+    <Content Include="res\img\map\cluster\cluster2.png" />
+    <Content Include="res\img\map\cluster\cluster3.png" />
+    <Content Include="res\img\map\cluster\cluster4.png" />
+    <Content Include="res\img\map\dot.png" />
+    <Content Include="res\img\map\img404.png" />
+    <Content Include="res\img\map\infoWinShadow.png" />
+    <Content Include="res\img\map\infowin\infoWinClose.gif" />
+    <Content Include="res\img\map\infowin\infoWinDown.png" />
+    <Content Include="res\img\map\infowin\infoWinShadow.png" />
+    <Content Include="res\img\map\logo.png" />
+    <Content Include="res\img\map\mapctrls.png" />
+    <Content Include="res\img\map\mapNav.png" />
+    <Content Include="res\img\map\marker.png" />
+    <Content Include="res\img\map\no.gif" />
+    <Content Include="res\img\map\poi_2.png" />
+    <Content Include="res\img\map\mask.gif" />
+    <Content Include="res\img\map\overviewClose.png" />
+    <Content Include="res\img\map\overviewOpen.png" />
+    <Content Include="res\img\map\ter404.png" />
+    <Content Include="res\js\esl.js" />
+    <Content Include="res\js\tdt.js" />
+    <Content Include="res\js\x.form.js" />
+    <Content Include="res\js\x.js" />
+    <Content Include="res\css\map.css" />
+    <Content Include="res\img\map\markerA.png" />
+    <Content Include="res\img\map\navtool.png" />
+    <Content Include="res\img\map\wms\marker.png" />
+    <Content Include="res\img\no.jpg" />
+    <Content Include="res\img\no_pic.png" />
+    <Content Include="res\img\tip.jpg" />
+    <Content Include="res\js\jq_214.js" />
+    <Content Include="res\js\map.js" />
+    <Content Include="res\js\maptool.js" />
+    <Content Include="res\js\x.grid.js" />
+    <Content Include="res\js\bs.min.js" />
+    <Content Include="res\js\jquery.min.js" />
+    <Content Include="res\css\base.css" />
+    <Content Include="res\css\bs.min.css" />
+    <Content Include="res\img\dialog.bg.png" />
+    <Content Include="res\css\font\icon.svg" />
+    <Content Include="res\css\icon.min.css" />
+    <Content Include="res\img\loading.gif" />
+    <Content Include="res\js\zrender\animation\Animation.js" />
+    <Content Include="res\js\zrender\animation\Clip.js" />
+    <Content Include="res\js\zrender\animation\easing.js" />
+    <Content Include="res\js\zrender\config.js" />
+    <Content Include="res\js\zrender\dep\excanvas.js" />
+    <Content Include="res\js\zrender\dep\excanvas2.js" />
+    <Content Include="res\js\zrender\dep\excanvas3.js" />
+    <Content Include="res\js\zrender\Group.js" />
+    <Content Include="res\js\zrender\Handler.js" />
+    <Content Include="res\js\zrender\Layer.js" />
+    <Content Include="res\js\zrender\loadingEffect\Bar.js" />
+    <Content Include="res\js\zrender\loadingEffect\Base.js" />
+    <Content Include="res\js\zrender\loadingEffect\Bubble.js" />
+    <Content Include="res\js\zrender\loadingEffect\DynamicLine.js" />
+    <Content Include="res\js\zrender\loadingEffect\Ring.js" />
+    <Content Include="res\js\zrender\loadingEffect\Spin.js" />
+    <Content Include="res\js\zrender\loadingEffect\Whirling.js" />
+    <Content Include="res\js\zrender\macro.js" />
+    <Content Include="res\js\zrender\mixin\Eventful.js" />
+    <Content Include="res\js\zrender\mixin\Transformable.js" />
+    <Content Include="res\js\zrender\Painter.js" />
+    <Content Include="res\js\zrender\shape\Base.js" />
+    <Content Include="res\js\zrender\shape\BezierCurve.js" />
+    <Content Include="res\js\zrender\shape\Circle.js" />
+    <Content Include="res\js\zrender\shape\Droplet.js" />
+    <Content Include="res\js\zrender\shape\Ellipse.js" />
+    <Content Include="res\js\zrender\shape\Heart.js" />
+    <Content Include="res\js\zrender\shape\Image.js" />
+    <Content Include="res\js\zrender\shape\Isogon.js" />
+    <Content Include="res\js\zrender\shape\Line.js" />
+    <Content Include="res\js\zrender\shape\Path.js" />
+    <Content Include="res\js\zrender\shape\Polygon.js" />
+    <Content Include="res\js\zrender\shape\Polyline.js" />
+    <Content Include="res\js\zrender\shape\Rectangle.js" />
+    <Content Include="res\js\zrender\shape\Ring.js" />
+    <Content Include="res\js\zrender\shape\Rose.js" />
+    <Content Include="res\js\zrender\shape\Sector.js" />
+    <Content Include="res\js\zrender\shape\ShapeBundle.js" />
+    <Content Include="res\js\zrender\shape\Star.js" />
+    <Content Include="res\js\zrender\shape\Text.js" />
+    <Content Include="res\js\zrender\shape\Trochoid.js" />
+    <Content Include="res\js\zrender\shape\util\dashedLineTo.js" />
+    <Content Include="res\js\zrender\shape\util\PathProxy.js" />
+    <Content Include="res\js\zrender\shape\util\smoothBezier.js" />
+    <Content Include="res\js\zrender\shape\util\smoothSpline.js" />
+    <Content Include="res\js\zrender\Storage.js" />
+    <Content Include="res\js\zrender\tool\area.js" />
+    <Content Include="res\js\zrender\tool\color.js" />
+    <Content Include="res\js\zrender\tool\computeBoundingBox.js" />
+    <Content Include="res\js\zrender\tool\curve.js" />
+    <Content Include="res\js\zrender\tool\env.js" />
+    <Content Include="res\js\zrender\tool\event.js" />
+    <Content Include="res\js\zrender\tool\guid.js" />
+    <Content Include="res\js\zrender\tool\http.js" />
+    <Content Include="res\js\zrender\tool\log.js" />
+    <Content Include="res\js\zrender\tool\math.js" />
+    <Content Include="res\js\zrender\tool\matrix.js" />
+    <Content Include="res\js\zrender\tool\util.js" />
+    <Content Include="res\js\zrender\tool\vector.js" />
+    <Content Include="res\js\zrender\zrender.js" />
+    <Content Include="tpl\com\dict.html" />
+    <Content Include="tpl\com\err.html" />
+    <Content Include="tpl\com\getpos.html" />
+    <Content Include="tpl\com\_head.html" />
+    <Content Include="tpl\119.html" />
+    <Content Include="tpl\feature.html" />
+    <Content Include="tpl\demo.html" />
+    <Content Include="tpl\layer - 复制.html" />
+    <Content Include="tpl\point\edit.html" />
+    <Content Include="tpl\floor\edit.html" />
+    <Content Include="tpl\index - 复制.html" />
+    <Content Include="tpl\index.html" />
+    <Content Include="tpl\layer.html" />
+    <Content Include="tpl\poi\edit.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="res\css\font\FontAwesome.otf" />
+    <Content Include="res\css\font\icon.eot" />
+    <Content Include="res\css\font\icon.ttf" />
+    <Content Include="res\css\font\icon.woff" />
+    <None Include="Properties\PublishProfiles\x.bw.pubxml" />
+    <None Include="Properties\PublishProfiles\x.erp.pubxml" />
+    <None Include="Properties\PublishProfiles\xc.site.pubxml" />
+    <None Include="Properties\PublishProfiles\yt.gis.web.pubxml" />
+    <None Include="Properties\PublishProfiles\zfw.web.flash.pubxml" />
+    <Content Include="res\img\map\bg.psd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="res\img\poi\" />
+    <Folder Include="tiles\" />
+    <Folder Include="upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\X.App\X.App.csproj">
+      <Project>{133b22be-39b8-47c5-9577-884a5f8f3eb6}</Project>
+      <Name>X.App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>15010</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17830/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

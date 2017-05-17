@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>添加矩形</title>
+    <style type="text/css">
+        body, html, #mapDiv { width: 100%; height: 100%; overflow: hidden; margin: 0; font-family: "微软雅黑"; }
+    </style>
+</head>
+<body onLoad="onLoad()">
+    <div id="mapDiv"></div>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script type="text/javascript">
+        var map;
+        function onLoad() {
+            //初始化地图对象
+            map = new YMap("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new YLngLat(116.40969, 39.89945), 11);
+            //允许鼠标滚轮缩放地图
+            map.enableHandleMouseScroll();
+
+            var config = {
+                strokeColor: "blue",	//折线颜色
+                fillColor: "#FFFFFF",	//填充颜色。当参数为空时，折线覆盖物将没有填充效果
+                strokeWeight: "5px",	//折线的宽度，以像素为单位
+                opacity: 0.5,	//折线的透明度，取值范围0 - 1
+                strokeStyle: "solid"	//折线的样式，solid或dashed
+            };
+            var bounds = new YBounds(116.36231, 39.87784, 116.43954, 39.92841);
+            var rect = new YRect(bounds, config);
+            map.addOverLay(rect);
+
+
+        }
+    </script>
+</body>
+</html>

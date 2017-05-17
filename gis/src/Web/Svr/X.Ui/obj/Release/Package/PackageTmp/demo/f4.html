@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>自定义版权控件</title>
+    <style type="text/css">
+        body, html, #mapDiv { width: 100%; height: 100%; overflow: hidden; margin: 0; font-family: "微软雅黑"; }
+    </style>
+</head>
+<body onLoad="onLoad()">
+    <div id="mapDiv"></div>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script type="text/javascript">
+        var map, overviewMap;
+        function onLoad() {
+            //初始化地图对象
+            map = new YMap("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new YLngLat(116.40969, 39.89945), 13);
+            //允许鼠标滚轮缩放地图
+            map.enableHandleMouseScroll()
+            //创建版权控件对象
+            var control = new YCopyrightControl();
+            //设置版权的位置
+            control.setLeft(10);
+            control.setTop(10);
+            //添加版权控件
+            map.addControl(control);
+            var bs = map.getBounds();   //返回地图可视区域
+            control.addCopyright({ id: 1, content: "<a href='http://ytgis.591map.net' target='_blank' style='font-size:16px;background:red;color:white;'>自定义的版权控件</a>", bounds: bs });
+        }
+    </script>
+</body>
+</html>

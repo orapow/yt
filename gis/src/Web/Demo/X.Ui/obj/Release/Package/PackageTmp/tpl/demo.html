@@ -1,0 +1,337 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>在线演示 - $cfg.name</title>
+    <meta http-equiv="x-ua-compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body { margin: 0; padding: 0; font-size: 14px; font-family: "微软雅黑"; }
+        body, html, #mapDiv { width: 100%; height: 100%; overflow: hidden; }
+        .top { width: 100%; height: 45px; background-color: #0075c7; position: absolute; padding-top: 5px; padding-left: 5px; }
+        .lt { position: absolute; margin-top: 50px; padding: 10px; width: 320px; }
+        #mapDiv { margin-left: 340px; margin-top: 50px; }
+        .tab { margin-bottom: 10px; border-bottom: 1px solid #ff8a00; }
+        .tab .t { display: inline-block; width: 32.333%; text-align: center; line-height: 32px; margin-left: -1px; border-radius: 5px 5px 0px 0px; cursor: pointer; }
+        .tab .t.on { background: #ff8a00; color: white; margin-bottom: 0px; }
+        .lt .tb { }
+        .cates { margin-top: 10px; }
+        .cates .ct { display: inline-block; padding: 3px; }
+        .items { }
+        .items .it { position: relative; padding: 5px 0; border-bottom: 1px dashed #e2e2e2; font-size: 12px; cursor: pointer; }
+        .it .no { position: absolute; width: 20px; background: red; text-align: center; color: white; }
+        .it .topic { margin-left: 30px; }
+        .it .sub { margin-left: 30px; }
+        .it .sub span { display: block; line-height: 22px; }
+
+        .btns { position: absolute; z-index: 100; top: 60px; left: 60px; margin-left: 350px; }
+        .btns .btn { background-color: #F7F9FC; border: 1px solid #68A2E9; margin-left: -1px; cursor: pointer; font-size: 12px; padding: 0 10px; height: 24px; display: inline-block; line-height: 24px; text-align: center; }
+        .btns .btn.on { background-color: #7FB8FF; color: white; font-weight: bold; }
+        .maptype { right: 10px; left: auto; }
+        .drawtool { left: 150px; display: none; }
+        .drawtool .btn { }
+        .tools { bottom: 20px; background: red; top: auto; left: 50%; margin-left: -51px; }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="/demo/res/logo.png">
+    </div>
+    <div class="lt">
+        <div class="tab">
+            <span class="t on">分类查询</span><span class="t">视频监控</span><span class="t">GPS监控</span>
+        </div>
+        <div class="tb">
+            <input type="text" placeholder="请输入入名称、地址、电话进行搜索" style="padding: 5px;display: inline-block;width: 220px;vertical-align: top;" /><span class="btn" style="display: inline-block;padding: 5px 3px;background: #ff8a00;cursor:pointer;margin-left: 10px;width: 70px;text-align: center;color: white;">搜索</span>
+            <div class="cates">
+                <span style="line-height:26px;">分类搜索：</span>
+                #foreach($c in $cts)<a class="ct" href="javascript:;">$c</a>#end
+            </div>
+            <div class="items">
+                <span style="line-height:34px;border-bottom:1px solid #ccc; display:block; margin-bottom:10px;">搜索： <span style="color:#ff8a00">企业</span> 共找到 90 条结果</span>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+                <div class="it">
+                    <div class="no">1</div>
+                    <div class="topic">第一人民医院</div>
+                    <div class="sub">
+                        <span class="">地址：湘春路</span>
+                        <span class="">电话：15689898589</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mapDiv"></div>
+    <div class="btns">
+        <span class="btn" onclick="setmode()" id="btn_setedit">编辑模式</span>
+    </div>
+    <div class="btns maptype">
+        <span class="btn">矢量</span><span class="btn">影像</span>
+    </div>
+    <div class="btns drawtool">
+        <span class="btn">点</span><span class="btn">线</span><span class="btn">面</span><span class="btn">圆</span>
+    </div>
+    <div class="btns tools">
+        <span class="btn">测距</span><span class="btn">测面</span>
+    </div>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/x.desk.js"></script>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script type="text/javascript">
+        var editmode = false;
+        var style = { strokeColor: "blue", strokeWeight: 2, strokeOpacity: 0.8, fillOpacity: 0.5, fillColor: "#fff" }
+        var map = null;
+
+        function initmap() {
+            //初始化地图对象
+            map = new YMap("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new YLngLat(117.84299, 30.93448), 15);
+            map.enableHandleMouseScroll();
+            var l2_5 = {};
+            l2_5.getTileUrl = function (x, y, z) {
+                return "tiles/lv" + z + "/" + x + "," + y + ".png"; //111005,215227
+            }
+            //创建自定义图层对象
+            var lay = new YTileLayer(l2_5);
+            lay.setGetTileUrl(l2_5.getTileUrl);
+            //将图层增加到地图上
+            map.addLayer(lay);
+
+            //添加缩放平移控件
+            var nc_cfg = {
+                type: "YMAP_NAVIGATION_CONTROL_LARGE",   //缩放平移的显示类型
+                anchor: "YMAP_ANCHOR_TOP_LEFT",          //缩放平移控件显示的位置
+                offset: [0, 0],                           //缩放平移控件的偏移值
+                showZoomInfo: true                       //是否显示级别提示信息，true表示显示，false表示隐藏。
+            };
+            map.addControl(new YNavigationControl(nc_cfg));
+
+            //添加比例尺控件
+            map.addControl(new YScaleControl());
+
+            //添加鹰眼控件
+            var om_cfg = {
+                anchor: "YMAP_ANCHOR_BOTTOM_RIGHT", //设置鹰眼位置,"TMAP_ANCHOR_TOP_LEFT"表示左上，"TMAP_ANCHOR_TOP_RIGHT"表示右上，"TMAP_ANCHOR_BOTTOM_LEFT"表示左下，"TMAP_ANCHOR_BOTTOM_RIGHT"表示右下，"TMAP_ANCHOR_LEFT"表示左边，"TMAP_ANCHOR_TOP"表示上边，"TMAP_ANCHOR_RIGHT"表示右边，"TMAP_ANCHOR_BOTTOM"表示下边，"TMAP_ANCHOR_OFFSET"表示自定义位置,默认值为"TMAP_ANCHOR_BOTTOM_RIGHT"
+                size: new YSize(180, 120),         //鹰眼显示的大小
+                isOpen: false                       //鹰眼是否打开，true表示打开，false表示关闭，默认为关闭
+            };
+            map.addControl(new YOverviewMapControl(om_cfg));
+
+            YEvent.addListener(map, "zoomend", function () {
+                //map.clearOverLays();
+                //map.grids = {};
+                //loadgrid();
+            });
+
+            YEvent.addListener(map, "moveend", function (lnglat) {
+                //loadgrid();
+            });
+        }
+
+        function setmode() {
+            if (editmode) for (var id in map.grids) map.grids[id].disableEdit();
+            editmode = !editmode;
+            if (editmode) { $("#btn_setedit").addClass("on"); $(".drawtool").show(); }
+            else { $("#btn_setedit").removeClass("on"); $(".drawtool").hide(); }
+        }
+
+
+
+        var infoWin = null;
+
+        //function gridClick(yp, lng, lat, id) {
+        //    if (editmode) {
+        //        yp.enableEdit();
+        //    }
+        //    else {
+        //        var pt = new YLngLat(lng, lat);
+        //        if (infoWin) infoWin.closeInfoWindow();
+        //        infoWin = new YInfoWindow(pt, new YPixel([0, -34]));
+        //        infoWin.setTitle("ID:" + id)
+        //        infoWin.setLabel(yp.cfg);
+        //        map.addOverLay(infoWin);
+        //        map.panTo(pt);
+        //    }
+        //}
+
+        //function loadgrid() {
+        //    var bd = map.getBounds();
+        //    x.com.doapi("grid.load", { zoom: map.getZoom(), xmin: bd.XminNTU, xmax: bd.XmaxNTU, ymin: bd.YminNTU, ymax: bd.YmaxNTU }, function (d) {
+        //        for (var i in d.items) {
+        //            var p = d.items[i];
+        //            if (map.grids[p.id]) continue;
+        //            var points = [];
+        //            var pts = JSON.parse(p.pts);
+        //            for (var pt in pts) { points.push(new YLngLat(pts[pt].lng, pts[pt].lat)); }
+        //            var yp = new YPolygon(points, style);
+        //            yp.cfg = p.cfg;
+        //            (function (y, g) {
+        //                YEvent.addListener(y, "click", function () {
+        //                    gridClick(y, g.lng, g.lat, g.id);
+        //                });
+        //            })(yp, p);
+        //            map.grids[p.id] = yp;
+        //            map.addOverLay(yp);
+        //        }
+        //    }, false);
+        //}
+
+        //loadgrid();
+
+        $(function () {
+            initmap();
+
+            var mts = [YMAP_NORMAL_MAP, YMAP_SATELLITE_MAP]
+            $(".maptype .btn").click(function () {
+                var id = $(this).index();
+                map.setMapType(mts[id]);
+                $(".maptype .btn").removeClass("on");
+                $(this).addClass("on");
+            });
+            $(".maptype .btn:eq(0)").click();
+
+            $(".btns.tools .btn").click(function () {
+                $(".btns.tools .btn").removeClass("on");
+                $(this).addClass("on");
+                startTest($(this).index());
+            });
+
+            $(".btns.drawtool .btn").click(function () {
+                $(".btns.drawtool .btn").removeClass("on");
+                $(this).addClass("on");
+                startDraw($(this).index());
+            });
+
+        });
+
+        function startDraw(i) {
+            switch (i) {
+                case 0:
+                    var mt = new YMarkTool(map);
+                    YEvent.addListener(mt, "mouseup", function (p) {
+                        var mk = new YMarker(p);
+                        map.addOverLay(mk);
+                        mt.close();
+                        $(".btns.drawtool .btn").removeClass("on");
+                    });
+                    mt.open();
+                    break;
+                case 1:
+                    var cfg = jQuery.extend(style, { showLabel: false });
+                    var lt = new YPolylineTool(map, cfg);
+                    YEvent.addListener(lt, "draw", function () {
+                        lt.close();
+                        $(".btns.drawtool .btn").removeClass("on");
+                    });
+                    lt.open();
+                    break;
+                case 2:
+                    var cfg = jQuery.extend(style, { showLabel: false });
+                    var pt = new YPolygonTool(map, cfg);
+                    YEvent.addListener(pt, "draw", function () {
+                        pt.close();
+                        $(".btns.drawtool .btn").removeClass("on");
+                    });
+                    pt.open();
+                    break;
+                case 3:
+                    var ct = new YCircleTool(map, style);
+                    YEvent.addListener(ct, 'drawend', function (clr) {
+                        var c = clr.getCenter();
+                        var r = clr.getRadius();
+                        var cl = new YCircle(c, r, style);
+                        map.addOverLay(cl);
+                        ct.close();
+                        $(".btns.drawtool .btn").removeClass("on");
+                    });
+                    ct.open();
+                    break;
+            }
+        }
+
+        function startTest(i) {
+            if (i == 0) {
+                var lineTool = new YPolylineTool(map, style);
+                lineTool.showLabel = true;
+                YEvent.addListener(lineTool, "draw", function () {
+                    lineTool.close();
+                    $(".btns.tools .btn").removeClass("on");
+                });
+                lineTool.open();
+            } else if (i == 1) {
+                var polygonTool = new YPolygonTool(map, style);
+                polygonTool.showLabel = true;
+                YEvent.addListener(polygonTool, "draw", function () {
+                    polygonTool.close();
+                    $(".btns.tools .btn").removeClass("on");
+                });
+                polygonTool.open();
+            }
+        }
+
+    </script>
+</body>
+</html>

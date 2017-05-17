@@ -1,0 +1,11 @@
+
+时间：2017-02-26 20:28:14,033 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：777592 
+System.Exception: {} ---> NVelocity.Exception.ResourceNotFoundException: Unable to find resource 'layer.html'
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Views\View.cs:行号 107
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---

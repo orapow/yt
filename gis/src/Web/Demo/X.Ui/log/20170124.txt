@@ -1,0 +1,142 @@
+
+时间：2017-01-24 10:37:12,711 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：66590363 
+System.Exception: {} ---> NVelocity.Exception.ParseErrorException: Encountered "/" at line 4, column 15.
+Was expecting one of:
+    "[" ...
+    <RPAREN> ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <WORD> ...
+    <IDENTIFIER> ...
+    "{" ...
+     ---> NVelocity.Runtime.Parser.ParseException: Encountered "/" at line 4, column 15.
+Was expecting one of:
+    "[" ...
+    <RPAREN> ...
+    <WHITESPACE> ...
+    <STRING_LITERAL> ...
+    "true" ...
+    "false" ...
+    <NUMBER_LITERAL> ...
+    <WORD> ...
+    <IDENTIFIER> ...
+    "{" ...
+    
+   在 NVelocity.Runtime.Parser.Parser.Parse(TextReader reader, String templateName)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName, Boolean dumpNamespace)
+   在 NVelocity.Runtime.RuntimeInstance.Parse(TextReader reader, String templateName)
+   在 NVelocity.Template.Process()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 X.Web.Views.View.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Views\View.cs:行号 107
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+
+时间：2017-01-24 10:37:41,426 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：66619078 
+System.Exception: {} ---> System.OutOfMemoryException: 引发类型为“System.OutOfMemoryException”的异常。
+   在 System.Text.StringBuilder.ToString()
+   在 System.IO.StringWriter.ToString()
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore)
+   在 X.Core.Utility.Serialize.ToJson(Object o)
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+
+时间：2017-01-24 10:48:09,617 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：131249 
+System.Exception: {"minx":62.70605,"miny":25.22077,"maxx":175.29393,"maxy":46.17673} ---> System.OutOfMemoryException: 引发类型为“System.OutOfMemoryException”的异常。
+   在 System.Text.StringBuilder.ToString()
+   在 System.IO.StringWriter.ToString()
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore)
+   在 X.Core.Utility.Serialize.ToJson(Object o)
+   在 X.Web.Apis.Api.GetResponse()
+   在 X.Web.XApp.ProcessRequest(HttpContext c)
+   --- 内部异常堆栈跟踪的结尾 ---
+
+时间：2017-01-24 10:50:57,567 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：26454 
+System.Exception: {"minx":62.70605,"miny":25.22077,"maxx":175.29393,"maxy":46.17673} ---> System.OutOfMemoryException: 引发类型为“System.OutOfMemoryException”的异常。
+   在 System.Text.StringBuilder.ToString()
+   在 System.IO.StringWriter.ToString()
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore)
+   在 X.Core.Utility.Serialize.ToJson(Object o)
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+
+时间：2017-01-24 10:50:59,405 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：28292 
+System.Exception: {"minx":62.70605,"miny":25.22077,"maxx":175.29393,"maxy":46.17673} ---> System.OutOfMemoryException: 引发类型为“System.OutOfMemoryException”的异常。
+   在 System.Text.StringBuilder.ToString()
+   在 System.IO.StringWriter.ToString()
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore)
+   在 X.Core.Utility.Serialize.ToJson(Object o)
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+
+时间：2017-01-24 10:51:35,358 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：64245 
+System.Exception: {"minx":62.70605,"miny":25.22077,"maxx":175.29393,"maxy":46.17673} ---> System.OutOfMemoryException: 引发类型为“System.OutOfMemoryException”的异常。
+   在 System.Text.StringBuilder.ToString()
+   在 System.IO.StringWriter.ToString()
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore)
+   在 X.Core.Utility.Serialize.ToJson(Object o)
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+
+时间：2017-01-24 10:51:50,995 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(:0) - 
+错误：致命错误 
+时间：79881 
+System.Exception: {"minx":62.70605,"miny":25.22077,"maxx":175.29393,"maxy":46.17673} ---> System.OutOfMemoryException: 引发类型为“System.OutOfMemoryException”的异常。
+   在 System.Text.StringBuilder.ToString()
+   在 System.IO.StringWriter.ToString()
+   在 X.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonSerializerSettings settings)
+   在 X.Json.JsonConvert.SerializeObject(Object value, JsonSerializerSettings settings)
+   在 X.Core.Utility.Serialize.ToJson(Object o, Boolean ignore)
+   在 X.Core.Utility.Serialize.ToJson(Object o)
+   在 X.Web.Apis.Api.GetResponse() 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\Apis\Api.cs:行号 31
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\ytgis\src\Yt.Web\X.Web\XApp.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---

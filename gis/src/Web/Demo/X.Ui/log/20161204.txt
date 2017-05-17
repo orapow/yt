@@ -1,0 +1,8 @@
+
+时间：2016-12-04 15:39:00,803 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\zfw\bw\src\Xc\Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"未知错误代码(商户号mch_id与appid不匹配)","code":"商户号mch_id与appid不匹配"}
+{"mo":1} 
+时间：2424488 

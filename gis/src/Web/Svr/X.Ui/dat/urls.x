@@ -1,0 +1,11 @@
+﻿^/$->/app.ashx?v=index&t=1
+^(/(css|img|js|um)\S+)$->/res/{0}
+^/services/$->/app.ashx?v=services.index&t=1
+^/services/layers/?$->/app.ashx?v=services.layers.index&t=1
+^/services/([\w\d_]+)$->/app.ashx?v=services.detail&t=1&p={0}
+^/services/([\w\d_]+)/tiler/(\d+)/(\d+)/(\d+)$->/app.ashx?v=services.tiler&t=1&p={0}-{1}-{2}-{3}
+^/services/([\w\d_]+)/grid/(\d+)/([\d.]+)/([\d.]+)/([\d.]+)/([\d.]+)$->/app.ashx?v=services.grid&t=1&p={0}-{1}-{2}-{3}-{4}-{5}
+^/services/layers/(\d+)$->/app.ashx?v=services.layers.detail&t=1&p={0}
+^/([\w/]+)-?([\S]*)[.]html$->/app.ashx?v={0}&t=1&p={1}
+^/(api)/([\d\w.=]+)$->/app.ashx?v={1}&t=2
+^/app/([\d\w.=]+)$->/app.ashx?v=app.{0}&t=2

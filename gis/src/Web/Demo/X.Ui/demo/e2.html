@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>叠加wms图层</title>
+    <style type="text/css">
+        body, html, #mapDiv { width: 100%; height: 100%; overflow: hidden; margin: 0; font-family: "微软雅黑"; }
+    </style>
+</head>
+<body onLoad="onLoad()">
+    <div id="mapDiv"></div>
+    <div style="position:absolute;right:20px;top:20px;z-index:100;padding:20px;background:white;">
+        <select id="projectionMap">
+            <option>EPSG:900913</option>
+            <option>EPSG:4326</option>
+        </select>
+        <button onClick="switchingMaps()" class="std-btn">切换地图投影</button><br />
+        <div style=line-height:30px>
+            <input type="radio" name="china" value="demo_anno" checked>行政名称
+            <input type="radio" name="china" value="demo_road">道路信息
+            <input type="radio" name="china" value="demo_city">行政区划边界
+        </div>
+        数据结果如下：<br />
+        <textarea id="resultStr" rows="15" cols="30"></textarea>
+    </div>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script type="text/javascript">
+        var map;
+        var wmsLayer;
+        function onLoad() {
+            //初始化地图对象
+            map = new YMap("mapDiv");
+            //设置显示地图的中心点和级别
+            map.centerAndZoom(new YLngLat(116.40969, 39.89945), 8);
+            //允许鼠标滚轮缩放地图
+            map.enableHandleMouseScroll();
+            //设置地图显示为卫星
+            map.setMapType(YMAP_SATELLITE_MAP);
+            //设置地图显示级别2-7
+            map.setZoomLevels([5, 6, 7, 8, 9, 10]);
+            //添加wms图层
+            getWMS();
+        }
+        function getWMS() {
+            if (wmsLayer) {
+                map.removeLayer(wmsLayer);
+            }
+            var config = {
+                REQUEST: "GetMap",	//操作名称
+                VERSION: "1.1.1",	//请求服务的版本
+                SERVICE: "WMS",		//服务类型标识符
+                LAYERS: "demo_city,demo_road,demo_anno",	//用","分隔的多个图层列表
+                TRANSPARENT: true,	//输出图像背景是否透明
+                STYLES: "",			//每个请求图层的用","分隔的描述样式
+                FORMAT: "image/png",	//输出图像的类型
+                //SRS:"EPSG:4326",	//地图投影类型
+                SRS: map.getCode(),	//地图投影类型
+                WIDTH: 256,			//输出地图图片的像素宽
+                HEIGHT: 256			//输出地图图片的像素高
+            };
+            //创建WMS图层对象
+            wmsLayer = new YTileLayerWMS("demo_tianditu", "http://gisserver.tianditu.com/tiandituService/wms", config);
+            //将WMS图层添加到地图上
+            map.addLayer(wmsLayer);
+
+            YEvent.addListener(map, "click", function (point) {
+                var bs = map.getBounds();   	//获取可视区域
+                var bssw = bs.getSouthWest();   //可视区域左下角
+                var bsne = bs.getNorthEast();   //可视区域右上角
+
+                if (map.getCode() == "EPSG:900913") {
+                    var bbox = bssw.getMercatorLng() + "," + bssw.getMercatorLat() + "," + bsne.getMercatorLng() + "," + bsne.getMercatorLat();
+                }
+                else {
+                    var bbox = bssw.getLng() + "," + bssw.getLat() + "," + bsne.getLng() + "," + bsne.getLat();
+                }
+
+                var params = {
+                    REQUEST: "GetFeatureInfo",	//操作名称
+                    VERSION: "1.1.1",			//请求服务的版本
+                    SERVICE: "WMS",				//服务类型标识符
+                    QUERY_LAYERS: getRadioValue(),	//获取某一图层的属性
+                    FEATURE_COUNT: 50,			//需要返回其信息的要素个数
+                    LAYERS: "demo_city,demo_road,demo_anno",	//用","分隔的多个图层列表
+                    EXCEPTIONS: "application/vnd.ogc.se_xml",	//异常处理文档
+                    INFO_FORMAT: "application/json",	//返回值格式（MIME 类型）
+                    FORMAT: "image/png",		//输出图像的类型
+                    WIDTH: map.getViewSize().width,		//地图显示的像素宽
+                    HEIGHT: map.getViewSize().height,	//地图显示的像素高
+                    SRS: map.getCode(),			//地图投影类型
+                    X: point[0],					//用像素表达的要素的X坐标 (以左上角坐标为0)
+                    Y: point[1],					//用像素表达的要素的Y坐标 (以左上角坐标为0)
+                    BBOX: bbox					//显示范围（左下角，右上角，坐标值用","分隔）
+                };
+                YTileLayerWMS.loadURL("http://gisserver.tianditu.com/tiandituService/wms", params, getFeatureInfo);
+            });
+        }
+        function getFeatureInfo(obj) {
+            var radioValue = getRadioValue();
+            if (radioValue == "demo_anno") {
+                parsePoint(obj)
+            }
+            else if (radioValue == "demo_road") {
+                parseHighway(obj);
+            }
+            else {
+                parseRegion(obj);
+            }
+        }
+        //解析信息点数据
+        function parsePoint(obj) {
+            if (obj.features.length > 0) {
+                var features = obj.features;
+                for (var i = 0; i < features.length; i++) {
+                    var point = null;
+                    var coordinates = features[i].geometry.coordinates;
+                    for (var m = 0; m < coordinates.length; m++) {
+                        point = new TLngLat(coordinates[0][0], coordinates[0][1]);
+                    }
+                    drawMarker(point);
+                }
+            }
+            //将JSON字符串输出到页面
+            document.getElementById("resultStr").value = json2str(obj);
+        }
+        //解析道路数据
+        function parseHighway(obj) {
+            if (obj.features.length > 0) {
+                var features = obj.features;
+                for (var i = 0; i < features.length; i++) {
+                    var coordinates = features[i].geometry.coordinates;
+                    for (var m = 0; m < coordinates.length; m++) {
+                        var points = [];
+                        for (var n = 0; n < coordinates[m].length; n++) {
+                            points.push(new YLngLat(coordinates[m][n][0], coordinates[m][n][1]));
+                        }
+                        drawLine(points, { strokeColor: "#F09500", strokeWeight: 3, strokeOpacity: 1 });
+                    }
+                }
+            }
+            //将JSON字符串输出到页面
+            document.getElementById("resultStr").value = json2str(obj);
+        }
+        //解析行政区划边界数据
+        function parseRegion(obj) {
+            if (obj.features.length > 0) {
+                map.clearOverLays();
+                var features = obj.features;
+                for (var i = 0; i < features.length; i++) {
+                    var coordinates = features[i].geometry.coordinates;
+                    for (var m = 0; m < coordinates.length; m++) {
+                        for (var n = 0; n < coordinates[m].length; n++) {
+                            var points = [];
+                            var coordinate = coordinates[m][n];
+                            for (var k = 0; k < coordinate.length; k++) {
+                                points.push(new YLngLat(coordinate[k][0], coordinate[k][1]));
+                            }
+                            drawPolygon(points, { strokeColor: "#82FF78", fillColor: "#5A971D", strokeWeight: 1, strokeOpacity: 0.5, fillOpacity: 0.8 });
+                        }
+                    }
+                }
+            }
+            //将JSON字符串输出到页面
+            document.getElementById("resultStr").value = json2str(obj);
+        }
+        //画点
+        function drawMarker(point) {
+            map.clearOverLays();
+            var icon = new YIcon("/img/map/wms/marker.png", new YSize(11, 11), { anchor: new TPixel(6, 8) });
+            //创建标注对象
+            var marker = new YMarker(point, { icon: icon });
+            //向地图上添加标注
+            map.addOverLay(marker);
+        }
+        //画线
+        function drawLine(points, config) {
+            map.clearOverLays();
+            //创建线对象
+            var line = new YPolyline(points, config);
+            //向地图上添加线
+            map.addOverLay(line);
+        }
+        //画面
+        function drawPolygon(points, config) {
+            //创建线对象
+            var polygon = new YPolygon(points, config);
+            //向地图上添加线
+            map.addOverLay(polygon);
+        }
+        //获得类型值
+        function getRadioValue() {
+            var obj = document.getElementsByName("china");
+            for (var i = 0; i < obj.length; i++) {
+                if (obj[i].checked) {
+                    return obj[i].value;
+                }
+            }
+        }
+        //将JSON对象转换成字符串
+        function json2str(json) {
+            var r = [];
+            if (typeof json == "string") return "\"" + json.replace(/([\'\"\\])/g, "\\$1").replace(/(\n)/g, "\\n").replace(/(\r)/g, "\\r").replace(/(\t)/g, "\\t") + "\"";
+            if (typeof json == "undefined") return "";
+            if (typeof json == "object") {
+                if (json === null) return "null";
+                else if (!json.sort) {
+                    for (var i in json)
+                        r.push(i + ":" + json2str(json[i]))
+                    r = "{" + r.join() + "}"
+                } else {
+                    for (var i = 0; i < json.length; i++)
+                        r.push(json2str(json[i]))
+                    r = "[" + r.join() + "]"
+                }
+                return r;
+            }
+            return json.toString();
+        }
+        function switchingMaps() {
+            var obj = document.getElementById("projectionMap");
+            var index = obj.selectedIndex;
+            var text = obj.options[index].text;
+            if (map.getCode() == text) return;
+            map.switchingMaps(text);
+            getWMS();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+时间：2017-05-18 00:02:54,913 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 poi.load","code":"0x0002"} 
+时间：1796824 
+
+时间：2017-05-18 06:31:09,814 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 poi.load","code":"0x0002"} 
+时间：25091724 
+
+时间：2017-05-18 06:31:35,161 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(:0) - 
+错误：{"issucc":false,"msg":"接口不存在 poi.load","code":"0x0002"} 
+时间：25117071 

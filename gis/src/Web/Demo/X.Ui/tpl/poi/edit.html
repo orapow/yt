@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    #parse("com/_head.html")
+    <title></title>
+    <style type="text/css">
+        .row .li { display: none; margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <x:form api="poi.save">
+        <input type="hidden" name="gid" value="$!gid" x-check="" />
+        <x:text title="名称" name="name" size="4" def="$!item.name" />
+        <x:upload title="图片" name="img" def="$!item.img" tp="img" />
+        <x:pick title="类型" name="tp" src="dict:poi.type" />
+        <x:text title="电话" name="tel" size="5" def="$!item.tel" />
+        <x:text title="地址" name="addr" size="4" def="$!item.addr" />
+        <x:text title="说明" name="remark" size="5" tp="3" def="$!item.remark" />
+        <div class="btns">
+            <button type="submit" class="btn btn-warning"><i class="icon-ok"></i>提交</button><span class="btn" onclick="parent.x.closewin();">取消</span>
+        </div>
+    </x:form>
+    <script type="text/javascript">
+        $(function () {
+            $("form:eq(0)").xform({
+                callback: function (d) {
+                    if (!d.issucc) return;
+                    x.closewin();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
