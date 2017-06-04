@@ -75,6 +75,7 @@ namespace X.Gis
         public Extend Extends { get; set; }
         public string Desc { get; set; }
         public string Copyright { get; set; }
+        public List<List<PointF>> Shapes { get; set; }
         public override string ToString()
         {
             return "[" + (Tp == 1 ? "图像" : "图形") + "]->" + Name;

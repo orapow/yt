@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Interop.MapWinGIS;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -15,6 +18,7 @@ namespace X.Desk
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form2());
             Application.Run(new Main());
         }
     }

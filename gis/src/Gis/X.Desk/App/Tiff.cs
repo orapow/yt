@@ -99,41 +99,51 @@ namespace X.Desk
 
                 if (imgw < 0 || imgh < 0) { fs.Close(); return null; }
 
-                var block = new MemoryStream();
-                for (var i = os.Y; i < Math.Min(ph + os.Y, h); i++)
+                //var block = new MemoryStream();
+                try
                 {
-                    var y0 = i * rh;
-                    var u = y0 - (int)y0;
-
-                    fs.Seek(Pos + (int)y0 * Stride, SeekOrigin.Begin);
-                    var row = new byte[Stride * (int)(rh)];
-                    fs.Read(row, 0, row.Length);
-
-                    for (var x = os.X; x < Math.Min(pw + os.X, w); x++)
+                    var bmp = new Bitmap(imgw, imgh, PixelFormat.Format32bppArgb);
+                    var bd = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+                    var of = bd.Scan0;
+                    for (var i = os.Y; i < Math.Min(ph + os.Y, h); i++)
                     {
-                        var x0 = x * 4 * rw;
-                        var v = x0 - (int)x0;
-                        var x1 = (int)(x0) - ((int)x0 % 4 == 0 ? 0 : (int)x0 % 4);
-                        var x2 = x1 + 4;
-                        var x3 = Stride * (int)(rh / 2) + x1;
-                        var x4 = x3 + 4;
+                        var y0 = i * rh;
+                        var u = y0 - (int)y0;
 
-                        var r = (1 - u) * (1 - v) * row[x1 + 2] + (1 - u) * v * row[x3 + 2] + u * (1 - v) * row[x2 + 2] + u * v * row[x4 + 2];
-                        var g = (1 - u) * (1 - v) * row[x1 + 1] + (1 - u) * v * row[x3 + 1] + u * (1 - v) * row[x2 + 1] + u * v * row[x4 + 1];
-                        var b = (1 - u) * (1 - v) * row[x1 + 0] + (1 - u) * v * row[x3 + 0] + u * (1 - v) * row[x2 + 0] + u * v * row[x4 + 0];
+                        fs.Seek(Pos + (int)y0 * Stride, SeekOrigin.Begin);
+                        //var row = new byte[Stride * (int)(rh)];
+                        var row = new byte[Stride * 3];
+                        fs.Read(row, 0, row.Length);
 
-                        block.Write(new byte[] { (byte)r, (byte)g, (byte)b, row[x1 + 3] }, 0, 4);
+                        for (var x = os.X; x < Math.Min(pw + os.X, w); x++)
+                        {
+                            var x0 = x * 4 * rw;
+                            var v = x0 - (int)x0;
+                            var x1 = (int)(x0) - ((int)x0 % 4 == 0 ? 0 : (int)x0 % 4);
+                            var x2 = x1 + 4;
+                            //var x3 = Stride * (int)(rh / 2) + x1;
+                            var x3 = Stride + x1;
+                            var x4 = x3 + 4;
+
+                            var r = (1 - u) * (1 - v) * row[x1 + 2] + (1 - u) * v * row[x3 + 2] + u * (1 - v) * row[x2 + 2] + u * v * row[x4 + 2];
+                            var g = (1 - u) * (1 - v) * row[x1 + 1] + (1 - u) * v * row[x3 + 1] + u * (1 - v) * row[x2 + 1] + u * v * row[x4 + 1];
+                            var b = (1 - u) * (1 - v) * row[x1 + 0] + (1 - u) * v * row[x3 + 0] + u * (1 - v) * row[x2 + 0] + u * v * row[x4 + 0];
+
+                            //block.Write(new byte[] { (byte)r, (byte)g, (byte)b, row[x1 + 3] }, 0, 4);
+                            Marshal.Copy(new byte[] { (byte)r, (byte)g, (byte)b, row[x1 + 3] }, 0, of, 4);
+                            of = IntPtr.Add(of, 4);
+                        }
+                        //for (var c = 0; c < block.Length % 4; c++) block.WriteByte(0);
                     }
-                    for (var c = 0; c < block.Length % 4; c++) block.WriteByte(0);
+                    bmp.UnlockBits(bd);
+                    return bmp;
                 }
-                fs.Close();
-
-                var bmp = new Bitmap(imgw, imgh, PixelFormat.Format32bppArgb);
-                var bd = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
-                Marshal.Copy(block.ToArray(), 0, bd.Scan0, (int)block.Length);
-                bmp.UnlockBits(bd);
-                return bmp;
-
+                catch { }
+                finally
+                {
+                    fs.Close();
+                }
+                return null;
             }
 
             /// <summary>
@@ -260,6 +270,7 @@ namespace X.Desk
             public DE(byte[] de, FileStream fs, IFD fd)
             {
                 Tag = (ushort)fd.Head.getValue(de.Take(2), 3); //BitConverter.ToUInt16(ifh.Bit == "MM" ? .Reverse().ToArray() : de.Take(2).ToArray(), 0);
+                if (Tag != 256 && Tag != 257 && Tag != 273 && Tag != 279) return;
                 Type = (ushort)fd.Head.getValue(de.Skip(2).Take(2), 3); //BitConverter.ToUInt16(ifh.Bit == "MM" ? de.Skip(2).Take(2).Reverse().ToArray() : de.Skip(2).Take(2).ToArray(), 0);
                 Length = (uint)fd.Head.getValue(de.Skip(4).Take(4), 4);// BitConverter.ToUInt32(ifh.Bit == "MM" ? de.Skip(4).Take(4).Reverse().ToArray() : de.Skip(4).Take(4).ToArray(), 0);
                 var v = Convert.ToInt64(fd.Head.getValue(de.Skip(8).Take(4), Type));

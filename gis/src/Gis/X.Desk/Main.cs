@@ -1,17 +1,20 @@
 ﻿using Interop.MapWinGIS;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Linq;
 using X.Core.Utility;
 using X.Gis;
+using System.Diagnostics;
 
 namespace X.Desk
 {
     public partial class Main : Form
     {
         bool ischanged = false;
-        string file = "";
+        string msg = "";
 
         public Main()
         {
@@ -59,10 +62,11 @@ namespace X.Desk
 
         private void showtip(string tip)
         {
-            Invoke((Action)(() =>
-            {
-                tlb_tip.Text = tip;
-            }));
+            msg = tip;
+            //Invoke((Action)(() =>
+            //{
+            //    tlb_tip.Text = tip;
+            //}));
         }
 
         private void tmi_inport_Click(object sender, EventArgs e)
@@ -77,36 +81,14 @@ namespace X.Desk
             {
                 showtip("正在加载文件：" + f);
                 var ext = f.Substring(ofd.FileName.LastIndexOf("."));
-                Tn tn = new Tn() { Text = f.Substring(f.LastIndexOf('\\') + 1) };
-                if (ext == ".shp")
-                {
-                    var shp = new Shapefile();
-                    shp.Open(f);
-                    var lay = map1.AddLayer(shp, true);
-                    tn.tp = 3;
-                    tn.layhandler = lay;
-                    tn.data = shp;
-                    tn.extents = shp.Extents;
-                }
-                else
-                {
-                    var img = new Image();
-                    img.Open(f);
-                    var lay = map1.AddLayer(img, true);
-                    tn.tp = 2;
-                    tn.data = img;
-                    tn.extents = img.Extents;
-                    tn.layhandler = lay;
-                    map1.Extents = img.Extents;
-                }
+                Tn tn = new Tn() { Text = f.Substring(f.LastIndexOf('\\') + 1), file = f };
+                addLayer(tn);
                 tn.Checked = true;
-                tn.Tag = f;
                 if (nd.tp <= 1) { nd.Nodes.Add(tn); nd.Expand(); }
                 else nd.Parent.Nodes.Add(tn);
             }
             showtip("文件加载完成");
             tmi_zoomTothis_Click(nd, null);
-            //map1.Extents = shp.Extents;
         }
 
         private void tmi_zoomTothis_Click(object sender, EventArgs e)
@@ -148,7 +130,7 @@ namespace X.Desk
         void removelay(Tn tn)
         {
             if (tn.tp == 1) foreach (Tn t in tn.Nodes) removelay(t);
-            else map1.RemoveLayer(tn.layhandler);
+            else map1.RemoveLayer(tn.inptr);
         }
 
         void getLayer(Edit ed, TreeNodeCollection tnc)
@@ -156,24 +138,9 @@ namespace X.Desk
             foreach (Tn t in tnc)
             {
                 if (t.tp <= 1) { getLayer(ed, t.Nodes); return; }
-
                 Layer lay = null;
-
-                if (t.tp == 2)
-                {
-                    lay = new ImgLayer();
-                    lay.Tp = 1;
-                }
-                else if (t.tp == 3)
-                {
-                    lay = new ShpLayer();
-                    lay.Tp = 2;
-                }
-
-                lay.Extends = new Extend() { XMax = t.extents.xMax, XMin = t.extents.xMin, YMax = t.extents.yMax, YMin = t.extents.yMin };
-                lay.File = t.Tag + "";
-                lay.Name = t.Text;
-
+                if (t.tp == 2) lay = new ImgLayer() { ext = new Extend(t.extents), file = t.file, };
+                else if (t.tp == 3) lay = new ShpLayer() { ext = new Extend(t.extents), file = t.file, Shapes = t.Tag as List<Shape> };
                 ed.AddLayer(lay);
             }
         }
@@ -256,7 +223,7 @@ namespace X.Desk
         void setlayervisible(Tn tn, bool check)
         {
             if (tn.tp <= 1) foreach (Tn t in tn.Nodes) { setlayervisible(t, check); t.Checked = check; }
-            else map1.set_LayerVisible(tn.layhandler, check);
+            else map1.set_LayerVisible(tn.inptr, check);
         }
 
         private void tmi_edit_Click(object sender, EventArgs e)
@@ -292,6 +259,7 @@ namespace X.Desk
         private void tr_time_Tick(object sender, EventArgs e)
         {
             tsl_time.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            tlb_tip.Text = msg;
         }
 
         private void 关于AToolStripMenuItem_Click(object sender, EventArgs e)
@@ -315,92 +283,144 @@ namespace X.Desk
             ofd.Filter = "Yt工程文件|*.ytp";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                file = ofd.FileName;
-                var data = File.ReadAllText(ofd.FileName);
-                var node = Serialize.FromJson<Node>(data);
-                tv_layers.Nodes.Clear();
-                map1.RemoveAllLayers();
-                var tn = new Tn() { Text = node.name, tp = 0, Checked = true };
-                tv_layers.Nodes.Add(tn);
-                node2tree(node.nodes, tv_layers.Nodes[0].Nodes);
-                tn.Expand();
+                //file = ofd.FileName;
+                //var data = File.ReadAllText(ofd.FileName);
+                //var node = Serialize.FromJson<Node>(data);
+                //tv_layers.Nodes.Clear();
+                //map1.RemoveAllLayers();
+                //var tn = new Tn() { Text = node.name, tp = 0, Checked = true };
+                //tv_layers.Nodes.Add(tn);
+                ////node2tree(node.nodes, tv_layers.Nodes[0].Nodes);
+                //tn.Expand();
             }
         }
 
         private void tsmi_save_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(file))
-            {
-                var sfd = new SaveFileDialog();
-                sfd.Filter = "Yt工程文件|*.ytp";
-                if (sfd.ShowDialog() == DialogResult.OK) file = sfd.FileName;
-            }
-            if (string.IsNullOrEmpty(file)) return;
+            //if (string.IsNullOrEmpty(file))
+            //{
+            //    var sfd = new SaveFileDialog();
+            //    sfd.Filter = "Yt工程文件|*.ytp";
+            //    if (sfd.ShowDialog() == DialogResult.OK) file = sfd.FileName;
+            //}
+            //if (string.IsNullOrEmpty(file)) return;
 
-            var n = new Node() { name = "图层", nodes = new List<Node>() };
-            tree2node(n.nodes, tv_layers.Nodes[0].Nodes);
-            var data = Serialize.ToJson(n);
-            File.WriteAllText(file, data);
-
+            ////var n = new Node() { name = "图层", nodes = new List<Node>() };
+            ////tree2node(n.nodes, tv_layers.Nodes[0].Nodes);
+            //var data = Serialize.ToJson(n);
+            //File.WriteAllText(file, data);
         }
 
-        void node2tree(List<Node> ns, TreeNodeCollection tnc)
+        void addLayer(Tn tn)
         {
-            foreach (var n in ns)
+            var ext = tn.file.Substring(tn.file.LastIndexOf("."));
+            object lay = null;
+            if (ext == ".shp")
             {
-                Tn tn = new Tn() { tp = n.tp, Checked = true };
-                if (!File.Exists(n.file))
-                    tn.Text += "(" + n.file + "不存在)";
-                else
+                var shp = new Shapefile();
+                shp.Open(tn.file);
+                lay = shp;
+                tn.tp = 3;
+                tn.extents = shp.Extents;
+                var shps = new List<Shape>();
+                for (var i = 0; i < shp.NumShapes; i++)
                 {
-                    tn.Text = n.name;
-                    if (n.tp == 3)
-                    {
-                        if (!File.Exists(n.file)) tn.Text += "(" + n.file + "不存在)";
-                        else
-                        {
-                            var shp = new Shapefile();
-                            shp.Open(n.file);
-                            tn.layhandler = map1.AddLayer(shp, true);
-                            tn.data = shp;
-                            tn.extents = shp.Extents;
-                        }
-                    }
-                    else if (n.tp == 2)
-                    {
-                        var img = new Interop.MapWinGIS.Image();
-                        img.Open(n.file);
-                        tn.data = img;
-                        tn.extents = img.Extents;
-                        tn.layhandler = map1.AddLayer(img, true);
-                    }
+
+                    showtip("正在加载文件：" + tn.file + " " + i + "/" + shp.NumShapes);
+                    var sp = shp.Shape[i];
+
+                    var spe = new Shape();
+                    spe.Tp = (byte)sp.ShapeType;
+
+                    for (var j = 0; j < sp.NumParts; j++) spe.Points.Add(j, getPoints(sp.PartAsShape[j]));
+
+                    shps.Add(spe);
+
                 }
-                tnc.Add(tn);
-                node2tree(n.nodes, tn.Nodes);
-                tn.Expand();
+                tn.Tag = shps;
             }
+            else
+            {
+                var img = new Interop.MapWinGIS.Image();
+                img.Open(tn.file);
+                var r = false;
+                img.SetNoDataValue(0, ref r);
+                lay = img;
+                tn.tp = 2;
+                tn.extents = img.Extents;
+            }
+            tn.inptr = map1.AddLayer(lay, true);
+            showtip("文件：" + tn.file + " 加载完成");
         }
 
-        void tree2node(List<Node> ns, TreeNodeCollection tnc)
+        List<PointF> getPoints(IShape s)
         {
-            if (ns == null) ns = new List<Node>();
-            foreach (Tn tn in tnc)
+            var pts = new List<PointF>();
+            for (var i = 0; i < s.numPoints; i++)
             {
-                var n = new Node() { name = tn.Text, nodes = new List<Node>(), tp = tn.tp };
-                if (tn.tp == 2)
-                {
-                    var img = tn.data as Interop.MapWinGIS.Image;
-                    n.file = img.Filename;
-                }
-                else if (tn.tp == 3)
-                {
-                    var shp = tn.data as Shapefile;
-                    n.file = shp.Filename;
-                }
-                ns.Add(n);
-                tree2node(n.nodes, tn.Nodes);
+                var pt = s.Point[i];
+                pts.Add(new PointF((float)pt.x, (float)pt.y));
             }
+            return pts;
         }
+
+        //void node2tree(List<Node> ns, TreeNodeCollection tnc)
+        //{
+        //    foreach (var n in ns)
+        //    {
+        //        Tn tn = new Tn() { tp = n.tp, Checked = true };
+        //        if (!File.Exists(n.file))
+        //            tn.Text += "(" + n.file + "不存在)";
+        //        else
+        //        {
+        //            tn.Text = n.name;
+        //            if (n.tp == 3)
+        //            {
+        //                if (!File.Exists(n.file)) tn.Text += "(" + n.file + "不存在)";
+        //                else
+        //                {
+        //                    var shp = new Shapefile();
+        //                    shp.Open(n.file);
+        //                    tn.layhandler = map1.AddLayer(shp, true);
+        //                    tn.data = shp;
+        //                    tn.extents = shp.Extents;
+        //                }
+        //            }
+        //            else if (n.tp == 2)
+        //            {
+        //                var img = new Interop.MapWinGIS.Image();
+        //                img.Open(n.file);
+        //                tn.data = img;
+        //                tn.extents = img.Extents;
+        //                tn.layhandler = map1.AddLayer(img, true);
+        //            }
+        //        }
+        //        tnc.Add(tn);
+        //        node2tree(n.nodes, tn.Nodes);
+        //        tn.Expand();
+        //    }
+        //}
+
+        //void tree2node(List<Node> ns, TreeNodeCollection tnc)
+        //{
+        //    if (ns == null) ns = new List<Node>();
+        //    foreach (Tn tn in tnc)
+        //    {
+        //        var n = new Node() { name = tn.Text, nodes = new List<Node>(), tp = tn.tp };
+        //        if (tn.tp == 2)
+        //        {
+        //            var img = tn.data as Interop.MapWinGIS.Image;
+        //            n.file = img.Filename;
+        //        }
+        //        else if (tn.tp == 3)
+        //        {
+        //            var shp = tn.data as Shapefile;
+        //            n.file = shp.Filename;
+        //        }
+        //        ns.Add(n);
+        //        tree2node(n.nodes, tn.Nodes);
+        //    }
+        //}
 
         private void tsmi_new_Click(object sender, EventArgs e)
         {
@@ -422,21 +442,19 @@ namespace X.Desk
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (ischanged)
+            if (!ischanged) return;
+            if (e.CloseReason == CloseReason.TaskManagerClosing || e.CloseReason == CloseReason.WindowsShutDown) tsmi_save_Click(sender, e);
+            else
             {
-                if (e.CloseReason == CloseReason.TaskManagerClosing || e.CloseReason == CloseReason.WindowsShutDown) tsmi_save_Click(sender, e);
-                else
-                {
-                    var rt = MessageBox.Show("工程已经更改，是否保存？", "消息提示", MessageBoxButtons.YesNoCancel);
-                    if (rt == DialogResult.Yes) tsmi_save_Click(sender, e);
-                    else if (rt == DialogResult.Cancel) e.Cancel = true;
-                }
+                var rt = MessageBox.Show("工程已经更改，是否保存？", "消息提示", MessageBoxButtons.YesNoCancel);
+                if (rt == DialogResult.Yes) tsmi_save_Click(sender, e);
+                else if (rt == DialogResult.Cancel) e.Cancel = true;
             }
         }
 
         private void tsmi_save_as_Click(object sender, EventArgs e)
         {
-            file = "";
+            //file = "";
             tsmi_save_Click(sender, e);
         }
 
@@ -456,32 +474,18 @@ namespace X.Desk
             map1.Extents = map1.Extents;
         }
 
-        private void tmi_prop_Click(object sender, EventArgs e)
+        public class Tn : TreeNode
         {
-
+            /// <summary>
+            /// 0、根
+            /// 1、文件夹
+            /// 2、图片层
+            /// 3、热区层
+            /// </summary>
+            public int tp { get; set; }
+            public string file { get; set; }
+            public Extents extents { get; set; }
+            public int inptr { get; set; }
         }
-    }
-
-    class Node
-    {
-        public string name { get; set; }
-        public int tp { get; set; }
-        public string file { get; set; }
-        public List<Node> nodes { get; set; }
-    }
-
-    public class Tn : TreeNode
-    {
-        public System.Drawing.Image img { get; set; }
-        /// <summary>
-        /// 0、根
-        /// 1、文件夹
-        /// 2、图片层
-        /// 3、热区层
-        /// </summary>
-        public int tp { get; set; }
-        public object data { get; set; }
-        public Extents extents { get; set; }
-        public int layhandler { get; set; }
     }
 }

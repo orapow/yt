@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="x.desk.exe" size="189440">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="x.desk.exe" size="545280">
       <assemblyIdentity name="x.desk" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>sMz8Qe0oF6pOG12ShY/VqhUaxNo=</dsig:DigestValue>
+        <dsig:DigestValue>CX/haS876l0fm6lT5tW4FclN/AI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>94Uc0jCyCA6UPe5crtSCQQz4zpI=</dsig:DigestValue>
+        <dsig:DigestValue>yAHA2Jf5Bv0OwVfkrTcORtAFjjk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

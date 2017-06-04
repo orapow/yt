@@ -373,9 +373,9 @@
             this.lb_wmtran.AutoSize = true;
             this.lb_wmtran.Location = new System.Drawing.Point(281, 57);
             this.lb_wmtran.Name = "lb_wmtran";
-            this.lb_wmtran.Size = new System.Drawing.Size(77, 12);
+            this.lb_wmtran.Size = new System.Drawing.Size(71, 12);
             this.lb_wmtran.TabIndex = 3;
-            this.lb_wmtran.Text = "透明度：100%";
+            this.lb_wmtran.Text = "透明度：75%";
             // 
             // tb_wmtran
             // 
@@ -388,7 +388,7 @@
             this.tb_wmtran.SmallChange = 5;
             this.tb_wmtran.TabIndex = 4;
             this.tb_wmtran.TickFrequency = 10;
-            this.tb_wmtran.Value = 78;
+            this.tb_wmtran.Value = 75;
             this.tb_wmtran.ValueChanged += new System.EventHandler(this.tb_wmtran_ValueChanged);
             // 
             // label9
@@ -522,6 +522,7 @@
             this.bt_down.TabIndex = 6;
             this.bt_down.Text = "下移";
             this.bt_down.UseVisualStyleBackColor = true;
+            this.bt_down.Click += new System.EventHandler(this.bt_down_Click);
             // 
             // bt_up
             // 
@@ -531,6 +532,7 @@
             this.bt_up.TabIndex = 6;
             this.bt_up.Text = "上移";
             this.bt_up.UseVisualStyleBackColor = true;
+            this.bt_up.Click += new System.EventHandler(this.bt_up_Click);
             // 
             // lb_layers
             // 
@@ -572,6 +574,7 @@
             this.pb_sp_style.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pb_sp_style.TabIndex = 3;
             this.pb_sp_style.TabStop = false;
+            this.pb_sp_style.Click += new System.EventHandler(this.pb_sp_style_Click);
             // 
             // rb_sp_grid
             // 
@@ -709,7 +712,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "8192 * 8192"});
+            "8192 * 8192",
+            "4096 * 4096"});
             this.comboBox1.Location = new System.Drawing.Point(52, 249);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
@@ -731,6 +735,7 @@
             this.tb_ch_max.Name = "tb_ch_max";
             this.tb_ch_max.Size = new System.Drawing.Size(100, 21);
             this.tb_ch_max.TabIndex = 15;
+            this.tb_ch_max.Text = "512";
             // 
             // tb_cb_min
             // 
@@ -738,6 +743,7 @@
             this.tb_cb_min.Name = "tb_cb_min";
             this.tb_cb_min.Size = new System.Drawing.Size(100, 21);
             this.tb_cb_min.TabIndex = 15;
+            this.tb_cb_min.Text = "128";
             // 
             // label1
             // 
@@ -753,13 +759,15 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(20, 91);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 12);
+            this.label17.Size = new System.Drawing.Size(89, 12);
             this.label17.TabIndex = 14;
-            this.label17.Text = "缓存大小：";
+            this.label17.Text = "缓存大小：(MB)";
             // 
             // cb_ch_file
             // 
             this.cb_ch_file.AutoSize = true;
+            this.cb_ch_file.Checked = true;
+            this.cb_ch_file.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_ch_file.Location = new System.Drawing.Point(20, 169);
             this.cb_ch_file.Name = "cb_ch_file";
             this.cb_ch_file.Size = new System.Drawing.Size(72, 16);
