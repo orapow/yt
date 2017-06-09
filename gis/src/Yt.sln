@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X.Ui", "Web\Demo\X.Ui\X.Ui.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X.Gis", "X.Gis\X.Gis.csproj", "{404A54E9-F6F8-4F83-AEE1-B113918E61E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "X.Core", "X.Core\X.Core.csproj", "{9364F44B-C253-4A46-A86B-F9248325543D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,18 @@ Global
 		{404A54E9-F6F8-4F83-AEE1-B113918E61E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{404A54E9-F6F8-4F83-AEE1-B113918E61E5}.Release|x86.ActiveCfg = Release|Any CPU
 		{404A54E9-F6F8-4F83-AEE1-B113918E61E5}.Release|x86.Build.0 = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Debug|x86.Build.0 = Debug|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Intellisense|Any CPU.ActiveCfg = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Intellisense|Any CPU.Build.0 = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Intellisense|x86.ActiveCfg = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Intellisense|x86.Build.0 = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Release|x86.ActiveCfg = Release|Any CPU
+		{9364F44B-C253-4A46-A86B-F9248325543D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

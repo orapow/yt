@@ -30,6 +30,7 @@ namespace X.Web
             XCache = new ContextCache();
             Context = c;
         }
+
         /// <summary>
         /// 设置属性
         /// </summary>

@@ -11,9 +11,9 @@ namespace X.Web.Com
     public class XForm
     {
         static Assembly assb = Assembly.Load("X.Web");
-        static DB db = null;
 
-        public XForm(DB d) { db = d; }
+        public delegate Dictionary<string, string> GetDictListHandler(string cd, string up);
+        public static event GetDictListHandler GetDictList;
 
         #region 私有方法
         static ict loadct(string cn, string ps)
@@ -59,6 +59,14 @@ namespace X.Web.Com
                 return ct == null ? "" : ct.ToString();
             });
         }
+
+        static string getDictName(string cd, string val)
+        {
+            var dir = GetDictList(cd, "00");
+            if (dir == null || !dir.ContainsKey(val)) return "";
+            else return dir[val];
+        }
+
         #endregion
 
         #region 公有方法
@@ -291,14 +299,14 @@ namespace X.Web.Com
                 if (!string.IsNullOrEmpty(ti[0])) sb_html.AppendFormat("<label class='lbe' for='id_{0}'>" + (no == 1 ? "<span class='star'>*</span>" : "") + "{1}</label>", name, ti[0] + "：");
 
                 var data = src.Split(':');
-                if (data[0] == "dict" && !string.IsNullOrEmpty(def)) def = def + "|" + db.GetDictName(data[1], def, "、");
+                if (data[0] == "dict" && !string.IsNullOrEmpty(def)) def = def + "|" + getDictName(data[1], def);
 
                 if (mode == 2 && (data[0] == "dict" || data[0] == "loc"))
                 {
                     sb_html.Append("<div class='btn-group' title='" + title + "' x-check='" + (no == 1 ? "{\"no\":true}" : "") + "' x-val='" + def + "' name='" + name + "'>");
                     if (data[0] == "dict")
                     {
-                        var d = db.GetDictList(data[1], "0");
+                        var d = GetDictList(data[1], "0");
                         foreach (var i in d) sb_html.Append("<span class='btn " + (def == i.Value || (def != null && def.Contains("[" + i.Value + "]")) ? "btn-primary" : "") + "' name='" + name + "' x-val='" + i.Value + "'>" + i.Key + "</span>");
                     }
                     else

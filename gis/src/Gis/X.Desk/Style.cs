@@ -78,6 +78,7 @@ namespace X.Desk
         private void lb_bc_Click(object sender, EventArgs e)
         {
             var cop = new ColorDialog();
+            if (DrawStyle != null) cop.Color = DrawStyle.BorderColor;
             if (cop.ShowDialog() == DialogResult.OK)
             {
                 lb_bc.BackColor = cop.Color;
@@ -88,6 +89,7 @@ namespace X.Desk
         private void lb_fc_Click(object sender, EventArgs e)
         {
             var cop = new ColorDialog();
+            if (DrawStyle != null) cop.Color = DrawStyle.FillColor;
             if (cop.ShowDialog() == DialogResult.OK)
             {
                 lb_fc.BackColor = cop.Color;

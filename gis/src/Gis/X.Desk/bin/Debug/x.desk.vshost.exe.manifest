@@ -91,26 +91,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="x.desk.exe" size="545280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="x.desk.exe" size="196096">
       <assemblyIdentity name="x.desk" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>CX/haS876l0fm6lT5tW4FclN/AI=</dsig:DigestValue>
+        <dsig:DigestValue>rbhtXmW8aJFHxtex+y4t/3gP9ZU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="X.Gis.dll" size="13312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="X.Gis.dll" size="13824">
       <assemblyIdentity name="X.Gis" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yAHA2Jf5Bv0OwVfkrTcORtAFjjk=</dsig:DigestValue>
+        <dsig:DigestValue>S7yku5uSVzyfu6EujvSiqgVb0dk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

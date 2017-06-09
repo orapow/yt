@@ -9,7 +9,7 @@
 </head>
 <body>
     <script type="text/javascript">
-        x.dialog.alert("错误信息：$!rsp.msg 代号：$!rsp.code", function () {
+        x.alert("错误信息：$!rsp.msg 代号：$!rsp.code", function () {
             switch ("$rsp.code") {
                 case "0x0006":
                     var url = document.location.href;

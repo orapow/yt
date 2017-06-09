@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using X.Gis;
 
 namespace X.Desk
 {
@@ -28,9 +29,9 @@ namespace X.Desk
             var dt = DateTime.Now;
             var img = new Bitmap(pb_view.Width, pb_view.Height);
             var g = Graphics.FromImage(img);
-            //g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            //g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-            //g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
             g.Clear(Color.Transparent);
 
             foreach (var l in layers)

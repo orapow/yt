@@ -413,8 +413,6 @@
             // cb_show_bl
             // 
             this.cb_show_bl.AutoSize = true;
-            this.cb_show_bl.Checked = true;
-            this.cb_show_bl.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_show_bl.Location = new System.Drawing.Point(29, 51);
             this.cb_show_bl.Name = "cb_show_bl";
             this.cb_show_bl.Size = new System.Drawing.Size(72, 16);
@@ -429,6 +427,7 @@
             this.gb_show_bl.Controls.Add(this.rb_lb_l1);
             this.gb_show_bl.Controls.Add(this.cb_lb);
             this.gb_show_bl.Controls.Add(this.label8);
+            this.gb_show_bl.Enabled = false;
             this.gb_show_bl.Location = new System.Drawing.Point(20, 51);
             this.gb_show_bl.Name = "gb_show_bl";
             this.gb_show_bl.Size = new System.Drawing.Size(391, 109);

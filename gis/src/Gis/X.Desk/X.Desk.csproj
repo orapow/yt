@@ -95,9 +95,6 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
-    <Reference Include="X.Core">
-      <HintPath>..\..\..\lib\X.Core.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.cs">
@@ -107,6 +104,7 @@
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="App\Layer.cs" />
+    <Compile Include="App\Sdk.cs" />
     <Compile Include="App\Utils.cs" />
     <Compile Include="App\Config.cs" />
     <Compile Include="App\Pack.cs" />
@@ -122,12 +120,6 @@
     </Compile>
     <Compile Include="Edit.Designer.cs">
       <DependentUpon>Edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -155,6 +147,12 @@
     <Compile Include="Style.Designer.cs">
       <DependentUpon>Style.cs</DependentUpon>
     </Compile>
+    <Compile Include="Links.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Links.Designer.cs">
+      <DependentUpon>Links.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,9 +161,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -188,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Style.resx">
       <DependentUpon>Style.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Links.resx">
+      <DependentUpon>Links.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -233,6 +231,10 @@
     <None Include="Resources\b1.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\X.Core\X.Core.csproj">
+      <Project>{9364f44b-c253-4a46-a86b-f9248325543d}</Project>
+      <Name>X.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\X.Gis\X.Gis.csproj">
       <Project>{404a54e9-f6f8-4f83-aee1-b113918e61e5}</Project>
       <Name>X.Gis</Name>

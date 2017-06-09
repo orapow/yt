@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using X.Gis;
 
 namespace X.Desk
 {
@@ -35,42 +36,4 @@ namespace X.Desk
             return p;
         }
     }
-
-    public class Extend
-    {
-        public double xMax { get; set; }
-        public double xMin { get; set; }
-        public double yMax { get; set; }
-        public double yMin { get; set; }
-        public void SetBound(Extend ext)
-        {
-            xMin = xMin == 0 ? ext.xMin : Math.Min(xMin, ext.xMin);
-            yMin = yMin == 0 ? ext.yMin : Math.Min(yMin, ext.yMin);
-            xMax = xMax == 0 ? ext.xMax : Math.Max(xMax, ext.xMax);
-            yMax = yMax == 0 ? ext.yMax : Math.Max(yMax, ext.yMax);
-        }
-        public Extend(Extents ext)
-        {
-            xMax = ext.xMax;
-            xMin = ext.xMin;
-            yMin = ext.yMin;
-            yMax = ext.yMax;
-        }
-        public Extend() { }
-    }
-
-    public class Shape
-    {
-        /// <summary>
-        /// 1、线
-        /// 2、面
-        /// </summary>
-        public int Tp { get; set; }
-        public Dictionary<int, List<PointF>> Points { get; set; }
-        public Shape()
-        {
-            Points = new Dictionary<int, List<PointF>>();
-        }
-    }
-
 }

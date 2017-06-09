@@ -8,6 +8,7 @@ namespace X.Web.Views
     public class Code : View
     {
         protected virtual int len { get { return 4; } }
+        protected virtual string pr_key { get { return "img.code."; } }
         /// <summary>
         /// 
         /// </summary>
@@ -28,8 +29,8 @@ namespace X.Web.Views
             GetPageParms();
             var c = "";
             var _ts = CacheHelper.Get<string>("code.key.ts" + ts);
-            if (_ts == null) c = Tools.GetRandRom(len);
-            CacheHelper.Save("code." + key, c);
+            if (string.IsNullOrEmpty(_ts)) c = Tools.GetRandRom(len);
+            CacheHelper.Save(pr_key + key, c);
             CacheHelper.Save("code.key.ts", ts, 1);
             Context.Response.ContentType = "image/gif";
             return CreateImage(c);

@@ -139,8 +139,8 @@ namespace X.Desk
             {
                 if (t.tp <= 1) { getLayer(ed, t.Nodes); return; }
                 Layer lay = null;
-                if (t.tp == 2) lay = new ImgLayer() { ext = new Extend(t.extents), file = t.file, };
-                else if (t.tp == 3) lay = new ShpLayer() { ext = new Extend(t.extents), file = t.file, Shapes = t.Tag as List<Shape> };
+                if (t.tp == 2) lay = new ImgLayer() { ext = new Extend(t.extents.xMin, t.extents.yMin, t.extents.xMax, t.extents.yMax), file = t.file, };
+                else if (t.tp == 3) lay = new ShpLayer() { ext = new Extend(t.extents.xMin, t.extents.yMin, t.extents.xMax, t.extents.yMax), file = t.file, Shapes = t.Tag as List<Gis.Shape> };
                 ed.AddLayer(lay);
             }
         }
@@ -322,14 +322,14 @@ namespace X.Desk
                 lay = shp;
                 tn.tp = 3;
                 tn.extents = shp.Extents;
-                var shps = new List<Shape>();
+                var shps = new List<Gis.Shape>();
                 for (var i = 0; i < shp.NumShapes; i++)
                 {
 
                     showtip("正在加载文件：" + tn.file + " " + i + "/" + shp.NumShapes);
                     var sp = shp.Shape[i];
 
-                    var spe = new Shape();
+                    var spe = new Gis.Shape();
                     spe.Tp = (byte)sp.ShapeType;
 
                     for (var j = 0; j < sp.NumParts; j++) spe.Points.Add(j, getPoints(sp.PartAsShape[j]));
@@ -486,6 +486,11 @@ namespace X.Desk
             public string file { get; set; }
             public Extents extents { get; set; }
             public int inptr { get; set; }
+        }
+
+        private void tsmi_links_Click(object sender, EventArgs e)
+        {
+            new Links().ShowDialog();
         }
     }
 }

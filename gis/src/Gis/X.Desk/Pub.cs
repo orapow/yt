@@ -46,5 +46,40 @@ namespace X.Desk
             };
             Close();
         }
+
+        private void bt_nt2_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            cfg = new Pack()
+            {
+                Key = "",
+                Name = tb_name.Text,
+                Op = 0,
+                Path = rb_newdir.Checked ? tb_newdir.Text : cb_dir.SelectedText
+            };
+            Close();
+        }
+
+        private void bt_nt3_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            cfg = new Pack()
+            {
+                Key = "",
+                Name = tb_name.Text,
+                Op = 1,
+                Path = ""
+            };
+            Close();
+        }
+
+        private void lb_svrs_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            var lb = sender as ListBox;
+            e.DrawBackground();
+            e.DrawFocusRectangle();
+            if (e.Index < 0) return;
+            e.Graphics.DrawString(lb.Items[e.Index].ToString(), e.Font, new SolidBrush(e.ForeColor), e.Bounds.Left + 9, e.Bounds.Top + 9);
+        }
     }
 }

@@ -243,7 +243,6 @@ D:\Pro\ytgis\src\Web\Svr\X.App\bin\Debug\X.Data.pdb
 D:\Pro\ytgis\src\Web\Svr\X.App\obj\Debug\X.App.csprojResolveAssemblyReference.cache
 D:\Pro\ytgis\src\Web\Svr\X.App\obj\Debug\X.App.dll
 D:\Pro\ytgis\src\Web\Svr\X.App\obj\Debug\X.App.pdb
-D:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.csprojResolveAssemblyReference.cache
 C:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.App.dll
 C:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.App.pdb
 C:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Core.dll
@@ -256,3 +255,16 @@ C:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Web.pdb
 C:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.csprojResolveAssemblyReference.cache
 C:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.dll
 C:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.pdb
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.App.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.App.pdb
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Core.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Web.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\NVelocity.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\log4net.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Json.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\Enyim.Caching.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Web.pdb
+D:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.csprojResolveAssemblyReference.cache
+D:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.dll
+D:\Pro\yt\gis\src\Web\Svr\X.App\obj\Debug\X.App.pdb
+D:\Pro\yt\gis\src\Web\Svr\X.App\bin\Debug\X.Core.pdb

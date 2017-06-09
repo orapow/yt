@@ -42,15 +42,15 @@
             this.tp_new = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.tb_newdir = new System.Windows.Forms.TextBox();
+            this.cb_dir = new System.Windows.Forms.ComboBox();
+            this.rb_newdir = new System.Windows.Forms.RadioButton();
+            this.tb_dir = new System.Windows.Forms.RadioButton();
             this.bt_c2 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cb_links1 = new System.Windows.Forms.ComboBox();
             this.bt_pr1 = new System.Windows.Forms.Button();
             this.bt_nt2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,11 +60,7 @@
             this.bt_pr2 = new System.Windows.Forms.Button();
             this.bt_nt3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdir = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cb_link2 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tp_loc = new System.Windows.Forms.TabPage();
             this.label8 = new System.Windows.Forms.Label();
@@ -78,6 +74,8 @@
             this.bt_seldir = new System.Windows.Forms.Button();
             this.tx_dir = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.lb_svrs = new System.Windows.Forms.ListBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tb_guide.SuspendLayout();
             this.tp_tp.SuspendLayout();
@@ -85,7 +83,6 @@
             this.tp_new.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tp_ov.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tp_loc.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,7 +162,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(35, 72);
             this.pictureBox1.Name = "pictureBox1";
@@ -203,7 +199,7 @@
             this.rb_pub.Size = new System.Drawing.Size(71, 16);
             this.rb_pub.TabIndex = 0;
             this.rb_pub.TabStop = true;
-            this.rb_pub.Text = "发布服务";
+            this.rb_pub.Text = "发新服务";
             this.rb_pub.UseVisualStyleBackColor = true;
             // 
             // tp_new
@@ -211,10 +207,10 @@
             this.tp_new.Controls.Add(this.groupBox4);
             this.tp_new.Controls.Add(this.groupBox1);
             this.tp_new.Controls.Add(this.bt_c2);
-            this.tp_new.Controls.Add(this.comboBox2);
+            this.tp_new.Controls.Add(this.cb_links1);
             this.tp_new.Controls.Add(this.bt_pr1);
             this.tp_new.Controls.Add(this.bt_nt2);
-            this.tp_new.Controls.Add(this.textBox3);
+            this.tp_new.Controls.Add(this.tb_name);
             this.tp_new.Controls.Add(this.label2);
             this.tp_new.Controls.Add(this.label3);
             this.tp_new.Controls.Add(this.label1);
@@ -238,10 +234,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton4);
+            this.groupBox1.Controls.Add(this.tb_newdir);
+            this.groupBox1.Controls.Add(this.cb_dir);
+            this.groupBox1.Controls.Add(this.rb_newdir);
+            this.groupBox1.Controls.Add(this.tb_dir);
             this.groupBox1.Location = new System.Drawing.Point(25, 179);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(390, 99);
@@ -249,42 +245,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "选择文件夹";
             // 
-            // textBox1
+            // tb_newdir
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 21);
-            this.textBox1.TabIndex = 3;
+            this.tb_newdir.Location = new System.Drawing.Point(110, 62);
+            this.tb_newdir.Name = "tb_newdir";
+            this.tb_newdir.Size = new System.Drawing.Size(244, 21);
+            this.tb_newdir.TabIndex = 3;
             // 
-            // comboBox3
+            // cb_dir
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(110, 28);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(244, 20);
-            this.comboBox3.TabIndex = 1;
+            this.cb_dir.FormattingEnabled = true;
+            this.cb_dir.Location = new System.Drawing.Point(110, 28);
+            this.cb_dir.Name = "cb_dir";
+            this.cb_dir.Size = new System.Drawing.Size(244, 20);
+            this.cb_dir.TabIndex = 1;
             // 
-            // radioButton5
+            // rb_newdir
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(21, 63);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(83, 16);
-            this.radioButton5.TabIndex = 2;
-            this.radioButton5.Text = "创建文件夹";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_newdir.AutoSize = true;
+            this.rb_newdir.Location = new System.Drawing.Point(21, 63);
+            this.rb_newdir.Name = "rb_newdir";
+            this.rb_newdir.Size = new System.Drawing.Size(83, 16);
+            this.rb_newdir.TabIndex = 2;
+            this.rb_newdir.Text = "创建文件夹";
+            this.rb_newdir.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // tb_dir
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Checked = true;
-            this.radioButton4.Location = new System.Drawing.Point(21, 29);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(83, 16);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "现有文件夹";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.tb_dir.AutoSize = true;
+            this.tb_dir.Checked = true;
+            this.tb_dir.Location = new System.Drawing.Point(21, 29);
+            this.tb_dir.Name = "tb_dir";
+            this.tb_dir.Size = new System.Drawing.Size(83, 16);
+            this.tb_dir.TabIndex = 0;
+            this.tb_dir.TabStop = true;
+            this.tb_dir.Text = "现有文件夹";
+            this.tb_dir.UseVisualStyleBackColor = true;
             // 
             // bt_c2
             // 
@@ -296,13 +292,13 @@
             this.bt_c2.Text = "取消(&C)";
             this.bt_c2.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cb_links1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(23, 59);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(392, 20);
-            this.comboBox2.TabIndex = 0;
+            this.cb_links1.FormattingEnabled = true;
+            this.cb_links1.Location = new System.Drawing.Point(23, 59);
+            this.cb_links1.Name = "cb_links1";
+            this.cb_links1.Size = new System.Drawing.Size(392, 20);
+            this.cb_links1.TabIndex = 0;
             // 
             // bt_pr1
             // 
@@ -324,13 +320,14 @@
             this.bt_nt2.TabIndex = 7;
             this.bt_nt2.Text = "继续(&N)";
             this.bt_nt2.UseVisualStyleBackColor = true;
+            this.bt_nt2.Click += new System.EventHandler(this.bt_nt2_Click);
             // 
-            // textBox3
+            // tb_name
             // 
-            this.textBox3.Location = new System.Drawing.Point(23, 139);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(390, 21);
-            this.textBox3.TabIndex = 1;
+            this.tb_name.Location = new System.Drawing.Point(23, 139);
+            this.tb_name.Name = "tb_name";
+            this.tb_name.Size = new System.Drawing.Size(390, 21);
+            this.tb_name.TabIndex = 1;
             // 
             // label2
             // 
@@ -361,13 +358,14 @@
             // 
             // tp_ov
             // 
+            this.tp_ov.Controls.Add(this.lb_svrs);
             this.tp_ov.Controls.Add(this.groupBox2);
             this.tp_ov.Controls.Add(this.bt_c3);
             this.tp_ov.Controls.Add(this.bt_pr2);
             this.tp_ov.Controls.Add(this.bt_nt3);
             this.tp_ov.Controls.Add(this.label7);
-            this.tp_ov.Controls.Add(this.dataGridView1);
-            this.tp_ov.Controls.Add(this.comboBox4);
+            this.tp_ov.Controls.Add(this.cb_link2);
+            this.tp_ov.Controls.Add(this.label9);
             this.tp_ov.Controls.Add(this.label5);
             this.tp_ov.Location = new System.Drawing.Point(4, 25);
             this.tp_ov.Name = "tp_ov";
@@ -416,6 +414,7 @@
             this.bt_nt3.TabIndex = 3;
             this.bt_nt3.Text = "继续(&N)";
             this.bt_nt3.UseVisualStyleBackColor = true;
+            this.bt_nt3.Click += new System.EventHandler(this.bt_nt3_Click);
             // 
             // label7
             // 
@@ -426,56 +425,13 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "服务器类型：YTGis Server";
             // 
-            // dataGridView1
+            // cb_link2
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.dataGridView1.ColumnHeadersHeight = 26;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sname,
-            this.sdir,
-            this.status});
-            this.dataGridView1.Location = new System.Drawing.Point(23, 115);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 24;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.RowTemplate.Height = 32;
-            this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(392, 165);
-            this.dataGridView1.TabIndex = 1;
-            // 
-            // sname
-            // 
-            this.sname.HeaderText = "服务名称";
-            this.sname.Name = "sname";
-            this.sname.ReadOnly = true;
-            this.sname.Width = 120;
-            // 
-            // sdir
-            // 
-            this.sdir.HeaderText = "服务文件夹";
-            this.sdir.Name = "sdir";
-            this.sdir.ReadOnly = true;
-            // 
-            // status
-            // 
-            this.status.HeaderText = "状态";
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(23, 59);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(392, 20);
-            this.comboBox4.TabIndex = 0;
+            this.cb_link2.FormattingEnabled = true;
+            this.cb_link2.Location = new System.Drawing.Point(23, 59);
+            this.cb_link2.Name = "cb_link2";
+            this.cb_link2.Size = new System.Drawing.Size(392, 20);
+            this.cb_link2.TabIndex = 0;
             // 
             // label5
             // 
@@ -606,6 +562,26 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "存储路径：";
             // 
+            // lb_svrs
+            // 
+            this.lb_svrs.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.lb_svrs.FormattingEnabled = true;
+            this.lb_svrs.ItemHeight = 30;
+            this.lb_svrs.Location = new System.Drawing.Point(23, 136);
+            this.lb_svrs.Name = "lb_svrs";
+            this.lb_svrs.Size = new System.Drawing.Size(392, 136);
+            this.lb_svrs.TabIndex = 21;
+            this.lb_svrs.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lb_svrs_DrawItem);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(23, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 12);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "选择一个服务：";
+            // 
             // Pub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -628,7 +604,6 @@
             this.groupBox1.PerformLayout();
             this.tp_ov.ResumeLayout(false);
             this.tp_ov.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tp_loc.ResumeLayout(false);
             this.tp_loc.PerformLayout();
             this.ResumeLayout(false);
@@ -650,15 +625,15 @@
         private System.Windows.Forms.TabPage tp_new;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.TextBox tb_newdir;
+        private System.Windows.Forms.ComboBox cb_dir;
+        private System.Windows.Forms.RadioButton rb_newdir;
+        private System.Windows.Forms.RadioButton tb_dir;
         private System.Windows.Forms.Button bt_c2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cb_links1;
         private System.Windows.Forms.Button bt_pr1;
         private System.Windows.Forms.Button bt_nt2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -668,11 +643,7 @@
         private System.Windows.Forms.Button bt_pr2;
         private System.Windows.Forms.Button bt_nt3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sdir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cb_link2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tp_loc;
         private System.Windows.Forms.Label label8;
@@ -686,6 +657,8 @@
         private System.Windows.Forms.Button bt_seldir;
         private System.Windows.Forms.TextBox tx_dir;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox lb_svrs;
+        private System.Windows.Forms.Label label9;
     }
 }
 

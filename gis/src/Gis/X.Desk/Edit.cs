@@ -75,7 +75,7 @@ namespace X.Desk
         {
             var lys = new List<Layer>();
             foreach (Layer l in lb_layers.Items) lys.Add(l);
-            new PreView(lys, extends).Show();
+            new PreView(lys, new Gis.Extend(extends.xMin, extends.yMin, extends.xMax, extends.yMax)).Show();
         }
 
         private void tb_wmtran_ValueChanged(object sender, EventArgs e)

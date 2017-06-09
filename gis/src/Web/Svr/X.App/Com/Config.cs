@@ -22,10 +22,6 @@ namespace X.App.Com
         /// 2、WebCached
         /// </summary>
         public int cache { get; set; }
-        /// <summary>
-        /// 地点分类
-        /// </summary>
-        public string cates { get; set; }
 
         private static string file = HttpContext.Current.Server.MapPath("/dat/cfg.x");
         private static Config cfg = null;

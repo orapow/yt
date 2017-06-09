@@ -9,12 +9,6 @@ namespace X.Gis
     public class Svr
     {
         /// <summary>
-        /// 1、发布服务
-        /// 2、本地包
-        /// 3、覆盖现有
-        /// </summary>
-        public int Op { get; set; }
-        /// <summary>
         /// 服务名称
         /// </summary>
         public string Name { get; set; }
@@ -75,7 +69,6 @@ namespace X.Gis
         public Extend Extends { get; set; }
         public string Desc { get; set; }
         public string Copyright { get; set; }
-        public List<List<PointF>> Shapes { get; set; }
         public override string ToString()
         {
             return "[" + (Tp == 1 ? "图像" : "图形") + "]->" + Name;
@@ -88,6 +81,7 @@ namespace X.Gis
     public class ShpLayer : Layer
     {
         public List<Field> Fields { get; set; }
+        public string IDField { get; set; }
         public string DiaplsyField { get; set; }
         public DrawInfo Style { get; set; }
         public OutType OutPut { get; set; }
@@ -106,7 +100,7 @@ namespace X.Gis
 
         public class DrawInfo
         {
-            public StrockStyle StrockStyle { get; set; }
+            public string StrockStyle { get { return "Solid"; } }
             public int StrockWidth { get; set; }
             public int StrockTransparent { get; set; }
             public Color StrockColor { get; set; }
@@ -128,9 +122,37 @@ namespace X.Gis
     }
     public class Extend
     {
-        public double XMin { get; set; }
-        public double YMin { get; set; }
-        public double XMax { get; set; }
-        public double YMax { get; set; }
+        public double xMax { get; set; }
+        public double xMin { get; set; }
+        public double yMax { get; set; }
+        public double yMin { get; set; }
+        public void SetBound(Extend ext)
+        {
+            xMin = xMin == 0 ? ext.xMin : Math.Min(xMin, ext.xMin);
+            yMin = yMin == 0 ? ext.yMin : Math.Min(yMin, ext.yMin);
+            xMax = xMax == 0 ? ext.xMax : Math.Max(xMax, ext.xMax);
+            yMax = yMax == 0 ? ext.yMax : Math.Max(yMax, ext.yMax);
+        }
+        public Extend(double xMin, double yMin, double xMax, double yMax)
+        {
+            this.xMax = xMax;
+            this.xMin = xMin;
+            this.yMin = yMin;
+            this.yMax = yMax;
+        }
+        public Extend() { }
+    }
+    public class Shape
+    {
+        /// <summary>
+        /// 1、线
+        /// 2、面
+        /// </summary>
+        public int Tp { get; set; }
+        public Dictionary<int, List<PointF>> Points { get; set; }
+        public Shape()
+        {
+            Points = new Dictionary<int, List<PointF>>();
+        }
     }
 }

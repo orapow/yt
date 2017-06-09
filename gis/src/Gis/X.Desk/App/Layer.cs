@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using X.Gis;
 
 namespace X.Desk
 {
@@ -46,9 +47,7 @@ namespace X.Desk
             g.DrawImage(bmp, Math.Max(px, 0), Math.Max(py, 0));
             bmp.Dispose();
             GC.Collect();
-
             Debug.WriteLine("draw->" + file);
-
         }
     }
 
@@ -80,9 +79,6 @@ namespace X.Desk
             if (Shapes == null) return;
 
             var rg_lay = Utils.GetRect(ext, lv);
-            //if (rg_lay.X + rect.X < full.X || rg_lay.Y + y < full.Y) return;
-            //if (rg_lay.X + x + 4096 < full.X || rg_lay.Y + y + 4096 < full.Y) return;
-            //if (rg_lay.X + x > full.X + 4096 || rg_lay.Y + y > full.Y + 4096) return;
 
             foreach (var s in Shapes)
             {

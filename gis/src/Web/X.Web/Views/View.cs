@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
 using System.Text;
@@ -20,14 +21,6 @@ namespace X.Web.Views
         {
             get { return 0; }
         }
-
-        ///// <summary>
-        ///// 错误信息显示视图名称
-        ///// </summary>
-        //protected virtual string err_viewname
-        //{
-        //    get { return "com.err"; }
-        //}
 
         /// <summary>
         /// 获取页面参数
@@ -121,6 +114,8 @@ namespace X.Web.Views
 
             dict?.Clear();
 
+            XForm.GetDictList += XForm_GetDictList;
+
             html = XForm.Parse(html);
 
             #region 压缩页面
@@ -143,6 +138,13 @@ namespace X.Web.Views
             return data;
 
         }
+
+        private Dictionary<string, string> XForm_GetDictList(string cd, string up)
+        {
+            return GetDictList(cd, up);
+        }
+
+        protected virtual Dictionary<string, string> GetDictList(string cd, string up) { return null; }
 
     }
 }

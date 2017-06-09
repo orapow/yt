@@ -1,4 +1,3 @@
-D:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.exe.config
 C:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.exe.config
 C:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.exe.manifest
 C:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.application
@@ -25,6 +24,7 @@ C:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.exe.manifest
 C:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.application
 C:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.exe
 C:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.pdb
+D:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.exe.config
 D:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.exe.manifest
 D:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.application
 D:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\x.desk.exe
@@ -45,9 +45,10 @@ D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.PreView.resources
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.Properties.Resources.resources
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.Pub.resources
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.Style.resources
+D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.Links.resources
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.csproj.GenerateResource.Cache
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.exe.manifest
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.application
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.exe
 D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\x.desk.pdb
-D:\Pro\yt\gis\src\Gis\X.Desk\obj\Debug\X.Desk.Form2.resources
+D:\Pro\yt\gis\src\Gis\X.Desk\bin\Debug\X.Core.pdb

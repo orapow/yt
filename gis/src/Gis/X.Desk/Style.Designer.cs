@@ -79,9 +79,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(275, 30);
+            this.groupBox1.Location = new System.Drawing.Point(219, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(169, 170);
+            this.groupBox1.Size = new System.Drawing.Size(169, 199);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "示例";
@@ -89,7 +89,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 53);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -116,29 +116,28 @@
             // 
             // lb_bc
             // 
-            this.lb_bc.AutoSize = true;
             this.lb_bc.BackColor = System.Drawing.Color.Green;
-            this.lb_bc.Location = new System.Drawing.Point(97, 77);
+            this.lb_bc.Location = new System.Drawing.Point(97, 68);
             this.lb_bc.Name = "lb_bc";
-            this.lb_bc.Size = new System.Drawing.Size(29, 12);
+            this.lb_bc.Size = new System.Drawing.Size(54, 31);
             this.lb_bc.TabIndex = 5;
             this.lb_bc.Text = "    ";
             this.lb_bc.Click += new System.EventHandler(this.lb_bc_Click);
             // 
             // lb_fc
             // 
-            this.lb_fc.AutoSize = true;
             this.lb_fc.BackColor = System.Drawing.Color.White;
-            this.lb_fc.Location = new System.Drawing.Point(97, 175);
+            this.lb_fc.Location = new System.Drawing.Point(97, 166);
             this.lb_fc.Name = "lb_fc";
-            this.lb_fc.Size = new System.Drawing.Size(29, 12);
+            this.lb_fc.Size = new System.Drawing.Size(54, 31);
             this.lb_fc.TabIndex = 5;
             this.lb_fc.Text = "    ";
             this.lb_fc.Click += new System.EventHandler(this.lb_fc_Click);
             // 
             // bt_no
             // 
-            this.bt_no.Location = new System.Drawing.Point(394, 245);
+            this.bt_no.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_no.Location = new System.Drawing.Point(327, 253);
             this.bt_no.Name = "bt_no";
             this.bt_no.Size = new System.Drawing.Size(75, 30);
             this.bt_no.TabIndex = 6;
@@ -148,7 +147,8 @@
             // 
             // bt_ok
             // 
-            this.bt_ok.Location = new System.Drawing.Point(313, 245);
+            this.bt_ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_ok.Location = new System.Drawing.Point(246, 253);
             this.bt_ok.Name = "bt_ok";
             this.bt_ok.Size = new System.Drawing.Size(75, 30);
             this.bt_ok.TabIndex = 6;
@@ -234,7 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 287);
+            this.ClientSize = new System.Drawing.Size(414, 295);
             this.Controls.Add(this.nud_ft);
             this.Controls.Add(this.nud_bt);
             this.Controls.Add(this.nud_bw);

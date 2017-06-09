@@ -86,43 +86,43 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>pNObyb6y/eCfFLElf/c2MsqWSzg=</dsig:DigestValue>
+        <dsig:DigestValue>ilCocz/bkUim/6EKiJ2AQjmXbfs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="x.desk.exe" size="545280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="x.desk.exe" size="196608">
       <assemblyIdentity name="x.desk" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>CX/haS876l0fm6lT5tW4FclN/AI=</dsig:DigestValue>
+        <dsig:DigestValue>EQGxIkw1mRXVmVnm8zo6mMgTJg8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="X.Gis.dll" size="13312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="X.Gis.dll" size="13824">
       <assemblyIdentity name="X.Gis" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yAHA2Jf5Bv0OwVfkrTcORtAFjjk=</dsig:DigestValue>
+        <dsig:DigestValue>6m6C2AJ7rq/g8C5vySP3nvOA1Lw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="X.Json.dll" size="438784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="X.Json.dll" size="456704">
       <assemblyIdentity name="X.Json" version="4.5.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7BG1EMQ/HzjIrlmJbkBiwoXOVOk=</dsig:DigestValue>
+        <dsig:DigestValue>rqCcRuXisaFcdVygcXME7mXtIxc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

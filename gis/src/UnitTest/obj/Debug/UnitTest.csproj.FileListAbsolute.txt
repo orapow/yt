@@ -4,8 +4,3 @@ D:\Pro\ytgis\src\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTest
 D:\Pro\ytgis\src\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 D:\Pro\ytgis\src\UnitTest\obj\Debug\UnitTest.dll
 D:\Pro\ytgis\src\UnitTest\obj\Debug\UnitTest.pdb
-D:\Pro\yt\gis\src\UnitTest\bin\Debug\UnitTest.dll
-D:\Pro\yt\gis\src\UnitTest\bin\Debug\UnitTest.pdb
-D:\Pro\yt\gis\src\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Pro\yt\gis\src\UnitTest\obj\Debug\UnitTest.dll
-D:\Pro\yt\gis\src\UnitTest\obj\Debug\UnitTest.pdb
