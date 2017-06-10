@@ -44,7 +44,6 @@ namespace X.Desk
             if (!Check(url)) throw new Exception("链接验证失败");
             gateway = url;
         }
-
         public static DirsRsp GetDirs()
         {
             return HttpPost<DirsRsp>("sdk.dirs", null);
@@ -72,7 +71,6 @@ namespace X.Desk
                 }
             }
         }
-
         public class Resp
         {
             public bool issucc { get; set; }
