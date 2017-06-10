@@ -7,12 +7,12 @@ namespace X.App.Apis
     public class xapi : Api
     {
         protected Config cfg = null;
-        //protected DataClassesDataContext db = null;
+        protected DBDataContext db = null;
         protected override void InitApi()
         {
             base.InitApi();
             cfg = Config.LoadConfig();
-            //db = new DataClassesDataContext() { DeferredLoadingEnabled = true };
+            db = new DBDataContext() { DeferredLoadingEnabled = true };
         }
     }
 }

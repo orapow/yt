@@ -3,9 +3,9 @@ using System.Linq;
 using System.Collections.Generic;
 using X.Core.Cache;
 
-namespace X.Data
+namespace X.App
 {
-    partial class DataClassesDataContext
+    partial class DBDataContext
     {
         /// <summary>
         /// »ñÈ¡×ÖµäÎÄ×Ö

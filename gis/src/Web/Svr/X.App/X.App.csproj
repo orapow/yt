@@ -34,19 +34,40 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.XML" />
+    <Reference Include="X.Json">
+      <HintPath>..\..\..\..\..\..\libs\X.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apis\com\upload.cs" />
     <Compile Include="Apis\sdk\check.cs" />
-    <Compile Include="Apis\sdk\svrs.cs" />
+    <Compile Include="Apis\sdk\dirs\list.cs" />
+    <Compile Include="Apis\sdk\dirs\save.cs" />
+    <Compile Include="Apis\sdk\svrs\list.cs" />
+    <Compile Include="Apis\sdk\svrs\save.cs" />
     <Compile Include="Apis\sdk\_sdk.cs" />
     <Compile Include="Apis\xapi.cs" />
     <Compile Include="Com\Config.cs" />
+    <Compile Include="Com\DB.cs">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Com\DB.designer.cs">
+      <DependentUpon>DB.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Com\XTree.cs" />
     <Compile Include="Global.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Views\check.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\demo.cs" />
@@ -65,7 +86,18 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Com\DB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\X.Core\X.Core.csproj">
       <Project>{9364f44b-c253-4a46-a86b-f9248325543d}</Project>
@@ -75,6 +107,11 @@
       <Project>{6e4653a5-1350-4fb0-a52e-4fde25ae8ec9}</Project>
       <Name>X.Web</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Com\DB.dbml.layout">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
