@@ -17,6 +17,10 @@ namespace X.App.Com
         /// </summary>
         public string name { get; set; }
         /// <summary>
+        /// 版本号
+        /// </summary>
+        public int version { get; set; }
+        /// <summary>
         /// 缓存设置
         /// 1、memcached
         /// 2、WebCached

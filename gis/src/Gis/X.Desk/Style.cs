@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using X.Gis;
 
 namespace X.Desk
 {
     public partial class Style : Form
     {
-        public ShpLayer.DrawStyle DrawStyle { get; private set; }
+        public DrawStyle DrawStyle { get; private set; }
 
         public Style() : this(null) { }
 
-        public Style(ShpLayer.DrawStyle style)
+        public Style(DrawStyle style)
         {
             InitializeComponent();
             if (style != null)
@@ -29,7 +25,7 @@ namespace X.Desk
             }
             else
             {
-                DrawStyle = new ShpLayer.DrawStyle();
+                DrawStyle = new DrawStyle();
             }
         }
 
@@ -50,7 +46,7 @@ namespace X.Desk
             g.FillRectangle(new SolidBrush(Color.FromArgb(ft, fc)), new Rectangle(bw, bw, 100 - bw * 2, 100 - bw * 2));
             g.Dispose();
 
-            DrawStyle = new ShpLayer.DrawStyle();
+            DrawStyle = new DrawStyle();
             DrawStyle.BorderColor = bc;
             DrawStyle.BorderTran = bt;
             DrawStyle.BorderWidth = bw;

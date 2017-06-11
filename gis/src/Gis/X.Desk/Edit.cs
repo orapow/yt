@@ -1,14 +1,8 @@
-﻿using Interop.MapWinGIS;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using X.Core.Utility;
 using X.Gis;
@@ -166,13 +160,6 @@ namespace X.Desk
 
         }
 
-        class Block
-        {
-            public int level { get; set; }
-            public string file { get; set; }
-            public Rectangle bound { get; set; }
-        }
-
         private void pb_sp_style_Click(object sender, EventArgs e)
         {
             var lay = lb_layers.SelectedItem as ShpLayer;
@@ -181,6 +168,7 @@ namespace X.Desk
             if (opst.ShowDialog() == DialogResult.OK)
             {
                 lay.Style = opst.DrawStyle;
+                foreach (var p in lay.Shapes) p.Style = opst.DrawStyle;
                 //lb_layers.SelectedItem = lay;
             }
         }

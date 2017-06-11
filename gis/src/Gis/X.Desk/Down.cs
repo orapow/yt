@@ -16,6 +16,7 @@ namespace X.Desk
         private Extents extents = null;
         private string path = "";
         private int mtype = 0;
+        private bool stop = false;
         public Down(Extents ext)
         {
             InitializeComponent();
@@ -40,7 +41,9 @@ namespace X.Desk
             path = lb_outdir.Text;
             mtype = cb_map_type.SelectedIndex;
             bt_start.Enabled = false;
+            bt_stop.Enabled = true;
 
+            stop = false;
             for (var l = minlev; l <= maxlev; l++)
             {
                 new Thread(o =>
@@ -77,6 +80,7 @@ namespace X.Desk
             {
                 for (var y = y1; y <= y2; y++)
                 {
+                    if (stop) return;
                     var url = mtype == 0 ?
                         "http://webgis.591map.net/tiler/tdt-vec_w-{sw}-" + x + "-" + y + "-" + m.lv + ".html" :
                         "http://webgis.591map.net/tiler/tdt-img_w-{sw}-" + x + "-" + y + "-" + m.lv + ".html";
@@ -102,11 +106,10 @@ namespace X.Desk
             }
             Invoke((Action)(() =>
             {
-                if (m.lv == int.Parse(cb_maxlev.SelectedItem + ""))
-                {
-                    tsl_tip.Text = "下载完成";
-                    bt_start.Enabled = true;
-                }
+                if (m.lv == int.Parse(cb_maxlev.SelectedItem + "")) tsl_tip.Text = "下载完成";
+                else tsl_tip.Text = "下载取消";
+                bt_start.Enabled = true;
+                bt_stop.Enabled = false;
             }));
             g.Dispose();
             img.Dispose();

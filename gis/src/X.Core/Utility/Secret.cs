@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
 using System.IO;
@@ -25,16 +24,19 @@ namespace X.Core.Utility
         /// <returns></returns>
         public static byte[] XcDecode(byte[] data, string k)
         {
-            var k1 = getXcKey(k);
-            var k2 = data.Take(32);
-            if (!Enumerable.SequenceEqual(k1, k2)) throw new Exception("Decode Error");
+            try
+            {
+                var k1 = getXcKey(k);
+                var k2 = data.Take(32);
+                if (!Enumerable.SequenceEqual(k1, k2)) throw new Exception("Decode Error");
 
-            var dt = data.Skip(32).ToArray();
+                var dt = data.Skip(32).ToArray();
 
-            var i = 0;
-            for (var j = 0; j < dt.Length; j++) dt[j] = (byte)(dt[j] ^ k1[i++ % k1.Length]);
-
-            return dt;
+                var i = 0;
+                for (var j = 0; j < dt.Length; j++) dt[j] = (byte)(dt[j] ^ k1[i++ % k1.Length]);
+                return dt;
+            }
+            catch { return null; }
         }
         /// <summary>
         /// 加密
@@ -44,12 +46,16 @@ namespace X.Core.Utility
         /// <returns></returns>
         public static byte[] XcEncode(byte[] data, string k)
         {
-            var key = getXcKey(k);
-            var i = 0;
-            var dts = data.ToList();
-            for (var j = 0; j < dts.Count; j++) dts[j] = (byte)(dts[j] ^ key[i++ % key.Length]);
-            dts.InsertRange(0, key.ToList());
-            return dts.ToArray();
+            try
+            {
+                var key = getXcKey(k);
+                var i = 0;
+                var dts = data.ToList();
+                for (var j = 0; j < dts.Count; j++) dts[j] = (byte)(dts[j] ^ key[i++ % key.Length]);
+                dts.InsertRange(0, key.ToList());
+                return dts.ToArray();
+            }
+            catch { return null; }
         }
 
         #endregion

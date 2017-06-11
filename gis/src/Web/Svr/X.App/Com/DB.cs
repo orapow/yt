@@ -4,7 +4,7 @@ using System.Data.Linq;
 using System.Linq;
 using X.Core.Cache;
 
-namespace X.App
+namespace X.App.Com
 {
     partial class x_dict
     {

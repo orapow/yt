@@ -3,6 +3,7 @@
 ^/services/$->/app.ashx?v=services.index&t=1
 ^/services/layers/?$->/app.ashx?v=services.layers.index&t=1
 ^/services/([\w\d_]+)$->/app.ashx?v=services.detail&t=1&p={0}
+^/services/([\w\d_]+)/$->/app.ashx?v=services.index&t=1&p={0}
 ^/services/([\w\d_]+)/tiler/(\d+)/(\d+)/(\d+)$->/app.ashx?v=services.tiler&t=1&p={0}-{1}-{2}-{3}
 ^/services/([\w\d_]+)/grid/(\d+)/([\d.]+)/([\d.]+)/([\d.]+)/([\d.]+)$->/app.ashx?v=services.grid&t=1&p={0}-{1}-{2}-{3}-{4}-{5}
 ^/services/layers/(\d+)$->/app.ashx?v=services.layers.detail&t=1&p={0}

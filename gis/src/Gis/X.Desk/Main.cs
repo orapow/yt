@@ -4,10 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using System.Linq;
-using X.Core.Utility;
 using X.Gis;
-using System.Diagnostics;
 
 namespace X.Desk
 {
@@ -331,6 +328,11 @@ namespace X.Desk
 
                     var spe = new Gis.Shape();
                     spe.Tp = (byte)sp.ShapeType;
+                    spe.Extent = new Extend(sp.Extents.xMin, sp.Extents.yMin, sp.Extents.xMax, sp.Extents.yMax);
+
+                    var data = new Dictionary<string, string>();
+                    for (var f = 0; f < shp.NumFields; f++) data.Add(shp.Field[f].Name, shp.CellValue[f, i]);
+                    spe.Data = data;
 
                     for (var j = 0; j < sp.NumParts; j++) spe.Points.Add(j, getPoints(sp.PartAsShape[j]));
 

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 
 namespace X.Gis
 {
@@ -20,7 +18,8 @@ namespace X.Gis
         /// 密钥
         /// </summary>
         public string Key { get; set; }
-        public Size BlockSize { get; set; }
+        public int BlockSize { get; set; }
+        public int Version { get; set; }
         public DocumentInfo DocumentInfo { get; set; }
         public WaterMark WaterMarked { get; set; }
         public Cache Cached { get; set; }
@@ -83,34 +82,9 @@ namespace X.Gis
         public List<Field> Fields { get; set; }
         public string IDField { get; set; }
         public string DiaplsyField { get; set; }
-        public DrawInfo Style { get; set; }
-        public OutType OutPut { get; set; }
+        public DrawStyle Style { get; set; }
+        public string OutPut { get; set; }
 
-        public enum OutType
-        {
-            /// <summary>
-            /// 图形
-            /// </summary>
-            Img,
-            /// <summary>
-            /// 网格
-            /// </summary>
-            Grid
-        }
-
-        public class DrawInfo
-        {
-            public string StrockStyle { get { return "Solid"; } }
-            public int StrockWidth { get; set; }
-            public int StrockTransparent { get; set; }
-            public Color StrockColor { get; set; }
-            public Color FillColor { get; set; }
-            public int FillTransparent { get; set; }
-        }
-        public enum StrockStyle
-        {
-
-        }
         public class Field
         {
             public string Name { get; set; }
@@ -120,12 +94,43 @@ namespace X.Gis
             public bool Selected { get; set; }
         }
     }
+    public class DrawStyle
+    {
+        public int BorderWidth { get; set; }
+        public int BorderTran { get; set; }
+        public Color BorderColor { get; set; }
+        public int FillTran { get; set; }
+        public Color FillColor { get; set; }
+    }
+    //public class DrawInfo
+    //{
+    //    public string StrockStyle { get { return "Solid"; } }
+    //    public int StrockWidth { get; set; }
+    //    public int StrockTransparent { get; set; }
+    //    public Color StrockColor { get; set; }
+    //    public Color FillColor { get; set; }
+    //    public int FillTransparent { get; set; }
+    //}
     public class Extend
     {
         public double xMax { get; set; }
         public double xMin { get; set; }
         public double yMax { get; set; }
         public double yMin { get; set; }
+        public double xCenter
+        {
+            get
+            {
+                return (xMin + xMax) / 2;
+            }
+        }
+        public double yCenter
+        {
+            get
+            {
+                return (yMin + yMax) / 2;
+            }
+        }
         public void SetBound(Extend ext)
         {
             xMin = xMin == 0 ? ext.xMin : Math.Min(xMin, ext.xMin);
@@ -142,6 +147,12 @@ namespace X.Gis
         }
         public Extend() { }
     }
+    public class Block
+    {
+        public int level { get; set; }
+        public string file { get; set; }
+        public Rectangle bound { get; set; }
+    }
     public class Shape
     {
         /// <summary>
@@ -150,6 +161,10 @@ namespace X.Gis
         /// </summary>
         public int Tp { get; set; }
         public Dictionary<int, List<PointF>> Points { get; set; }
+        public DrawStyle Style { get; set; }
+        public string Name { get; set; }
+        public Extend Extent { get; set; }
+        public Dictionary<string, string> Data { get; set; }
         public Shape()
         {
             Points = new Dictionary<int, List<PointF>>();

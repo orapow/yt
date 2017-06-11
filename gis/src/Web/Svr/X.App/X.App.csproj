@@ -48,8 +48,12 @@
     <Compile Include="Apis\sdk\check.cs" />
     <Compile Include="Apis\sdk\dirs\list.cs" />
     <Compile Include="Apis\sdk\dirs\save.cs" />
+    <Compile Include="Apis\sdk\svrs\begin.cs" />
+    <Compile Include="Apis\sdk\svrs\init.cs" />
     <Compile Include="Apis\sdk\svrs\list.cs" />
+    <Compile Include="Apis\sdk\svrs\end.cs" />
     <Compile Include="Apis\sdk\svrs\save.cs" />
+    <Compile Include="Apis\sdk\svrs\upload.cs" />
     <Compile Include="Apis\sdk\_sdk.cs" />
     <Compile Include="Apis\xapi.cs" />
     <Compile Include="Com\Config.cs" />
@@ -68,7 +72,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Views\check.cs" />
     <Compile Include="Views\com\err.cs" />
     <Compile Include="Views\demo.cs" />
     <Compile Include="Views\services\layers\detail.cs" />
@@ -102,6 +105,10 @@
     <ProjectReference Include="..\..\..\X.Core\X.Core.csproj">
       <Project>{9364f44b-c253-4a46-a86b-f9248325543d}</Project>
       <Name>X.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\X.Gis\X.Gis.csproj">
+      <Project>{404a54e9-f6f8-4f83-aee1-b113918e61e5}</Project>
+      <Name>X.Gis</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\X.Web\X.Web.csproj">
       <Project>{6e4653a5-1350-4fb0-a52e-4fde25ae8ec9}</Project>

@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace X.App
+namespace X.App.Com
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -33,18 +33,18 @@ namespace X.App
     partial void Insertx_block(x_block instance);
     partial void Updatex_block(x_block instance);
     partial void Deletex_block(x_block instance);
-    partial void Insertx_service(x_service instance);
-    partial void Updatex_service(x_service instance);
-    partial void Deletex_service(x_service instance);
     partial void Insertx_dict(x_dict instance);
     partial void Updatex_dict(x_dict instance);
     partial void Deletex_dict(x_dict instance);
-    partial void Insertx_grid(x_grid instance);
-    partial void Updatex_grid(x_grid instance);
-    partial void Deletex_grid(x_grid instance);
     partial void Insertx_layer(x_layer instance);
     partial void Updatex_layer(x_layer instance);
     partial void Deletex_layer(x_layer instance);
+    partial void Insertx_service(x_service instance);
+    partial void Updatex_service(x_service instance);
+    partial void Deletex_service(x_service instance);
+    partial void Insertx_grid(x_grid instance);
+    partial void Updatex_grid(x_grid instance);
+    partial void Deletex_grid(x_grid instance);
     #endregion
 		
 		public DBDataContext() : 
@@ -85,14 +85,6 @@ namespace X.App
 			}
 		}
 		
-		public System.Data.Linq.Table<x_service> x_service
-		{
-			get
-			{
-				return this.GetTable<x_service>();
-			}
-		}
-		
 		public System.Data.Linq.Table<x_dict> x_dict
 		{
 			get
@@ -101,19 +93,27 @@ namespace X.App
 			}
 		}
 		
-		public System.Data.Linq.Table<x_grid> x_grid
-		{
-			get
-			{
-				return this.GetTable<x_grid>();
-			}
-		}
-		
 		public System.Data.Linq.Table<x_layer> x_layer
 		{
 			get
 			{
 				return this.GetTable<x_layer>();
+			}
+		}
+		
+		public System.Data.Linq.Table<x_service> x_service
+		{
+			get
+			{
+				return this.GetTable<x_service>();
+			}
+		}
+		
+		public System.Data.Linq.Table<x_grid> x_grid
+		{
+			get
+			{
+				return this.GetTable<x_grid>();
 			}
 		}
 	}
@@ -386,416 +386,6 @@ namespace X.App
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.x_service")]
-	public partial class x_service : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _service_id;
-		
-		private string _name;
-		
-		private string _dir;
-		
-		private string _secret_key;
-		
-		private string _docinfo;
-		
-		private System.Nullable<int> _blocksize;
-		
-		private string _innerextend;
-		
-		private string _fullextend;
-		
-		private string _watermark;
-		
-		private string _cache;
-		
-		private string _version;
-		
-		private System.Nullable<int> _status;
-		
-		private EntitySet<x_block> _x_block;
-		
-		private EntitySet<x_grid> _x_grid;
-		
-		private EntitySet<x_layer> _x_layer;
-		
-    #region 可扩展性方法定义
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void Onservice_idChanging(long value);
-    partial void Onservice_idChanged();
-    partial void OnnameChanging(string value);
-    partial void OnnameChanged();
-    partial void OndirChanging(string value);
-    partial void OndirChanged();
-    partial void Onsecret_keyChanging(string value);
-    partial void Onsecret_keyChanged();
-    partial void OndocinfoChanging(string value);
-    partial void OndocinfoChanged();
-    partial void OnblocksizeChanging(System.Nullable<int> value);
-    partial void OnblocksizeChanged();
-    partial void OninnerextendChanging(string value);
-    partial void OninnerextendChanged();
-    partial void OnfullextendChanging(string value);
-    partial void OnfullextendChanged();
-    partial void OnwatermarkChanging(string value);
-    partial void OnwatermarkChanged();
-    partial void OncacheChanging(string value);
-    partial void OncacheChanged();
-    partial void OnversionChanging(string value);
-    partial void OnversionChanged();
-    partial void OnstatusChanging(System.Nullable<int> value);
-    partial void OnstatusChanged();
-    #endregion
-		
-		public x_service()
-		{
-			this._x_block = new EntitySet<x_block>(new Action<x_block>(this.attach_x_block), new Action<x_block>(this.detach_x_block));
-			this._x_grid = new EntitySet<x_grid>(new Action<x_grid>(this.attach_x_grid), new Action<x_grid>(this.detach_x_grid));
-			this._x_layer = new EntitySet<x_layer>(new Action<x_layer>(this.attach_x_layer), new Action<x_layer>(this.detach_x_layer));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_service_id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long service_id
-		{
-			get
-			{
-				return this._service_id;
-			}
-			set
-			{
-				if ((this._service_id != value))
-				{
-					this.Onservice_idChanging(value);
-					this.SendPropertyChanging();
-					this._service_id = value;
-					this.SendPropertyChanged("service_id");
-					this.Onservice_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(200)")]
-		public string name
-		{
-			get
-			{
-				return this._name;
-			}
-			set
-			{
-				if ((this._name != value))
-				{
-					this.OnnameChanging(value);
-					this.SendPropertyChanging();
-					this._name = value;
-					this.SendPropertyChanged("name");
-					this.OnnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dir", DbType="NVarChar(100)")]
-		public string dir
-		{
-			get
-			{
-				return this._dir;
-			}
-			set
-			{
-				if ((this._dir != value))
-				{
-					this.OndirChanging(value);
-					this.SendPropertyChanging();
-					this._dir = value;
-					this.SendPropertyChanged("dir");
-					this.OndirChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_secret_key", DbType="NVarChar(400)")]
-		public string secret_key
-		{
-			get
-			{
-				return this._secret_key;
-			}
-			set
-			{
-				if ((this._secret_key != value))
-				{
-					this.Onsecret_keyChanging(value);
-					this.SendPropertyChanging();
-					this._secret_key = value;
-					this.SendPropertyChanged("secret_key");
-					this.Onsecret_keyChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_docinfo", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string docinfo
-		{
-			get
-			{
-				return this._docinfo;
-			}
-			set
-			{
-				if ((this._docinfo != value))
-				{
-					this.OndocinfoChanging(value);
-					this.SendPropertyChanging();
-					this._docinfo = value;
-					this.SendPropertyChanged("docinfo");
-					this.OndocinfoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_blocksize", DbType="Int")]
-		public System.Nullable<int> blocksize
-		{
-			get
-			{
-				return this._blocksize;
-			}
-			set
-			{
-				if ((this._blocksize != value))
-				{
-					this.OnblocksizeChanging(value);
-					this.SendPropertyChanging();
-					this._blocksize = value;
-					this.SendPropertyChanged("blocksize");
-					this.OnblocksizeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_innerextend", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string innerextend
-		{
-			get
-			{
-				return this._innerextend;
-			}
-			set
-			{
-				if ((this._innerextend != value))
-				{
-					this.OninnerextendChanging(value);
-					this.SendPropertyChanging();
-					this._innerextend = value;
-					this.SendPropertyChanged("innerextend");
-					this.OninnerextendChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullextend", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string fullextend
-		{
-			get
-			{
-				return this._fullextend;
-			}
-			set
-			{
-				if ((this._fullextend != value))
-				{
-					this.OnfullextendChanging(value);
-					this.SendPropertyChanging();
-					this._fullextend = value;
-					this.SendPropertyChanged("fullextend");
-					this.OnfullextendChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_watermark", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string watermark
-		{
-			get
-			{
-				return this._watermark;
-			}
-			set
-			{
-				if ((this._watermark != value))
-				{
-					this.OnwatermarkChanging(value);
-					this.SendPropertyChanging();
-					this._watermark = value;
-					this.SendPropertyChanged("watermark");
-					this.OnwatermarkChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cache", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string cache
-		{
-			get
-			{
-				return this._cache;
-			}
-			set
-			{
-				if ((this._cache != value))
-				{
-					this.OncacheChanging(value);
-					this.SendPropertyChanging();
-					this._cache = value;
-					this.SendPropertyChanged("cache");
-					this.OncacheChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_version", DbType="NVarChar(100)")]
-		public string version
-		{
-			get
-			{
-				return this._version;
-			}
-			set
-			{
-				if ((this._version != value))
-				{
-					this.OnversionChanging(value);
-					this.SendPropertyChanging();
-					this._version = value;
-					this.SendPropertyChanged("version");
-					this.OnversionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status", DbType="Int")]
-		public System.Nullable<int> status
-		{
-			get
-			{
-				return this._status;
-			}
-			set
-			{
-				if ((this._status != value))
-				{
-					this.OnstatusChanging(value);
-					this.SendPropertyChanging();
-					this._status = value;
-					this.SendPropertyChanged("status");
-					this.OnstatusChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_block", Storage="_x_block", ThisKey="service_id", OtherKey="service_id")]
-		public EntitySet<x_block> x_block
-		{
-			get
-			{
-				return this._x_block;
-			}
-			set
-			{
-				this._x_block.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_grid", Storage="_x_grid", ThisKey="service_id", OtherKey="service_id")]
-		public EntitySet<x_grid> x_grid
-		{
-			get
-			{
-				return this._x_grid;
-			}
-			set
-			{
-				this._x_grid.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_layer", Storage="_x_layer", ThisKey="service_id", OtherKey="service_id")]
-		public EntitySet<x_layer> x_layer
-		{
-			get
-			{
-				return this._x_layer;
-			}
-			set
-			{
-				this._x_layer.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_x_block(x_block entity)
-		{
-			this.SendPropertyChanging();
-			entity.x_service = this;
-		}
-		
-		private void detach_x_block(x_block entity)
-		{
-			this.SendPropertyChanging();
-			entity.x_service = null;
-		}
-		
-		private void attach_x_grid(x_grid entity)
-		{
-			this.SendPropertyChanging();
-			entity.x_service = this;
-		}
-		
-		private void detach_x_grid(x_grid entity)
-		{
-			this.SendPropertyChanging();
-			entity.x_service = null;
-		}
-		
-		private void attach_x_layer(x_layer entity)
-		{
-			this.SendPropertyChanging();
-			entity.x_service = this;
-		}
-		
-		private void detach_x_layer(x_layer entity)
-		{
-			this.SendPropertyChanging();
-			entity.x_service = null;
 		}
 	}
 	
@@ -1221,277 +811,6 @@ namespace X.App
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.x_grid")]
-	public partial class x_grid : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private long _grid_id;
-		
-		private System.Nullable<long> _service_id;
-		
-		private string _name;
-		
-		private System.Nullable<decimal> _lng;
-		
-		private System.Nullable<decimal> _lat;
-		
-		private string _style;
-		
-		private System.Nullable<int> _type;
-		
-		private string _points;
-		
-		private EntityRef<x_service> _x_service;
-		
-    #region 可扩展性方法定义
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void Ongrid_idChanging(long value);
-    partial void Ongrid_idChanged();
-    partial void Onservice_idChanging(System.Nullable<long> value);
-    partial void Onservice_idChanged();
-    partial void OnnameChanging(string value);
-    partial void OnnameChanged();
-    partial void OnlngChanging(System.Nullable<decimal> value);
-    partial void OnlngChanged();
-    partial void OnlatChanging(System.Nullable<decimal> value);
-    partial void OnlatChanged();
-    partial void OnstyleChanging(string value);
-    partial void OnstyleChanged();
-    partial void OntypeChanging(System.Nullable<int> value);
-    partial void OntypeChanged();
-    partial void OnpointsChanging(string value);
-    partial void OnpointsChanged();
-    #endregion
-		
-		public x_grid()
-		{
-			this._x_service = default(EntityRef<x_service>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_grid_id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public long grid_id
-		{
-			get
-			{
-				return this._grid_id;
-			}
-			set
-			{
-				if ((this._grid_id != value))
-				{
-					this.Ongrid_idChanging(value);
-					this.SendPropertyChanging();
-					this._grid_id = value;
-					this.SendPropertyChanged("grid_id");
-					this.Ongrid_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_service_id", DbType="BigInt")]
-		public System.Nullable<long> service_id
-		{
-			get
-			{
-				return this._service_id;
-			}
-			set
-			{
-				if ((this._service_id != value))
-				{
-					if (this._x_service.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onservice_idChanging(value);
-					this.SendPropertyChanging();
-					this._service_id = value;
-					this.SendPropertyChanged("service_id");
-					this.Onservice_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(200)")]
-		public string name
-		{
-			get
-			{
-				return this._name;
-			}
-			set
-			{
-				if ((this._name != value))
-				{
-					this.OnnameChanging(value);
-					this.SendPropertyChanging();
-					this._name = value;
-					this.SendPropertyChanged("name");
-					this.OnnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lng", DbType="Decimal(18,8)")]
-		public System.Nullable<decimal> lng
-		{
-			get
-			{
-				return this._lng;
-			}
-			set
-			{
-				if ((this._lng != value))
-				{
-					this.OnlngChanging(value);
-					this.SendPropertyChanging();
-					this._lng = value;
-					this.SendPropertyChanged("lng");
-					this.OnlngChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lat", DbType="Decimal(18,8)")]
-		public System.Nullable<decimal> lat
-		{
-			get
-			{
-				return this._lat;
-			}
-			set
-			{
-				if ((this._lat != value))
-				{
-					this.OnlatChanging(value);
-					this.SendPropertyChanging();
-					this._lat = value;
-					this.SendPropertyChanged("lat");
-					this.OnlatChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_style", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string style
-		{
-			get
-			{
-				return this._style;
-			}
-			set
-			{
-				if ((this._style != value))
-				{
-					this.OnstyleChanging(value);
-					this.SendPropertyChanging();
-					this._style = value;
-					this.SendPropertyChanged("style");
-					this.OnstyleChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_type", DbType="Int")]
-		public System.Nullable<int> type
-		{
-			get
-			{
-				return this._type;
-			}
-			set
-			{
-				if ((this._type != value))
-				{
-					this.OntypeChanging(value);
-					this.SendPropertyChanging();
-					this._type = value;
-					this.SendPropertyChanged("type");
-					this.OntypeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_points", DbType="NText", UpdateCheck=UpdateCheck.Never)]
-		public string points
-		{
-			get
-			{
-				return this._points;
-			}
-			set
-			{
-				if ((this._points != value))
-				{
-					this.OnpointsChanging(value);
-					this.SendPropertyChanging();
-					this._points = value;
-					this.SendPropertyChanged("points");
-					this.OnpointsChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_grid", Storage="_x_service", ThisKey="service_id", OtherKey="service_id", IsForeignKey=true)]
-		public x_service x_service
-		{
-			get
-			{
-				return this._x_service.Entity;
-			}
-			set
-			{
-				x_service previousValue = this._x_service.Entity;
-				if (((previousValue != value) 
-							|| (this._x_service.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._x_service.Entity = null;
-						previousValue.x_grid.Remove(this);
-					}
-					this._x_service.Entity = value;
-					if ((value != null))
-					{
-						value.x_grid.Add(this);
-						this._service_id = value.service_id;
-					}
-					else
-					{
-						this._service_id = default(Nullable<long>);
-					}
-					this.SendPropertyChanged("x_service");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.x_layer")]
 	public partial class x_layer : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1803,6 +1122,711 @@ namespace X.App
 					if ((value != null))
 					{
 						value.x_layer.Add(this);
+						this._service_id = value.service_id;
+					}
+					else
+					{
+						this._service_id = default(Nullable<long>);
+					}
+					this.SendPropertyChanged("x_service");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.x_service")]
+	public partial class x_service : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private long _service_id;
+		
+		private string _name;
+		
+		private string _dir;
+		
+		private string _secret_key;
+		
+		private string _docinfo;
+		
+		private System.Nullable<int> _blocksize;
+		
+		private string _innerextend;
+		
+		private string _fullextend;
+		
+		private string _watermark;
+		
+		private string _cache;
+		
+		private System.Nullable<int> _version;
+		
+		private System.Nullable<int> _status;
+		
+		private EntitySet<x_block> _x_block;
+		
+		private EntitySet<x_layer> _x_layer;
+		
+		private EntitySet<x_grid> _x_grid;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onservice_idChanging(long value);
+    partial void Onservice_idChanged();
+    partial void OnnameChanging(string value);
+    partial void OnnameChanged();
+    partial void OndirChanging(string value);
+    partial void OndirChanged();
+    partial void Onsecret_keyChanging(string value);
+    partial void Onsecret_keyChanged();
+    partial void OndocinfoChanging(string value);
+    partial void OndocinfoChanged();
+    partial void OnblocksizeChanging(System.Nullable<int> value);
+    partial void OnblocksizeChanged();
+    partial void OninnerextendChanging(string value);
+    partial void OninnerextendChanged();
+    partial void OnfullextendChanging(string value);
+    partial void OnfullextendChanged();
+    partial void OnwatermarkChanging(string value);
+    partial void OnwatermarkChanged();
+    partial void OncacheChanging(string value);
+    partial void OncacheChanged();
+    partial void OnversionChanging(System.Nullable<int> value);
+    partial void OnversionChanged();
+    partial void OnstatusChanging(System.Nullable<int> value);
+    partial void OnstatusChanged();
+    #endregion
+		
+		public x_service()
+		{
+			this._x_block = new EntitySet<x_block>(new Action<x_block>(this.attach_x_block), new Action<x_block>(this.detach_x_block));
+			this._x_layer = new EntitySet<x_layer>(new Action<x_layer>(this.attach_x_layer), new Action<x_layer>(this.detach_x_layer));
+			this._x_grid = new EntitySet<x_grid>(new Action<x_grid>(this.attach_x_grid), new Action<x_grid>(this.detach_x_grid));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_service_id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public long service_id
+		{
+			get
+			{
+				return this._service_id;
+			}
+			set
+			{
+				if ((this._service_id != value))
+				{
+					this.Onservice_idChanging(value);
+					this.SendPropertyChanging();
+					this._service_id = value;
+					this.SendPropertyChanged("service_id");
+					this.Onservice_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(200)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this.OnnameChanging(value);
+					this.SendPropertyChanging();
+					this._name = value;
+					this.SendPropertyChanged("name");
+					this.OnnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dir", DbType="NVarChar(100)")]
+		public string dir
+		{
+			get
+			{
+				return this._dir;
+			}
+			set
+			{
+				if ((this._dir != value))
+				{
+					this.OndirChanging(value);
+					this.SendPropertyChanging();
+					this._dir = value;
+					this.SendPropertyChanged("dir");
+					this.OndirChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_secret_key", DbType="NVarChar(400)")]
+		public string secret_key
+		{
+			get
+			{
+				return this._secret_key;
+			}
+			set
+			{
+				if ((this._secret_key != value))
+				{
+					this.Onsecret_keyChanging(value);
+					this.SendPropertyChanging();
+					this._secret_key = value;
+					this.SendPropertyChanged("secret_key");
+					this.Onsecret_keyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_docinfo", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string docinfo
+		{
+			get
+			{
+				return this._docinfo;
+			}
+			set
+			{
+				if ((this._docinfo != value))
+				{
+					this.OndocinfoChanging(value);
+					this.SendPropertyChanging();
+					this._docinfo = value;
+					this.SendPropertyChanged("docinfo");
+					this.OndocinfoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_blocksize", DbType="Int")]
+		public System.Nullable<int> blocksize
+		{
+			get
+			{
+				return this._blocksize;
+			}
+			set
+			{
+				if ((this._blocksize != value))
+				{
+					this.OnblocksizeChanging(value);
+					this.SendPropertyChanging();
+					this._blocksize = value;
+					this.SendPropertyChanged("blocksize");
+					this.OnblocksizeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_innerextend", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string innerextend
+		{
+			get
+			{
+				return this._innerextend;
+			}
+			set
+			{
+				if ((this._innerextend != value))
+				{
+					this.OninnerextendChanging(value);
+					this.SendPropertyChanging();
+					this._innerextend = value;
+					this.SendPropertyChanged("innerextend");
+					this.OninnerextendChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fullextend", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string fullextend
+		{
+			get
+			{
+				return this._fullextend;
+			}
+			set
+			{
+				if ((this._fullextend != value))
+				{
+					this.OnfullextendChanging(value);
+					this.SendPropertyChanging();
+					this._fullextend = value;
+					this.SendPropertyChanged("fullextend");
+					this.OnfullextendChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_watermark", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string watermark
+		{
+			get
+			{
+				return this._watermark;
+			}
+			set
+			{
+				if ((this._watermark != value))
+				{
+					this.OnwatermarkChanging(value);
+					this.SendPropertyChanging();
+					this._watermark = value;
+					this.SendPropertyChanged("watermark");
+					this.OnwatermarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cache", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string cache
+		{
+			get
+			{
+				return this._cache;
+			}
+			set
+			{
+				if ((this._cache != value))
+				{
+					this.OncacheChanging(value);
+					this.SendPropertyChanging();
+					this._cache = value;
+					this.SendPropertyChanged("cache");
+					this.OncacheChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_version", DbType="Int")]
+		public System.Nullable<int> version
+		{
+			get
+			{
+				return this._version;
+			}
+			set
+			{
+				if ((this._version != value))
+				{
+					this.OnversionChanging(value);
+					this.SendPropertyChanging();
+					this._version = value;
+					this.SendPropertyChanged("version");
+					this.OnversionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status", DbType="Int")]
+		public System.Nullable<int> status
+		{
+			get
+			{
+				return this._status;
+			}
+			set
+			{
+				if ((this._status != value))
+				{
+					this.OnstatusChanging(value);
+					this.SendPropertyChanging();
+					this._status = value;
+					this.SendPropertyChanged("status");
+					this.OnstatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_block", Storage="_x_block", ThisKey="service_id", OtherKey="service_id")]
+		public EntitySet<x_block> x_block
+		{
+			get
+			{
+				return this._x_block;
+			}
+			set
+			{
+				this._x_block.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_layer", Storage="_x_layer", ThisKey="service_id", OtherKey="service_id")]
+		public EntitySet<x_layer> x_layer
+		{
+			get
+			{
+				return this._x_layer;
+			}
+			set
+			{
+				this._x_layer.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_grid", Storage="_x_grid", ThisKey="service_id", OtherKey="service_id")]
+		public EntitySet<x_grid> x_grid
+		{
+			get
+			{
+				return this._x_grid;
+			}
+			set
+			{
+				this._x_grid.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_x_block(x_block entity)
+		{
+			this.SendPropertyChanging();
+			entity.x_service = this;
+		}
+		
+		private void detach_x_block(x_block entity)
+		{
+			this.SendPropertyChanging();
+			entity.x_service = null;
+		}
+		
+		private void attach_x_layer(x_layer entity)
+		{
+			this.SendPropertyChanging();
+			entity.x_service = this;
+		}
+		
+		private void detach_x_layer(x_layer entity)
+		{
+			this.SendPropertyChanging();
+			entity.x_service = null;
+		}
+		
+		private void attach_x_grid(x_grid entity)
+		{
+			this.SendPropertyChanging();
+			entity.x_service = this;
+		}
+		
+		private void detach_x_grid(x_grid entity)
+		{
+			this.SendPropertyChanging();
+			entity.x_service = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.x_grid")]
+	public partial class x_grid : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private long _grid_id;
+		
+		private System.Nullable<long> _service_id;
+		
+		private string _name;
+		
+		private System.Nullable<decimal> _lng;
+		
+		private System.Nullable<decimal> _lat;
+		
+		private string _style;
+		
+		private System.Nullable<int> _type;
+		
+		private string _points;
+		
+		private string _data;
+		
+		private EntityRef<x_service> _x_service;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Ongrid_idChanging(long value);
+    partial void Ongrid_idChanged();
+    partial void Onservice_idChanging(System.Nullable<long> value);
+    partial void Onservice_idChanged();
+    partial void OnnameChanging(string value);
+    partial void OnnameChanged();
+    partial void OnlngChanging(System.Nullable<decimal> value);
+    partial void OnlngChanged();
+    partial void OnlatChanging(System.Nullable<decimal> value);
+    partial void OnlatChanged();
+    partial void OnstyleChanging(string value);
+    partial void OnstyleChanged();
+    partial void OntypeChanging(System.Nullable<int> value);
+    partial void OntypeChanged();
+    partial void OnpointsChanging(string value);
+    partial void OnpointsChanged();
+    partial void OndataChanging(string value);
+    partial void OndataChanged();
+    #endregion
+		
+		public x_grid()
+		{
+			this._x_service = default(EntityRef<x_service>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_grid_id", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public long grid_id
+		{
+			get
+			{
+				return this._grid_id;
+			}
+			set
+			{
+				if ((this._grid_id != value))
+				{
+					this.Ongrid_idChanging(value);
+					this.SendPropertyChanging();
+					this._grid_id = value;
+					this.SendPropertyChanged("grid_id");
+					this.Ongrid_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_service_id", DbType="BigInt")]
+		public System.Nullable<long> service_id
+		{
+			get
+			{
+				return this._service_id;
+			}
+			set
+			{
+				if ((this._service_id != value))
+				{
+					if (this._x_service.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onservice_idChanging(value);
+					this.SendPropertyChanging();
+					this._service_id = value;
+					this.SendPropertyChanged("service_id");
+					this.Onservice_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(200)")]
+		public string name
+		{
+			get
+			{
+				return this._name;
+			}
+			set
+			{
+				if ((this._name != value))
+				{
+					this.OnnameChanging(value);
+					this.SendPropertyChanging();
+					this._name = value;
+					this.SendPropertyChanged("name");
+					this.OnnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lng", DbType="Decimal(18,8)")]
+		public System.Nullable<decimal> lng
+		{
+			get
+			{
+				return this._lng;
+			}
+			set
+			{
+				if ((this._lng != value))
+				{
+					this.OnlngChanging(value);
+					this.SendPropertyChanging();
+					this._lng = value;
+					this.SendPropertyChanged("lng");
+					this.OnlngChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lat", DbType="Decimal(18,8)")]
+		public System.Nullable<decimal> lat
+		{
+			get
+			{
+				return this._lat;
+			}
+			set
+			{
+				if ((this._lat != value))
+				{
+					this.OnlatChanging(value);
+					this.SendPropertyChanging();
+					this._lat = value;
+					this.SendPropertyChanged("lat");
+					this.OnlatChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_style", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string style
+		{
+			get
+			{
+				return this._style;
+			}
+			set
+			{
+				if ((this._style != value))
+				{
+					this.OnstyleChanging(value);
+					this.SendPropertyChanging();
+					this._style = value;
+					this.SendPropertyChanged("style");
+					this.OnstyleChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_type", DbType="Int")]
+		public System.Nullable<int> type
+		{
+			get
+			{
+				return this._type;
+			}
+			set
+			{
+				if ((this._type != value))
+				{
+					this.OntypeChanging(value);
+					this.SendPropertyChanging();
+					this._type = value;
+					this.SendPropertyChanged("type");
+					this.OntypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_points", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string points
+		{
+			get
+			{
+				return this._points;
+			}
+			set
+			{
+				if ((this._points != value))
+				{
+					this.OnpointsChanging(value);
+					this.SendPropertyChanging();
+					this._points = value;
+					this.SendPropertyChanged("points");
+					this.OnpointsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_data", DbType="NText", UpdateCheck=UpdateCheck.Never)]
+		public string data
+		{
+			get
+			{
+				return this._data;
+			}
+			set
+			{
+				if ((this._data != value))
+				{
+					this.OndataChanging(value);
+					this.SendPropertyChanging();
+					this._data = value;
+					this.SendPropertyChanged("data");
+					this.OndataChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="x_service_x_grid", Storage="_x_service", ThisKey="service_id", OtherKey="service_id", IsForeignKey=true)]
+		public x_service x_service
+		{
+			get
+			{
+				return this._x_service.Entity;
+			}
+			set
+			{
+				x_service previousValue = this._x_service.Entity;
+				if (((previousValue != value) 
+							|| (this._x_service.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._x_service.Entity = null;
+						previousValue.x_grid.Remove(this);
+					}
+					this._x_service.Entity = value;
+					if ((value != null))
+					{
+						value.x_grid.Add(this);
 						this._service_id = value.service_id;
 					}
 					else

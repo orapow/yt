@@ -55,6 +55,7 @@
             this.bt_start = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsl_tip = new System.Windows.Forms.ToolStripStatusLabel();
+            this.bt_stop = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -363,12 +364,24 @@
             this.tsl_tip.Spring = true;
             this.tsl_tip.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // bt_stop
+            // 
+            this.bt_stop.Enabled = false;
+            this.bt_stop.Location = new System.Drawing.Point(374, 160);
+            this.bt_stop.Name = "bt_stop";
+            this.bt_stop.Size = new System.Drawing.Size(80, 35);
+            this.bt_stop.TabIndex = 21;
+            this.bt_stop.Text = "停止下载";
+            this.bt_stop.UseVisualStyleBackColor = true;
+            this.bt_stop.Click += new System.EventHandler(this.bt_start_Click);
+            // 
             // Down
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 267);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.bt_stop);
             this.Controls.Add(this.bt_start);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -419,5 +432,6 @@
         private System.Windows.Forms.ToolStripStatusLabel tsl_tip;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cb_map_type;
+        private System.Windows.Forms.Button bt_stop;
     }
 }

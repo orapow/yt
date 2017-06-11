@@ -100,14 +100,5 @@ namespace X.Desk
                 }
             }
         }
-
-        public class DrawStyle
-        {
-            public int BorderWidth { get; set; }
-            public int BorderTran { get; set; }
-            public Color BorderColor { get; set; }
-            public int FillTran { get; set; }
-            public Color FillColor { get; set; }
-        }
     }
 }

@@ -9,7 +9,7 @@ namespace X.App.Apis.sdk.dirs
 {
     public class save : _sdk
     {
-        [ParmsAttr(name = "文件夹名称", req = true)]
+        [ParmsAttr(name = "文件夹名称", req = true, len = "3,20")]
         public string name { get; set; }
         protected override XResp Execute()
         {
