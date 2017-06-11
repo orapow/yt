@@ -94,8 +94,11 @@ namespace X.Desk
             {
                 gp_shp.Visible = true;
                 gp_img.Visible = false;
+                var sl = lay as ShpLayer;
                 cb_namefield.Items.Clear();
-                cb_namefield.Items.AddRange((lay as ShpLayer).Fields.ToArray());
+                cb_namefield.Items.AddRange(sl.Fields.ToArray());
+                if (sl.OutPut == "图形") { rb_sp_grid.Checked = true; cb_namefield.Text = sl.DiaplsyField; }
+                else { rb_sp_map.Checked = true; cb_namefield.Text = ""; }
             }
             else
             {
