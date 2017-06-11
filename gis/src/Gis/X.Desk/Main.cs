@@ -136,8 +136,8 @@ namespace X.Desk
             {
                 if (t.tp <= 1) { getLayer(ed, t.Nodes); return; }
                 Layer lay = null;
-                if (t.tp == 2) lay = new ImgLayer() { ext = new Extend(t.extents.xMin, t.extents.yMin, t.extents.xMax, t.extents.yMax), file = t.file, };
-                else if (t.tp == 3) lay = new ShpLayer() { ext = new Extend(t.extents.xMin, t.extents.yMin, t.extents.xMax, t.extents.yMax), file = t.file, Shapes = t.Tag as List<Gis.Shape> };
+                if (t.tp == 2) lay = new ImgLayer() { Name = t.Text, Tp = 1, Extends = new Extend(t.extents.xMin, t.extents.yMin, t.extents.xMax, t.extents.yMax), File = t.file };
+                else if (t.tp == 3) lay = new ShpLayer() { Name = t.Text, Tp = 2, Extends = new Extend(t.extents.xMin, t.extents.yMin, t.extents.xMax, t.extents.yMax), File = t.file, Shapes = t.Shapges, Fields = t.Fields };
                 ed.AddLayer(lay);
             }
         }
@@ -319,27 +319,29 @@ namespace X.Desk
                 lay = shp;
                 tn.tp = 3;
                 tn.extents = shp.Extents;
-                var shps = new List<Gis.Shape>();
+
+                tn.Fields = new List<ShpLayer.Field>();
+                for (var f = 0; f < shp.NumFields; f++)
+                {
+                    var fe = shp.Field[f];
+                    tn.Fields.Add(new ShpLayer.Field() { Name = fe.Name, Length = fe.Width, Type = fe.Type.ToString("G") });
+                }
+
+                tn.Shapges = new List<ShpLayer.Shape>();
                 for (var i = 0; i < shp.NumShapes; i++)
                 {
-
                     showtip("正在加载文件：" + tn.file + " " + i + "/" + shp.NumShapes);
                     var sp = shp.Shape[i];
-
-                    var spe = new Gis.Shape();
+                    var spe = new ShpLayer.Shape();
                     spe.Tp = (byte)sp.ShapeType;
                     spe.Extent = new Extend(sp.Extents.xMin, sp.Extents.yMin, sp.Extents.xMax, sp.Extents.yMax);
-
                     var data = new Dictionary<string, string>();
-                    for (var f = 0; f < shp.NumFields; f++) data.Add(shp.Field[f].Name, shp.CellValue[f, i]);
+                    for (var f = 0; f < shp.NumFields; f++) data.Add(shp.Field[f].Name, shp.CellValue[f, i] + "");
                     spe.Data = data;
-
                     for (var j = 0; j < sp.NumParts; j++) spe.Points.Add(j, getPoints(sp.PartAsShape[j]));
-
-                    shps.Add(spe);
-
+                    tn.Shapges.Add(spe);
                 }
-                tn.Tag = shps;
+
             }
             else
             {
@@ -488,6 +490,8 @@ namespace X.Desk
             public string file { get; set; }
             public Extents extents { get; set; }
             public int inptr { get; set; }
+            public List<ShpLayer.Field> Fields { get; set; }
+            public List<ShpLayer.Shape> Shapges { get; set; }
         }
 
         private void tsmi_links_Click(object sender, EventArgs e)

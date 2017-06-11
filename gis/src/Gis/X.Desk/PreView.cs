@@ -35,7 +35,7 @@ namespace X.Desk
             g.Clear(Color.Transparent);
 
             foreach (var l in layers)
-                l.DrawImage(new RectangleF(-x, -y, img.Width, img.Height), rg_full, lv, g);
+                Utils.DrawImage(l, new RectangleF(-x, -y, img.Width, img.Height), rg_full, lv, g);
 
             g.Dispose();
             pb_view.Image = img;
@@ -49,8 +49,8 @@ namespace X.Desk
             if (lv <= 1) lv = 2;
             rg_full = Utils.GetRect(extends, lv);
 
-            x = (Width - rg_full.Width) / 2;
-            y = (Height - rg_full.Height) / 2;
+            x = x / 2 + Width / 4;// (Width - rg_full.Width) / 2;
+            y = y / 2 + Height / 4;// (Height - rg_full.Height) / 2;
 
             drawImage();
         }
@@ -61,8 +61,8 @@ namespace X.Desk
             if (lv >= 21) lv = 20;
             rg_full = Utils.GetRect(extends, lv);
 
-            x = (Width - rg_full.Width) / 2;
-            y = (Height - rg_full.Height) / 2;
+            x = x * 2 - Width / 2;// (Width - rg_full.Width) / 2;
+            y = y * 2 - Height / 2;// (Height - rg_full.Height) / 2;
 
             drawImage();
         }

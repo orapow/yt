@@ -373,7 +373,7 @@
             this.bt_stop.TabIndex = 21;
             this.bt_stop.Text = "停止下载";
             this.bt_stop.UseVisualStyleBackColor = true;
-            this.bt_stop.Click += new System.EventHandler(this.bt_start_Click);
+            this.bt_stop.Click += new System.EventHandler(this.bt_stop_Click);
             // 
             // Down
             // 

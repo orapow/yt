@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 using X.Core.Utility;
 using X.Gis;
@@ -23,8 +24,8 @@ namespace X.Desk
 
         public void AddLayer(Layer lay)
         {
-            if (lay.tp == 0) return;
-            extends.SetBound(lay.ext);
+            if (lay.Tp == 0) return;
+            extends.SetBound(lay.Extends);
             lb_layers.Items.Add(lay);
         }
 
@@ -69,7 +70,7 @@ namespace X.Desk
         {
             var lys = new List<Layer>();
             foreach (Layer l in lb_layers.Items) lys.Add(l);
-            new PreView(lys, new Gis.Extend(extends.xMin, extends.yMin, extends.xMax, extends.yMax)).Show();
+            new PreView(lys, new Extend(extends.xMin, extends.yMin, extends.xMax, extends.yMax)).Show();
         }
 
         private void tb_wmtran_ValueChanged(object sender, EventArgs e)
@@ -81,7 +82,7 @@ namespace X.Desk
         {
             gp_fields.Visible = rb_sp_grid.Checked;
             var shp = lb_layers.SelectedItem as ShpLayer;
-            //shp.OutPut = rb_sp_grid.Checked ? ShpLayer.OutType.Grid : ShpLayer.OutType.Img;
+            shp.OutPut = rb_sp_grid.Checked ? "图形" : "图像";
             lb_layers.SelectedItem = shp;
         }
 
@@ -89,10 +90,15 @@ namespace X.Desk
         {
             var lay = lb_layers.SelectedItem as Layer;
             if (lay == null) return;
-            if (lay.tp == 1)
+            if (lay.Tp == 2)
             {
                 gp_shp.Visible = true;
                 gp_img.Visible = false;
+                var sl = lay as ShpLayer;
+                cb_namefield.Items.Clear();
+                cb_namefield.Items.AddRange(sl.Fields.ToArray());
+                if (sl.OutPut == "图形") { rb_sp_grid.Checked = true; cb_namefield.Text = sl.DiaplsyField; }
+                else { rb_sp_map.Checked = true; cb_namefield.Text = ""; }
             }
             else
             {
@@ -101,27 +107,68 @@ namespace X.Desk
             }
         }
 
-        private void cbl_fields_ItemCheck(object sender, ItemCheckEventArgs e)
-        {
-
-        }
-
         private void cb_namefield_SelectedIndexChanged(object sender, EventArgs e)
         {
             var shp = lb_layers.SelectedItem as ShpLayer;
-            //shp.DiaplsyField = (cb_namefield.SelectedItem as ShpLayer.Field).Name;
+            shp.DiaplsyField = (cb_namefield.SelectedItem as ShpLayer.Field).Name;
+            foreach (var sp in shp.Shapes) sp.Name = sp.Data[shp.DiaplsyField];
             lb_layers.SelectedItem = shp;
         }
 
         private void bt_start_Click(object sender, EventArgs e)
         {
-            var lv = 18;
+            var img_lays = new List<Layer>();
+            var shp_lays = new List<Layer>();
 
+            foreach (Layer l in lb_layers.Items)
+            {
+                if (l.Tp == 1) img_lays.Add(l);
+                var sl = l as ShpLayer;
+                if (sl == null) continue;
+                if (sl.OutPut == "图像") img_lays.Add(l);
+                else if (sl.OutPut == "图形") shp_lays.Add(l);
+            }
+
+            var path = Application.StartupPath + "\\" + tb_svr_name.Text + "\\";
+            if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+
+            outdraw(img_lays, path);
+
+            outshp(shp_lays, path);
+
+            //File.WriteAllBytes(path + "svr.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(svr))));
+
+            //Sdk.begin();
+            //Sdk.upload();
+            //Sdk.init();
+            //Sdk.end();
+
+            MessageBox.Show("发布完成");
+
+        }
+
+        void outshp(List<Layer> lays, string path)
+        {
+            var shp_path = path + "\\图形\\";
+            if (!Directory.Exists(shp_path)) Directory.CreateDirectory(shp_path);
+            var i = 1;
+            foreach (var l in lays)
+                File.WriteAllBytes(shp_path + (i++).ToString("000") + ".x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(l)), tb_key.Text));
+        }
+
+        void outdraw(List<Layer> lays, string path)
+        {
+            if (lays.Count == 0) return;
+            int lv = 18;
             var img = new Bitmap(4096, 4096);
             var g = Graphics.FromImage(img);
+
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+
+            var img_path = path + "\\图像\\";
+            if (!Directory.Exists(img_path)) Directory.CreateDirectory(img_path);
 
             var i = 1;
             var list = new List<Block>();
@@ -138,26 +185,29 @@ namespace X.Desk
                     for (var x = -img.Width - (int)(256.0 * w); x < full.Width; x += img.Width)
                     {
                         g.Clear(Color.Transparent);
-                        foreach (Layer l in lb_layers.Items) l.DrawImage(new RectangleF(x, y, 4096, 4096), full, lv, g);
+                        foreach (Layer l in lays) Utils.DrawImage(l, new RectangleF(x, y, img.Width, img.Height), full, lv, g);
                         var b = new Block()
                         {
-                            file = i++.ToString("000") + ".png",
+                            file = i++.ToString("000") + ".x",
                             level = lv,
                             bound = new Rectangle((int)(full.X + x / 256.0), (int)(full.Y + y / 256.0), 15, 15)
                         };
                         list.Add(b);
-                        img.Save("d:\\temp\\s\\" + b.file, ImageFormat.Png);
+                        using (var ms = new MemoryStream())
+                        {
+                            img.Save(ms, ImageFormat.Jpeg);
+                            File.WriteAllBytes(img_path + b.file, Secret.XcEncode(ms.ToArray(), tb_key.Text));
+                        }
+                        //img.Save(draw_path + b.file, ImageFormat.Png);
                     }
                 }
                 lv--;
-
             } while (true);
-
-            File.WriteAllText("d:\\temp\\s\\cfg.json", Serialize.ToJson(list));
 
             g.Dispose();
             img.Dispose();
 
+            File.WriteAllBytes(img_path + "000.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(list)), tb_key.Text));
         }
 
         private void pb_sp_style_Click(object sender, EventArgs e)
@@ -169,7 +219,6 @@ namespace X.Desk
             {
                 lay.Style = opst.DrawStyle;
                 foreach (var p in lay.Shapes) p.Style = opst.DrawStyle;
-                //lb_layers.SelectedItem = lay;
             }
         }
 
@@ -183,7 +232,6 @@ namespace X.Desk
             lb_layers.Items[idx + 1] = lay;
 
             lb_layers.SelectedItem = lay;
-
         }
 
         private void bt_up_Click(object sender, EventArgs e)
