@@ -80,7 +80,7 @@ namespace X.Desk
             {
                 for (var y = y1; y <= y2; y++)
                 {
-                    if (stop) return;
+                    if (stop) break;
                     var url = mtype == 0 ?
                         "http://webgis.591map.net/tiler/tdt-vec_w-{sw}-" + x + "-" + y + "-" + m.lv + ".html" :
                         "http://webgis.591map.net/tiler/tdt-img_w-{sw}-" + x + "-" + y + "-" + m.lv + ".html";
@@ -103,11 +103,12 @@ namespace X.Desk
                         tsl_tip.Text = "已下载瓦片：" + m.lv + "级，" + x + "," + y + " " + c + "/" + pc + "(" + ((float)c / pc * 100).ToString("F2") + "%)";
                     }));
                 }
+                if (stop) break;
             }
             Invoke((Action)(() =>
             {
-                if (m.lv == int.Parse(cb_maxlev.SelectedItem + "")) tsl_tip.Text = "下载完成";
-                else tsl_tip.Text = "下载取消";
+                if (stop) tsl_tip.Text = "下载中断";
+                else if (m.lv == int.Parse(cb_maxlev.SelectedItem + "")) tsl_tip.Text = "下载完成";
                 bt_start.Enabled = true;
                 bt_stop.Enabled = false;
             }));
@@ -166,6 +167,15 @@ namespace X.Desk
         {
             var ofd = new FolderBrowserDialog();
             if (ofd.ShowDialog() == DialogResult.OK) lb_outdir.Text = ofd.SelectedPath + "\\";
+        }
+
+        private void bt_stop_Click(object sender, EventArgs e)
+        {
+            stop = true;
+            //bt_start.Enabled = true;
+            //bt_stop.Enabled = false;
+            //Thread.Sleep(1000);
+            //tsl_tip.Text = "下载中断";
         }
     }
 }

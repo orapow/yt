@@ -103,7 +103,6 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\Layer.cs" />
     <Compile Include="App\Sdk.cs" />
     <Compile Include="App\Utils.cs" />
     <Compile Include="App\Config.cs" />

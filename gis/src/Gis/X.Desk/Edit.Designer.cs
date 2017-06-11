@@ -73,7 +73,6 @@
             this.gp_fields = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.cb_namefield = new System.Windows.Forms.ComboBox();
-            this.cbl_fields = new System.Windows.Forms.CheckedListBox();
             this.gp_img = new System.Windows.Forms.GroupBox();
             this.pb_tr_color = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -558,7 +557,7 @@
             this.gp_shp.Controls.Add(this.gp_fields);
             this.gp_shp.Location = new System.Drawing.Point(169, 62);
             this.gp_shp.Name = "gp_shp";
-            this.gp_shp.Size = new System.Drawing.Size(255, 312);
+            this.gp_shp.Size = new System.Drawing.Size(255, 311);
             this.gp_shp.TabIndex = 9;
             this.gp_shp.TabStop = false;
             this.gp_shp.Text = "图形设置";
@@ -613,7 +612,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gp_fields.Controls.Add(this.label15);
             this.gp_fields.Controls.Add(this.cb_namefield);
-            this.gp_fields.Controls.Add(this.cbl_fields);
             this.gp_fields.Location = new System.Drawing.Point(6, 71);
             this.gp_fields.Name = "gp_fields";
             this.gp_fields.Size = new System.Drawing.Size(243, 235);
@@ -629,7 +627,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 12);
             this.label15.TabIndex = 5;
-            this.label15.Text = "显示字段：";
+            this.label15.Text = "名称字段：";
             // 
             // cb_namefield
             // 
@@ -639,21 +637,6 @@
             this.cb_namefield.Size = new System.Drawing.Size(160, 20);
             this.cb_namefield.TabIndex = 4;
             this.cb_namefield.SelectedIndexChanged += new System.EventHandler(this.cb_namefield_SelectedIndexChanged);
-            // 
-            // cbl_fields
-            // 
-            this.cbl_fields.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbl_fields.CheckOnClick = true;
-            this.cbl_fields.FormattingEnabled = true;
-            this.cbl_fields.IntegralHeight = false;
-            this.cbl_fields.Location = new System.Drawing.Point(7, 52);
-            this.cbl_fields.MultiColumn = true;
-            this.cbl_fields.Name = "cbl_fields";
-            this.cbl_fields.Size = new System.Drawing.Size(230, 177);
-            this.cbl_fields.TabIndex = 1;
-            this.cbl_fields.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.cbl_fields_ItemCheck);
             // 
             // gp_img
             // 
@@ -1078,7 +1061,6 @@
         private System.Windows.Forms.GroupBox gp_fields;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cb_namefield;
-        private System.Windows.Forms.CheckedListBox cbl_fields;
         private System.Windows.Forms.GroupBox gb_show_bl;
         private System.Windows.Forms.RadioButton rb_bl_r2;
         private System.Windows.Forms.RadioButton rb_lb_l1;

@@ -79,6 +79,7 @@ namespace X.Gis
     }
     public class ShpLayer : Layer
     {
+        public List<Shape> Shapes { get; set; }
         public List<Field> Fields { get; set; }
         public string IDField { get; set; }
         public string DiaplsyField { get; set; }
@@ -91,7 +92,27 @@ namespace X.Gis
             public int Length { get; set; }
             public string Alias { get; set; }
             public string Type { get; set; }
-            public bool Selected { get; set; }
+            public override string ToString()
+            {
+                return Name;
+            }
+        }
+        public class Shape
+        {
+            /// <summary>
+            /// 1、线
+            /// 2、面
+            /// </summary>
+            public int Tp { get; set; }
+            public Dictionary<int, List<PointF>> Points { get; set; }
+            public DrawStyle Style { get; set; }
+            public string Name { get; set; }
+            public Extend Extent { get; set; }
+            public Dictionary<string, string> Data { get; set; }
+            public Shape()
+            {
+                Points = new Dictionary<int, List<PointF>>();
+            }
         }
     }
     public class DrawStyle
@@ -102,15 +123,6 @@ namespace X.Gis
         public int FillTran { get; set; }
         public Color FillColor { get; set; }
     }
-    //public class DrawInfo
-    //{
-    //    public string StrockStyle { get { return "Solid"; } }
-    //    public int StrockWidth { get; set; }
-    //    public int StrockTransparent { get; set; }
-    //    public Color StrockColor { get; set; }
-    //    public Color FillColor { get; set; }
-    //    public int FillTransparent { get; set; }
-    //}
     public class Extend
     {
         public double xMax { get; set; }
@@ -152,22 +164,5 @@ namespace X.Gis
         public int level { get; set; }
         public string file { get; set; }
         public Rectangle bound { get; set; }
-    }
-    public class Shape
-    {
-        /// <summary>
-        /// 1、线
-        /// 2、面
-        /// </summary>
-        public int Tp { get; set; }
-        public Dictionary<int, List<PointF>> Points { get; set; }
-        public DrawStyle Style { get; set; }
-        public string Name { get; set; }
-        public Extend Extent { get; set; }
-        public Dictionary<string, string> Data { get; set; }
-        public Shape()
-        {
-            Points = new Dictionary<int, List<PointF>>();
-        }
     }
 }
