@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -14,6 +15,7 @@ namespace X.Desk
     {
         Pack pb { get; set; }
         Extend extends = null;
+        Proc pc = null;
 
         public Edit(Pack p)
         {
@@ -132,21 +134,75 @@ namespace X.Desk
             var path = Application.StartupPath + "\\" + tb_svr_name.Text + "\\";
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
 
-            outdraw(img_lays, path);
-
+            #region 生成
+            outimg(img_lays, path);
             outshp(shp_lays, path);
+            outlay(path);
+            outsvr(path);
+            #endregion
 
-            //File.WriteAllBytes(path + "svr.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(svr))));
-
-            //Sdk.begin();
-            //Sdk.upload();
-            //Sdk.init();
-            //Sdk.end();
+            if (pb.Op != 2)
+            {
+                #region 发布
+                //Sdk.begin();//预处理
+                //Sdk.upload();//上传
+                //Sdk.init();//初始化
+                //Sdk.end();//清理
+                #endregion
+            }
+            else
+            {
+                #region 打包
+                Process.Start(Application.StartupPath + "\\rar\\rar a -p" + tb_key.Text + " " + path + " " + pb.Dir);
+                #endregion
+            }
 
             MessageBox.Show("发布完成");
 
         }
 
+        void showProc(string t1, string t2, int p1, int p2)
+        {
+            if (pc == null) return;
+            
+        }
+
+        /// <summary>
+        /// 输出图层
+        /// </summary>
+        /// <param name="path"></param>
+        void outlay(string path)
+        {
+            File.WriteAllBytes(path + "lays.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(lb_layers.Items)), tb_key.Text));
+        }
+        /// <summary>
+        /// 输出服务信息
+        /// </summary>
+        /// <param name="path"></param>
+        void outsvr(string path)
+        {
+            var svr = new Svr()
+            {
+                BlockSize = int.Parse(cb_blocksize.Text),
+                Cached = new Svr.Cache() { MaxMem = int.Parse(tb_ch_max.Text), MinMem = int.Parse(tb_cb_min.Text), UseMemory = cb_ch_mem.Checked, UserFile = cb_ch_file.Checked },
+                Dir = pb.Path,
+                DocumentInfo = new DocumentInfo() { Author = tb_author.Text, Category = "", Comments = tb_summary.Text, Desc = tb_remark.Text, Subject = "", Title = "" },
+                FullExtend = extends,
+                InitialExtend = new Extend(),
+                Key = "",
+                Name = tb_svr_name.Text,
+                Version = 2,
+                WaterMarked = new Svr.WaterMark() { Enabel = true, Img = pb_wmimg.Image, Transparent = tb_wmtran.Value },
+                MapTile = new Svr.TileInfo() { DPI = 72, Format = "Jpg", Height = 256, Quality = 75, Width = 256 }
+            };
+
+            File.WriteAllBytes(path + "svr.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(svr)), tb_key.Text));
+        }
+        /// <summary>
+        /// 输出图形
+        /// </summary>
+        /// <param name="lays"></param>
+        /// <param name="path"></param>
         void outshp(List<Layer> lays, string path)
         {
             var shp_path = path + "\\图形\\";
@@ -155,8 +211,12 @@ namespace X.Desk
             foreach (var l in lays)
                 File.WriteAllBytes(shp_path + (i++).ToString("000") + ".x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(l)), tb_key.Text));
         }
-
-        void outdraw(List<Layer> lays, string path)
+        /// <summary>
+        /// 输出图像
+        /// </summary>
+        /// <param name="lays"></param>
+        /// <param name="path"></param>
+        void outimg(List<Layer> lays, string path)
         {
             if (lays.Count == 0) return;
             int lv = 18;

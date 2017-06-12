@@ -9,6 +9,7 @@ using X.Core.Utility;
 using X.Gis;
 using X.Web;
 using X.Web.Com;
+using static X.Gis.ShpLayer;
 
 namespace X.App.Apis.sdk.svrs
 {

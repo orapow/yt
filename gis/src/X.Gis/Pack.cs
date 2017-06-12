@@ -25,6 +25,7 @@ namespace X.Gis
         public Cache Cached { get; set; }
         public Extend InitialExtend { get; set; }
         public Extend FullExtend { get; set; }
+        public TileInfo MapTile { get; set; }
         public class WaterMark
         {
             public bool Enabel { get; set; }
@@ -38,6 +39,14 @@ namespace X.Gis
             public int MaxMem { get; set; }
             public bool UserFile { get; set; }
         }
+        public class TileInfo
+        {
+            public int Width { get; set; }
+            public int Height { get; set; }
+            public int DPI { get; set; }
+            public int Quality { get; set; }
+            public string Format { get; set; }
+        }
     }
     public class DocumentInfo
     {
@@ -47,14 +56,6 @@ namespace X.Gis
         public string Subject { get; set; }
         public string Category { get; set; }
         public string Desc { get; set; }
-    }
-    public class TileInfo
-    {
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public int DPI { get; set; }
-        public int Quality { get; set; }
-        public string Format { get; set; }
     }
     public class Layer
     {

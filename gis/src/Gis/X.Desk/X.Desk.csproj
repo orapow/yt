@@ -132,6 +132,12 @@
     <Compile Include="PreView.Designer.cs">
       <DependentUpon>PreView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Proc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proc.Designer.cs">
+      <DependentUpon>Proc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pub.cs">
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PreView.resx">
       <DependentUpon>PreView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proc.resx">
+      <DependentUpon>Proc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -147,10 +147,10 @@ namespace X.Desk
             var pub = new Pub();
             pub.ShowDialog();
 
-            var ed = new Edit(pub.cfg);
-            getLayer(ed, tv_layers.Nodes);
+            //var ed = new Edit(pub.cfg);
+            //getLayer(ed, tv_layers.Nodes);
 
-            ed.Show();
+            //ed.Show();
             //var tn = tv_layers.SelectedNode as Tn;
 
             //if (tn.tp == 2)

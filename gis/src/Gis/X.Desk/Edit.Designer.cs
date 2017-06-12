@@ -77,7 +77,7 @@
             this.pb_tr_color = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_blocksize = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.tb_ch_max = new System.Windows.Forms.TextBox();
             this.tb_cb_min = new System.Windows.Forms.TextBox();
@@ -483,8 +483,8 @@
             this.tabPage3.Controls.Add(this.bt_down);
             this.tabPage3.Controls.Add(this.bt_up);
             this.tabPage3.Controls.Add(this.lb_layers);
-            this.tabPage3.Controls.Add(this.gp_shp);
             this.tabPage3.Controls.Add(this.gp_img);
+            this.tabPage3.Controls.Add(this.gp_shp);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -642,9 +642,9 @@
             // 
             this.gp_img.Controls.Add(this.pb_tr_color);
             this.gp_img.Controls.Add(this.label13);
-            this.gp_img.Location = new System.Drawing.Point(169, 61);
+            this.gp_img.Location = new System.Drawing.Point(169, 62);
             this.gp_img.Name = "gp_img";
-            this.gp_img.Size = new System.Drawing.Size(255, 312);
+            this.gp_img.Size = new System.Drawing.Size(255, 311);
             this.gp_img.TabIndex = 11;
             this.gp_img.TabStop = false;
             this.gp_img.Text = "图片设置";
@@ -672,7 +672,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.comboBox1);
+            this.tabPage4.Controls.Add(this.cb_blocksize);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.tb_ch_max);
             this.tabPage4.Controls.Add(this.tb_cb_min);
@@ -690,17 +690,18 @@
             this.tabPage4.Text = "4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cb_blocksize
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "8192 * 8192",
-            "4096 * 4096"});
-            this.comboBox1.Location = new System.Drawing.Point(52, 249);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 17;
-            this.comboBox1.Text = "8192 * 8192";
+            this.cb_blocksize.FormattingEnabled = true;
+            this.cb_blocksize.Items.AddRange(new object[] {
+            "4096",
+            "6144",
+            "8192"});
+            this.cb_blocksize.Location = new System.Drawing.Point(52, 249);
+            this.cb_blocksize.Name = "cb_blocksize";
+            this.cb_blocksize.Size = new System.Drawing.Size(121, 20);
+            this.cb_blocksize.TabIndex = 17;
+            this.cb_blocksize.Text = "8192 * 8192";
             // 
             // label18
             // 
@@ -1072,6 +1073,6 @@
         private System.Windows.Forms.Label lb_wmtran;
         private System.Windows.Forms.TrackBar tb_wmtran;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_blocksize;
     }
 }

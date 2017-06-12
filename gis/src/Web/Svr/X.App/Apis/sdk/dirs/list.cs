@@ -12,7 +12,7 @@ namespace X.App.Apis.sdk.dirs
         {
             var r = new Resp_List();
             var q = db.GetDictList("yt.dir", "0");
-            r.items = q.ToList().Select(o => new { o.name, o.value });
+            r.items = q.ToList().Select(o => o.name);
             r.count = q.Count();
             return r;
         }

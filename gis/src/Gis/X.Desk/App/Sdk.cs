@@ -16,6 +16,7 @@ namespace X.Desk
             try
             {
                 var json = "";
+                if (ps == null) ps = new Dictionary<string, string>();
                 var url = api.StartsWith("http") ? api : gateway + "api/" + api;
 
                 var _ps = new List<string>();
@@ -46,11 +47,15 @@ namespace X.Desk
         }
         public static DirsRsp GetDirs()
         {
-            return HttpPost<DirsRsp>("sdk.dirs", null);
+            return HttpPost<DirsRsp>("sdk.dirs.list", null);
         }
         public static SvrsRsp GetSvrs()
         {
-            return HttpPost<SvrsRsp>("sdk.svrs", null);
+            return HttpPost<SvrsRsp>("sdk.svrs.list", null);
+        }
+        public static Resp CreateDir(string name)
+        {
+            return HttpPost<Resp>("sdk.dirs.save", new Dictionary<string, string>() { { "name", name } });
         }
 
         public class DirsRsp : Resp
