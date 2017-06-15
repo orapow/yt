@@ -103,6 +103,11 @@ namespace X.App.Com
             }
         }
 
+        public void ClearDict(string code)
+        {
+            CacheHelper.Remove("dict." + code);
+        }
+
         public void SubmitDBChanges()
         {
             try

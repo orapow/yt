@@ -24,7 +24,7 @@ namespace X.Desk
             tn_root.Checked = true;
             tv_layers.Nodes.Add(tn_root);
             tv_layers.SelectedNode = tn_root;
-            Directory.CreateDirectory(Application.StartupPath + "\\temp");
+            //Directory.CreateDirectory(Application.StartupPath + "\\temp");
         }
 
         private void tv_layers_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -145,12 +145,15 @@ namespace X.Desk
         private void tmi_showpub_Click(object sender, EventArgs e)
         {
             var pub = new Pub();
-            pub.ShowDialog();
+            if (pub.ShowDialog() != DialogResult.OK) return;
 
-            var ed = new Edit(pub.cfg);
+            var ed = new Edit(pub.Path, pub.SName, pub.Key, pub.Dir, pub.Op);
             getLayer(ed, tv_layers.Nodes);
-
             ed.Show();
+
+            //var ed = new Edit(pub.cfg);
+
+            //ed.Show();
             //var tn = tv_layers.SelectedNode as Tn;
 
             //if (tn.tp == 2)
@@ -336,7 +339,7 @@ namespace X.Desk
                     spe.Tp = (byte)sp.ShapeType;
                     spe.Extent = new Extend(sp.Extents.xMin, sp.Extents.yMin, sp.Extents.xMax, sp.Extents.yMax);
                     var data = new Dictionary<string, string>();
-                    for (var f = 0; f < shp.NumFields; f++) data.Add(shp.Field[f].Name, shp.CellValue[f, i] + "");
+                    for (var f = 0; f < shp.NumFields; f++) data.Add(shp.Field[f].Name, shp.Table.CellValue[f, i] + "");
                     spe.Data = data;
                     for (var j = 0; j < sp.NumParts; j++) spe.Points.Add(j, getPoints(sp.PartAsShape[j]));
                     tn.Shapges.Add(spe);

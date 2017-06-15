@@ -66,13 +66,17 @@ namespace X.Desk
                     foreach (var k in s.Points.Keys)
                     {
                         var ps = getPoints(s.Points[k], full.X, full.Y, rect.X, rect.Y, lv);
-                        if (l.Style.BorderWidth > 0) g.DrawLines(new Pen(Color.FromArgb(l.Style.BorderTran, l.Style.BorderColor), l.Style.BorderWidth), ps.ToArray());
+                        //if (l.Style.BorderWidth > 0) g.DrawLines(new Pen(Color.FromArgb(l.Style.BorderTran, l.Style.BorderColor), l.Style.BorderWidth), ps.ToArray());
                         pts.AddRange(ps);
                         _pts.Add(ps[0]);
                     }
                     _pts.Reverse();
                     foreach (var p in _pts) pts.Add(p);
-                    if (s.Tp == 3 || s.Tp == 13) g.DrawLines(new Pen(Color.FromArgb(l.Style.BorderTran, l.Style.BorderColor), l.Style.BorderWidth), pts.ToArray());
+                    if (s.Tp == 3 || s.Tp == 13)
+                    {
+                        if (l.Style.BorderWidth > 0)
+                            g.DrawLines(new Pen(Color.FromArgb(l.Style.BorderTran, l.Style.BorderColor), l.Style.BorderWidth), pts.ToArray());
+                    }
                     else if (s.Tp == 5 || s.Tp == 15)
                     {
                         g.FillPolygon(new SolidBrush(Color.FromArgb(l.Style.FillTran, l.Style.FillColor)), pts.ToArray());

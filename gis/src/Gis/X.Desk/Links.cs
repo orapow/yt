@@ -44,7 +44,7 @@ namespace X.Desk
 
         private void bt_new_Click(object sender, EventArgs e)
         {
-            if (cfg.Links.FirstOrDefault(o => o.url == tb_url.Text) != null) { MessageBox.Show("服务链接已经存在", Text); return; }
+            if (cfg.Links != null && cfg.Links.FirstOrDefault(o => o.url == tb_url.Text) != null) { MessageBox.Show("服务链接已经存在", Text); return; }
 
             try
             {

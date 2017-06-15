@@ -47,7 +47,7 @@
             this.rb_newdir = new System.Windows.Forms.RadioButton();
             this.tb_dir = new System.Windows.Forms.RadioButton();
             this.bt_c2 = new System.Windows.Forms.Button();
-            this.cb_links1 = new System.Windows.Forms.ComboBox();
+            this.cb_link1 = new System.Windows.Forms.ComboBox();
             this.bt_pr1 = new System.Windows.Forms.Button();
             this.bt_nt2 = new System.Windows.Forms.Button();
             this.tb_name = new System.Windows.Forms.TextBox();
@@ -55,27 +55,32 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tp_ov = new System.Windows.Forms.TabPage();
+            this.lb_svrs = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bt_c3 = new System.Windows.Forms.Button();
             this.bt_pr2 = new System.Windows.Forms.Button();
             this.bt_nt3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cb_link2 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tp_loc = new System.Windows.Forms.TabPage();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bt_c4 = new System.Windows.Forms.Button();
             this.bt_pr3 = new System.Windows.Forms.Button();
             this.bt_nt4 = new System.Windows.Forms.Button();
-            this.tx_key = new System.Windows.Forms.TextBox();
             this.tx_name = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.bt_seldir = new System.Windows.Forms.Button();
             this.tx_dir = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lb_svrs = new System.Windows.Forms.ListBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.tp_key = new System.Windows.Forms.TabPage();
+            this.bt_pre2 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.bt_c5 = new System.Windows.Forms.Button();
+            this.bt_ok = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tx_key = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.tb_guide.SuspendLayout();
             this.tp_tp.SuspendLayout();
@@ -84,6 +89,8 @@
             this.groupBox1.SuspendLayout();
             this.tp_ov.SuspendLayout();
             this.tp_loc.SuspendLayout();
+            this.tp_key.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,12 +110,13 @@
             this.tb_guide.Controls.Add(this.tp_new);
             this.tb_guide.Controls.Add(this.tp_ov);
             this.tb_guide.Controls.Add(this.tp_loc);
+            this.tb_guide.Controls.Add(this.tp_key);
             this.tb_guide.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tb_guide.Location = new System.Drawing.Point(0, -1);
+            this.tb_guide.Location = new System.Drawing.Point(0, -23);
             this.tb_guide.Name = "tb_guide";
             this.tb_guide.Padding = new System.Drawing.Point(0, 0);
             this.tb_guide.SelectedIndex = 0;
-            this.tb_guide.Size = new System.Drawing.Size(442, 361);
+            this.tb_guide.Size = new System.Drawing.Size(442, 383);
             this.tb_guide.TabIndex = 6;
             // 
             // tp_tp
@@ -130,9 +138,8 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Location = new System.Drawing.Point(6, 281);
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Location = new System.Drawing.Point(6, 283);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(422, 10);
             this.groupBox5.TabIndex = 21;
@@ -141,7 +148,7 @@
             // bt_c1
             // 
             this.bt_c1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c1.Location = new System.Drawing.Point(353, 297);
+            this.bt_c1.Location = new System.Drawing.Point(353, 299);
             this.bt_c1.Name = "bt_c1";
             this.bt_c1.Size = new System.Drawing.Size(75, 26);
             this.bt_c1.TabIndex = 4;
@@ -152,7 +159,7 @@
             // bt_nt1
             // 
             this.bt_nt1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt1.Location = new System.Drawing.Point(272, 297);
+            this.bt_nt1.Location = new System.Drawing.Point(272, 299);
             this.bt_nt1.Name = "bt_nt1";
             this.bt_nt1.Size = new System.Drawing.Size(75, 26);
             this.bt_nt1.TabIndex = 3;
@@ -207,7 +214,7 @@
             this.tp_new.Controls.Add(this.groupBox4);
             this.tp_new.Controls.Add(this.groupBox1);
             this.tp_new.Controls.Add(this.bt_c2);
-            this.tp_new.Controls.Add(this.cb_links1);
+            this.tp_new.Controls.Add(this.cb_link1);
             this.tp_new.Controls.Add(this.bt_pr1);
             this.tp_new.Controls.Add(this.bt_nt2);
             this.tp_new.Controls.Add(this.tb_name);
@@ -217,16 +224,15 @@
             this.tp_new.Location = new System.Drawing.Point(4, 25);
             this.tp_new.Name = "tp_new";
             this.tp_new.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_new.Size = new System.Drawing.Size(434, 332);
+            this.tp_new.Size = new System.Drawing.Size(434, 354);
             this.tp_new.TabIndex = 1;
             this.tp_new.Text = "新服务";
             this.tp_new.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Location = new System.Drawing.Point(6, 281);
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Location = new System.Drawing.Point(6, 305);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(422, 10);
             this.groupBox4.TabIndex = 21;
@@ -254,6 +260,7 @@
             // 
             // cb_dir
             // 
+            this.cb_dir.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_dir.FormattingEnabled = true;
             this.cb_dir.Location = new System.Drawing.Point(110, 28);
             this.cb_dir.Name = "cb_dir";
@@ -285,25 +292,29 @@
             // bt_c2
             // 
             this.bt_c2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c2.Location = new System.Drawing.Point(353, 297);
+            this.bt_c2.Location = new System.Drawing.Point(353, 321);
             this.bt_c2.Name = "bt_c2";
             this.bt_c2.Size = new System.Drawing.Size(75, 26);
             this.bt_c2.TabIndex = 8;
             this.bt_c2.Text = "取消(&C)";
             this.bt_c2.UseVisualStyleBackColor = true;
+            this.bt_c2.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
-            // cb_links1
+            // cb_link1
             // 
-            this.cb_links1.FormattingEnabled = true;
-            this.cb_links1.Location = new System.Drawing.Point(23, 59);
-            this.cb_links1.Name = "cb_links1";
-            this.cb_links1.Size = new System.Drawing.Size(392, 20);
-            this.cb_links1.TabIndex = 0;
+            this.cb_link1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_link1.FormattingEnabled = true;
+            this.cb_link1.ItemHeight = 12;
+            this.cb_link1.Location = new System.Drawing.Point(23, 59);
+            this.cb_link1.Name = "cb_link1";
+            this.cb_link1.Size = new System.Drawing.Size(392, 20);
+            this.cb_link1.TabIndex = 0;
+            this.cb_link1.SelectedIndexChanged += new System.EventHandler(this.cb_link1_SelectedIndexChanged);
             // 
             // bt_pr1
             // 
             this.bt_pr1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pr1.Location = new System.Drawing.Point(191, 297);
+            this.bt_pr1.Location = new System.Drawing.Point(191, 321);
             this.bt_pr1.Name = "bt_pr1";
             this.bt_pr1.Size = new System.Drawing.Size(75, 26);
             this.bt_pr1.TabIndex = 6;
@@ -314,11 +325,11 @@
             // bt_nt2
             // 
             this.bt_nt2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt2.Location = new System.Drawing.Point(272, 297);
+            this.bt_nt2.Location = new System.Drawing.Point(272, 321);
             this.bt_nt2.Name = "bt_nt2";
             this.bt_nt2.Size = new System.Drawing.Size(75, 26);
             this.bt_nt2.TabIndex = 7;
-            this.bt_nt2.Text = "继续(&N)";
+            this.bt_nt2.Text = "下一步(&N)";
             this.bt_nt2.UseVisualStyleBackColor = true;
             this.bt_nt2.Click += new System.EventHandler(this.bt_nt2_Click);
             // 
@@ -332,7 +343,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 82);
+            this.label2.Location = new System.Drawing.Point(23, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 12);
             this.label2.TabIndex = 0;
@@ -341,7 +352,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 112);
+            this.label3.Location = new System.Drawing.Point(23, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 0;
@@ -374,11 +385,21 @@
             this.tp_ov.Text = "覆盖现有服务";
             this.tp_ov.UseVisualStyleBackColor = true;
             // 
+            // lb_svrs
+            // 
+            this.lb_svrs.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.lb_svrs.FormattingEnabled = true;
+            this.lb_svrs.ItemHeight = 28;
+            this.lb_svrs.Location = new System.Drawing.Point(23, 136);
+            this.lb_svrs.Name = "lb_svrs";
+            this.lb_svrs.Size = new System.Drawing.Size(392, 136);
+            this.lb_svrs.TabIndex = 21;
+            this.lb_svrs.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lb_DrawItem);
+            // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Location = new System.Drawing.Point(6, 281);
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Location = new System.Drawing.Point(6, 283);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(422, 10);
             this.groupBox2.TabIndex = 20;
@@ -387,17 +408,18 @@
             // bt_c3
             // 
             this.bt_c3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c3.Location = new System.Drawing.Point(353, 297);
+            this.bt_c3.Location = new System.Drawing.Point(353, 299);
             this.bt_c3.Name = "bt_c3";
             this.bt_c3.Size = new System.Drawing.Size(75, 26);
             this.bt_c3.TabIndex = 4;
             this.bt_c3.Text = "取消(&C)";
             this.bt_c3.UseVisualStyleBackColor = true;
+            this.bt_c3.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
             // bt_pr2
             // 
             this.bt_pr2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pr2.Location = new System.Drawing.Point(191, 297);
+            this.bt_pr2.Location = new System.Drawing.Point(191, 299);
             this.bt_pr2.Name = "bt_pr2";
             this.bt_pr2.Size = new System.Drawing.Size(75, 26);
             this.bt_pr2.TabIndex = 2;
@@ -408,18 +430,18 @@
             // bt_nt3
             // 
             this.bt_nt3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt3.Location = new System.Drawing.Point(272, 297);
+            this.bt_nt3.Location = new System.Drawing.Point(272, 299);
             this.bt_nt3.Name = "bt_nt3";
             this.bt_nt3.Size = new System.Drawing.Size(75, 26);
             this.bt_nt3.TabIndex = 3;
-            this.bt_nt3.Text = "继续(&N)";
+            this.bt_nt3.Text = "下一步(&N)";
             this.bt_nt3.UseVisualStyleBackColor = true;
             this.bt_nt3.Click += new System.EventHandler(this.bt_nt3_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 82);
+            this.label7.Location = new System.Drawing.Point(23, 85);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(149, 12);
             this.label7.TabIndex = 16;
@@ -427,11 +449,22 @@
             // 
             // cb_link2
             // 
+            this.cb_link2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_link2.FormattingEnabled = true;
             this.cb_link2.Location = new System.Drawing.Point(23, 59);
             this.cb_link2.Name = "cb_link2";
             this.cb_link2.Size = new System.Drawing.Size(392, 20);
             this.cb_link2.TabIndex = 0;
+            this.cb_link2.SelectedIndexChanged += new System.EventHandler(this.cb_link2_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(23, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 12);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "选择一个服务：";
             // 
             // label5
             // 
@@ -444,12 +477,10 @@
             // 
             // tp_loc
             // 
-            this.tp_loc.Controls.Add(this.label8);
             this.tp_loc.Controls.Add(this.groupBox3);
             this.tp_loc.Controls.Add(this.bt_c4);
             this.tp_loc.Controls.Add(this.bt_pr3);
             this.tp_loc.Controls.Add(this.bt_nt4);
-            this.tp_loc.Controls.Add(this.tx_key);
             this.tp_loc.Controls.Add(this.tx_name);
             this.tp_loc.Controls.Add(this.label6);
             this.tp_loc.Controls.Add(this.bt_seldir);
@@ -462,20 +493,10 @@
             this.tp_loc.Text = "本地文件";
             this.tp_loc.UseVisualStyleBackColor = true;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(25, 120);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 12);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "密钥：";
-            // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Location = new System.Drawing.Point(6, 281);
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Location = new System.Drawing.Point(6, 283);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(422, 10);
             this.groupBox3.TabIndex = 23;
@@ -484,17 +505,18 @@
             // bt_c4
             // 
             this.bt_c4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c4.Location = new System.Drawing.Point(353, 297);
+            this.bt_c4.Location = new System.Drawing.Point(353, 299);
             this.bt_c4.Name = "bt_c4";
             this.bt_c4.Size = new System.Drawing.Size(75, 26);
             this.bt_c4.TabIndex = 6;
             this.bt_c4.Text = "取消(&C)";
             this.bt_c4.UseVisualStyleBackColor = true;
+            this.bt_c4.Click += new System.EventHandler(this.bt_cancel_Click);
             // 
             // bt_pr3
             // 
             this.bt_pr3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pr3.Location = new System.Drawing.Point(191, 297);
+            this.bt_pr3.Location = new System.Drawing.Point(191, 299);
             this.bt_pr3.Name = "bt_pr3";
             this.bt_pr3.Size = new System.Drawing.Size(75, 26);
             this.bt_pr3.TabIndex = 4;
@@ -505,21 +527,13 @@
             // bt_nt4
             // 
             this.bt_nt4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt4.Location = new System.Drawing.Point(272, 297);
+            this.bt_nt4.Location = new System.Drawing.Point(272, 299);
             this.bt_nt4.Name = "bt_nt4";
             this.bt_nt4.Size = new System.Drawing.Size(75, 26);
             this.bt_nt4.TabIndex = 5;
-            this.bt_nt4.Text = "继续(&N)";
+            this.bt_nt4.Text = "下一步(&N)";
             this.bt_nt4.UseVisualStyleBackColor = true;
             this.bt_nt4.Click += new System.EventHandler(this.bt_nt4_Click);
-            // 
-            // tx_key
-            // 
-            this.tx_key.Location = new System.Drawing.Point(96, 117);
-            this.tx_key.Multiline = true;
-            this.tx_key.Name = "tx_key";
-            this.tx_key.Size = new System.Drawing.Size(315, 116);
-            this.tx_key.TabIndex = 2;
             // 
             // tx_name
             // 
@@ -545,6 +559,7 @@
             this.bt_seldir.TabIndex = 1;
             this.bt_seldir.Text = "选择";
             this.bt_seldir.UseVisualStyleBackColor = true;
+            this.bt_seldir.Click += new System.EventHandler(this.bt_seldir_Click);
             // 
             // tx_dir
             // 
@@ -562,25 +577,82 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "存储路径：";
             // 
-            // lb_svrs
+            // tp_key
             // 
-            this.lb_svrs.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.lb_svrs.FormattingEnabled = true;
-            this.lb_svrs.ItemHeight = 30;
-            this.lb_svrs.Location = new System.Drawing.Point(23, 136);
-            this.lb_svrs.Name = "lb_svrs";
-            this.lb_svrs.Size = new System.Drawing.Size(392, 136);
-            this.lb_svrs.TabIndex = 21;
-            this.lb_svrs.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lb_svrs_DrawItem);
+            this.tp_key.Controls.Add(this.bt_pre2);
+            this.tp_key.Controls.Add(this.groupBox7);
+            this.tp_key.Controls.Add(this.bt_c5);
+            this.tp_key.Controls.Add(this.bt_ok);
+            this.tp_key.Controls.Add(this.groupBox6);
+            this.tp_key.Location = new System.Drawing.Point(4, 25);
+            this.tp_key.Name = "tp_key";
+            this.tp_key.Padding = new System.Windows.Forms.Padding(3);
+            this.tp_key.Size = new System.Drawing.Size(434, 332);
+            this.tp_key.TabIndex = 4;
+            this.tp_key.Text = "密钥";
+            this.tp_key.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // bt_pre2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 111);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 12);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "选择一个服务：";
+            this.bt_pre2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_pre2.Location = new System.Drawing.Point(191, 299);
+            this.bt_pre2.Name = "bt_pre2";
+            this.bt_pre2.Size = new System.Drawing.Size(75, 26);
+            this.bt_pre2.TabIndex = 31;
+            this.bt_pre2.Text = "上一步(&P)";
+            this.bt_pre2.UseVisualStyleBackColor = true;
+            this.bt_pre2.Click += new System.EventHandler(this.bt_pre2_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.Location = new System.Drawing.Point(6, 283);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(422, 10);
+            this.groupBox7.TabIndex = 30;
+            this.groupBox7.TabStop = false;
+            // 
+            // bt_c5
+            // 
+            this.bt_c5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_c5.Location = new System.Drawing.Point(353, 299);
+            this.bt_c5.Name = "bt_c5";
+            this.bt_c5.Size = new System.Drawing.Size(75, 26);
+            this.bt_c5.TabIndex = 29;
+            this.bt_c5.Text = "取消(&C)";
+            this.bt_c5.UseVisualStyleBackColor = true;
+            this.bt_c5.Click += new System.EventHandler(this.bt_cancel_Click);
+            // 
+            // bt_ok
+            // 
+            this.bt_ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_ok.Location = new System.Drawing.Point(272, 299);
+            this.bt_ok.Name = "bt_ok";
+            this.bt_ok.Size = new System.Drawing.Size(75, 26);
+            this.bt_ok.TabIndex = 28;
+            this.bt_ok.Text = "继续(&N)";
+            this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.tx_key);
+            this.groupBox6.Location = new System.Drawing.Point(26, 31);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(10);
+            this.groupBox6.Size = new System.Drawing.Size(384, 234);
+            this.groupBox6.TabIndex = 26;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "服务密钥";
+            // 
+            // tx_key
+            // 
+            this.tx_key.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tx_key.Location = new System.Drawing.Point(10, 24);
+            this.tx_key.Multiline = true;
+            this.tx_key.Name = "tx_key";
+            this.tx_key.Size = new System.Drawing.Size(364, 200);
+            this.tx_key.TabIndex = 26;
             // 
             // Pub
             // 
@@ -606,6 +678,9 @@
             this.tp_ov.PerformLayout();
             this.tp_loc.ResumeLayout(false);
             this.tp_loc.PerformLayout();
+            this.tp_key.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -630,7 +705,7 @@
         private System.Windows.Forms.RadioButton rb_newdir;
         private System.Windows.Forms.RadioButton tb_dir;
         private System.Windows.Forms.Button bt_c2;
-        private System.Windows.Forms.ComboBox cb_links1;
+        private System.Windows.Forms.ComboBox cb_link1;
         private System.Windows.Forms.Button bt_pr1;
         private System.Windows.Forms.Button bt_nt2;
         private System.Windows.Forms.TextBox tb_name;
@@ -646,12 +721,10 @@
         private System.Windows.Forms.ComboBox cb_link2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TabPage tp_loc;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button bt_c4;
         private System.Windows.Forms.Button bt_pr3;
         private System.Windows.Forms.Button bt_nt4;
-        private System.Windows.Forms.TextBox tx_key;
         private System.Windows.Forms.TextBox tx_name;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button bt_seldir;
@@ -659,6 +732,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox lb_svrs;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TabPage tp_key;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox tx_key;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button bt_c5;
+        private System.Windows.Forms.Button bt_ok;
+        private System.Windows.Forms.Button bt_pre2;
     }
 }
 

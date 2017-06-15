@@ -51,7 +51,7 @@ namespace X.Desk
             DrawStyle.BorderTran = bt;
             DrawStyle.BorderWidth = bw;
             DrawStyle.FillColor = fc;
-            DrawStyle.FillTran = bt;
+            DrawStyle.FillTran = ft;
 
             pictureBox1.Image = img;
         }

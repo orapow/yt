@@ -15,11 +15,13 @@ namespace X.App.Apis.sdk.dirs
         protected override XResp Execute()
         {
             var d = db.GetDict("yt.dir", name);
-            if (d != null) throw new XExcep("T服务名称已经存在");
+            if (d != null) throw new XExcep("T文件夹已经存在");
 
             d = new x_dict() { name = name, value = name, upval = "0", code = "yt.dir" };
             db.x_dict.InsertOnSubmit(d);
             db.SubmitDBChanges();
+
+            db.ClearDict("yt.dir");
 
             return new XResp();
         }

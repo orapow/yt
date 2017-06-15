@@ -26,7 +26,7 @@ namespace X.App.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\X;Initial Catalog=yt.gis;User ID=sa;Password=sa123")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.0.6.254\\X;Initial Catalog=yt.gis;User ID=sa;Password=sa123")]
         public string x_linkConnectionString1 {
             get {
                 return ((string)(this["x_linkConnectionString1"]));

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using X.Core.Utility;
@@ -16,6 +17,7 @@ namespace X.Desk
             try
             {
                 var json = "";
+                if (ps == null) ps = new Dictionary<string, string>();
                 var url = api.StartsWith("http") ? api : gateway + "api/" + api;
 
                 var _ps = new List<string>();
@@ -46,11 +48,37 @@ namespace X.Desk
         }
         public static DirsRsp GetDirs()
         {
-            return HttpPost<DirsRsp>("sdk.dirs", null);
+            return HttpPost<DirsRsp>("sdk.dirs.list", null);
         }
         public static SvrsRsp GetSvrs()
         {
-            return HttpPost<SvrsRsp>("sdk.svrs", null);
+            return HttpPost<SvrsRsp>("sdk.svrs.list", null);
+        }
+        public static Resp NewDir(string name)
+        {
+            return HttpPost<Resp>("sdk.dirs.save", new Dictionary<string, string>() { { "name", name } });
+        }
+        public static Resp NewSvr(string name, string key)
+        {
+            return HttpPost<Resp>("sdk.svrs.save", new Dictionary<string, string>() { { "name", name }, { "sec_key", key } });
+        }
+        public static Resp Begin(string name, bool over)
+        {
+            return HttpPost<Resp>("sdk.svrs.begin", new Dictionary<string, string>() { { "name", name }, { "isover", over ? "1" : "0" } });
+        }
+        public static Resp Upload(int tp, string name, string file)
+        {
+            if (!File.Exists(file)) return new Resp() { issucc = false, msg = "文件(" + file + ")不存在" };
+            var fn = file.Substring(file.LastIndexOf("\\") + 1);
+            return HttpPost<Resp>("sdk.svrs.upload", new Dictionary<string, string>() { { "tp", tp + "" }, { "name", name }, { "data", Convert.ToBase64String(File.ReadAllBytes(file)) }, { "fname", fn } });
+        }
+        public static Resp Init(string name)
+        {
+            return HttpPost<Resp>("sdk.svrs.init", new Dictionary<string, string>() { { "name", name } });
+        }
+        public static Resp End(string name)
+        {
+            return HttpPost<Resp>("sdk.svrs.end", new Dictionary<string, string>() { { "name", name } });
         }
 
         public class DirsRsp : Resp
@@ -64,10 +92,11 @@ namespace X.Desk
             {
                 public string name { get; set; }
                 public string dir { get; set; }
+                public string key { get; set; }
                 public string status { get; set; }
                 public override string ToString()
                 {
-                    return "[" + dir + "](" + status + ")" + name;
+                    return "[" + (string.IsNullOrEmpty(dir) ? "根" : dir) + "](" + status + ")" + name;
                 }
             }
         }

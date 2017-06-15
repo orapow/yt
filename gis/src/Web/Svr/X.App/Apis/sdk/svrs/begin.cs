@@ -6,7 +6,7 @@ using X.Web.Com;
 
 namespace X.App.Apis.sdk.svrs
 {
-    public class status : _sdk
+    public class begin : _sdk
     {
         [ParmsAttr(name = "服务名称", req = true)]
         public string name { get; set; }
@@ -19,9 +19,9 @@ namespace X.App.Apis.sdk.svrs
             var s = db.x_service.FirstOrDefault(o => o.name == name);
             if (s == null) throw new XExcep("T服务不存在");
 
-            s.status = 2;
-
             var path = Context.Server.MapPath("/svrs/" + name);
+
+            s.status = 2;
             if (isover == 1)
             {
                 s.x_block.Clear();
@@ -29,7 +29,7 @@ namespace X.App.Apis.sdk.svrs
                 s.x_grid.Clear();
                 try
                 {
-                    Directory.Move(path, path + "_old_" + s.service_id);
+                    if (Directory.Exists(path)) Directory.Move(path, path + "_old_" + s.service_id);
                 }
                 catch (Exception e) { throw new XExcep("T服务覆盖失败，错误信息：", e.Message); }
             }
@@ -40,6 +40,8 @@ namespace X.App.Apis.sdk.svrs
                 Directory.CreateDirectory(path + "_new_" + s.service_id + "/图形");
             }
             catch (Exception e) { throw new XExcep("T服务创建失败，错误信息：" + e.Message); }
+
+            Directory.CreateDirectory(path);
 
             db.SubmitDBChanges();
 

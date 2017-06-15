@@ -25,6 +25,7 @@ namespace X.Gis
         public Cache Cached { get; set; }
         public Extend InitialExtend { get; set; }
         public Extend FullExtend { get; set; }
+        public TileInfo MapTile { get; set; }
         public class WaterMark
         {
             public bool Enabel { get; set; }
@@ -38,6 +39,14 @@ namespace X.Gis
             public int MaxMem { get; set; }
             public bool UserFile { get; set; }
         }
+        public class TileInfo
+        {
+            public int Width { get; set; }
+            public int Height { get; set; }
+            public int DPI { get; set; }
+            public int Quality { get; set; }
+            public string Format { get; set; }
+        }
     }
     public class DocumentInfo
     {
@@ -47,14 +56,6 @@ namespace X.Gis
         public string Subject { get; set; }
         public string Category { get; set; }
         public string Desc { get; set; }
-    }
-    public class TileInfo
-    {
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public int DPI { get; set; }
-        public int Quality { get; set; }
-        public string Format { get; set; }
     }
     public class Layer
     {
@@ -79,6 +80,7 @@ namespace X.Gis
     }
     public class ShpLayer : Layer
     {
+        [X.Json.JsonIgnore]
         public List<Shape> Shapes { get; set; }
         public List<Field> Fields { get; set; }
         public string IDField { get; set; }
@@ -104,6 +106,7 @@ namespace X.Gis
             /// 2、面
             /// </summary>
             public int Tp { get; set; }
+            public string LayerNo { get; set; }
             public Dictionary<int, List<PointF>> Points { get; set; }
             public DrawStyle Style { get; set; }
             public string Name { get; set; }
