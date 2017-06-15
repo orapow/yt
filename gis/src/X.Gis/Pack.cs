@@ -80,6 +80,7 @@ namespace X.Gis
     }
     public class ShpLayer : Layer
     {
+        [X.Json.JsonIgnore]
         public List<Shape> Shapes { get; set; }
         public List<Field> Fields { get; set; }
         public string IDField { get; set; }
@@ -105,6 +106,7 @@ namespace X.Gis
             /// 2、面
             /// </summary>
             public int Tp { get; set; }
+            public string LayerNo { get; set; }
             public Dictionary<int, List<PointF>> Points { get; set; }
             public DrawStyle Style { get; set; }
             public string Name { get; set; }

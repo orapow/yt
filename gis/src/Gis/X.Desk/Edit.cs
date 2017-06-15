@@ -5,7 +5,9 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
+using System.Linq;
 using X.Core.Utility;
 using X.Gis;
 
@@ -13,15 +15,23 @@ namespace X.Desk
 {
     public partial class Edit : Form
     {
-        Pack pb { get; set; }
+        string path { get; set; }
+        string sname { get; set; }
+        string key { get; set; }
+        string dir { get; set; }
+        int op { get; set; }
         Extend extends = null;
         Proc pc = null;
 
-        public Edit(Pack p)
+        public Edit(string path, string sname, string key, string dir, int op)
         {
             InitializeComponent();
-            pb = p;
             extends = new Extend();
+            this.path = path;
+            this.sname = sname;
+            this.key = key;
+            this.dir = dir;
+            this.op = op;
         }
 
         public void AddLayer(Layer lay)
@@ -50,12 +60,12 @@ namespace X.Desk
         private void Edit_Load(object sender, EventArgs e)
         {
             lb_items.SelectedIndex = 0;
-            tb_svr_name.Text = pb.Name;
-            tb_link.Text = pb.Path;
-            tb_key.Text = pb.Key;
-            lb_svr_name.Text = "服务名称:" + pb.Name;
-            lb_link.Text = (pb.Op == 2 ? "本地路径:" : "服务链接:") + pb.Path;
-            lb_link1.Text = (pb.Op == 2 ? "本地路径:" : "服务链接:");
+            tb_svr_name.Text = sname;
+            tb_link.Text = path;
+            tb_key.Text = key;
+            lb_svr_name.Text = "服务名称:" + sname;
+            lb_link.Text = (op == 3 ? "本地路径:" : "服务链接:") + path;
+            lb_link1.Text = (op == 3 ? "本地路径:" : "服务链接:");
         }
 
         private void cb_show_bl_CheckedChanged(object sender, EventArgs e)
@@ -120,7 +130,7 @@ namespace X.Desk
         private void bt_start_Click(object sender, EventArgs e)
         {
             var img_lays = new List<Layer>();
-            var shp_lays = new List<Layer>();
+            var shp_lays = new List<ShpLayer>();
 
             foreach (Layer l in lb_layers.Items)
             {
@@ -128,43 +138,50 @@ namespace X.Desk
                 var sl = l as ShpLayer;
                 if (sl == null) continue;
                 if (sl.OutPut == "图像") img_lays.Add(l);
-                else if (sl.OutPut == "图形") shp_lays.Add(l);
+                else if (sl.OutPut == "图形") shp_lays.Add(l as ShpLayer);
             }
 
             var path = Application.StartupPath + "\\" + tb_svr_name.Text + "\\";
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
 
             #region 生成
-            outimg(img_lays, path);
-            outshp(shp_lays, path);
-            outlay(path);
-            outsvr(path);
+            //outimg(img_lays, path);
+            //outshp(shp_lays, path);
+            //outlay(path);
+            //outsvr(path);
             #endregion
 
-            if (pb.Op != 2)
+            if (op != 3)
             {
                 #region 发布
-                //Sdk.begin();//预处理
-                //Sdk.upload();//上传
-                //Sdk.init();//初始化
-                //Sdk.end();//清理
+                var be = Sdk.Begin(sname, op == 2);//预处理
+                //if (!be.issucc) { MessageBox.Show("预处理失败"); return; }
+                //if (Directory.Exists(path + "图像")) foreach (var f in Directory.GetFiles(path + "图像")) Sdk.Upload(1, sname, f);
+                //if (Directory.Exists(path + "图形")) foreach (var f in Directory.GetFiles(path + "图形")) Sdk.Upload(2, sname, f);
+                //Sdk.Upload(3, sname, path + "lays.x");
+                //Sdk.Upload(3, sname, path + "svr.x");
+                Sdk.Init(sname);//初始化
+                Sdk.End(sname);//清理
                 #endregion
             }
             else
             {
                 #region 打包
-                Process.Start(Application.StartupPath + "\\rar\\rar a -p" + tb_key.Text + " " + path + " " + pb.Dir);
+                var pi = new ProcessStartInfo(Application.StartupPath + "\\rar.exe");
+                pi.Arguments = " a -ep1 -p" + tb_key.Text + " " + this.path + "\\" + sname + ".rar " + path.TrimEnd('\\');
+                pi.CreateNoWindow = true;
+                pi.WindowStyle = ProcessWindowStyle.Hidden;
+                Process.Start(pi);
                 #endregion
             }
 
-            MessageBox.Show("发布完成");
+            MessageBox.Show("发布完成", Text);
 
         }
 
         void showProc(string t1, string t2, int p1, int p2)
         {
             if (pc == null) return;
-            
         }
 
         /// <summary>
@@ -175,6 +192,7 @@ namespace X.Desk
         {
             File.WriteAllBytes(path + "lays.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(lb_layers.Items)), tb_key.Text));
         }
+
         /// <summary>
         /// 输出服务信息
         /// </summary>
@@ -185,7 +203,7 @@ namespace X.Desk
             {
                 BlockSize = int.Parse(cb_blocksize.Text),
                 Cached = new Svr.Cache() { MaxMem = int.Parse(tb_ch_max.Text), MinMem = int.Parse(tb_cb_min.Text), UseMemory = cb_ch_mem.Checked, UserFile = cb_ch_file.Checked },
-                Dir = pb.Path,
+                Dir = dir,
                 DocumentInfo = new DocumentInfo() { Author = tb_author.Text, Category = "", Comments = tb_summary.Text, Desc = tb_remark.Text, Subject = "", Title = "" },
                 FullExtend = extends,
                 InitialExtend = new Extend(),
@@ -195,7 +213,6 @@ namespace X.Desk
                 WaterMarked = new Svr.WaterMark() { Enabel = true, Img = pb_wmimg.Image, Transparent = tb_wmtran.Value },
                 MapTile = new Svr.TileInfo() { DPI = 72, Format = "Jpg", Height = 256, Quality = 75, Width = 256 }
             };
-
             File.WriteAllBytes(path + "svr.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(svr)), tb_key.Text));
         }
         /// <summary>
@@ -203,13 +220,36 @@ namespace X.Desk
         /// </summary>
         /// <param name="lays"></param>
         /// <param name="path"></param>
-        void outshp(List<Layer> lays, string path)
+        void outshp(List<ShpLayer> lays, string path)
         {
             var shp_path = path + "\\图形\\";
             if (!Directory.Exists(shp_path)) Directory.CreateDirectory(shp_path);
             var i = 1;
+            var list = new List<ShpLayer.Shape>();
+            var lno = 1;
             foreach (var l in lays)
-                File.WriteAllBytes(shp_path + (i++).ToString("000") + ".x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(l)), tb_key.Text));
+            {
+                int p = 1;
+                do
+                {
+                    var tp = l.Shapes.Skip((p - 1) * 10000).Take(10000);
+                    if (tp.Count() == 0) break;
+                    p++;
+                    foreach (var s in tp) s.LayerNo = lno.ToString("000");
+                    list.AddRange(tp);
+                    if (list.Count() >= 10000)
+                    {
+                        File.WriteAllBytes(shp_path + (i++).ToString("000") + ".x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(list)), tb_key.Text));
+                        list.Clear();
+                    }
+                } while (true);
+                lno++;
+            }
+            if (list.Count() > 0)
+            {
+                File.WriteAllBytes(shp_path + (i++).ToString("000") + ".x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(list)), tb_key.Text));
+                list.Clear();
+            }
         }
         /// <summary>
         /// 输出图像
@@ -258,7 +298,6 @@ namespace X.Desk
                             img.Save(ms, ImageFormat.Jpeg);
                             File.WriteAllBytes(img_path + b.file, Secret.XcEncode(ms.ToArray(), tb_key.Text));
                         }
-                        //img.Save(draw_path + b.file, ImageFormat.Png);
                     }
                 }
                 lv--;

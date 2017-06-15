@@ -65,6 +65,9 @@
             this.bt_down = new System.Windows.Forms.Button();
             this.bt_up = new System.Windows.Forms.Button();
             this.lb_layers = new System.Windows.Forms.ListBox();
+            this.gp_img = new System.Windows.Forms.GroupBox();
+            this.pb_tr_color = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.gp_shp = new System.Windows.Forms.GroupBox();
             this.pb_sp_style = new System.Windows.Forms.PictureBox();
             this.rb_sp_grid = new System.Windows.Forms.RadioButton();
@@ -73,9 +76,6 @@
             this.gp_fields = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.cb_namefield = new System.Windows.Forms.ComboBox();
-            this.gp_img = new System.Windows.Forms.GroupBox();
-            this.pb_tr_color = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.cb_blocksize = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -112,11 +112,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tb_wmtran)).BeginInit();
             this.gb_show_bl.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.gp_img.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_tr_color)).BeginInit();
             this.gp_shp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sp_style)).BeginInit();
             this.gp_fields.SuspendLayout();
-            this.gp_img.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tr_color)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -199,12 +199,12 @@
             this.tab_pages.Controls.Add(this.tabPage5);
             this.tab_pages.Controls.Add(this.tabPage6);
             this.tab_pages.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tab_pages.Location = new System.Drawing.Point(0, -1);
+            this.tab_pages.Location = new System.Drawing.Point(0, -22);
             this.tab_pages.Margin = new System.Windows.Forms.Padding(0);
             this.tab_pages.Name = "tab_pages";
             this.tab_pages.Padding = new System.Drawing.Point(0, 0);
             this.tab_pages.SelectedIndex = 0;
-            this.tab_pages.Size = new System.Drawing.Size(438, 408);
+            this.tab_pages.Size = new System.Drawing.Size(438, 429);
             this.tab_pages.TabIndex = 6;
             // 
             // tabPage1
@@ -488,7 +488,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(430, 379);
+            this.tabPage3.Size = new System.Drawing.Size(430, 400);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -543,10 +543,42 @@
             this.lb_layers.ItemHeight = 30;
             this.lb_layers.Location = new System.Drawing.Point(6, 32);
             this.lb_layers.Name = "lb_layers";
-            this.lb_layers.Size = new System.Drawing.Size(157, 341);
+            this.lb_layers.Size = new System.Drawing.Size(157, 362);
             this.lb_layers.TabIndex = 5;
             this.lb_layers.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.lb_DrawItem);
             this.lb_layers.SelectedIndexChanged += new System.EventHandler(this.lb_layers_SelectedIndexChanged);
+            // 
+            // gp_img
+            // 
+            this.gp_img.Controls.Add(this.pb_tr_color);
+            this.gp_img.Controls.Add(this.label13);
+            this.gp_img.Location = new System.Drawing.Point(169, 62);
+            this.gp_img.Name = "gp_img";
+            this.gp_img.Size = new System.Drawing.Size(255, 311);
+            this.gp_img.TabIndex = 11;
+            this.gp_img.TabStop = false;
+            this.gp_img.Text = "图片设置";
+            this.gp_img.Visible = false;
+            // 
+            // pb_tr_color
+            // 
+            this.pb_tr_color.BackColor = System.Drawing.Color.Black;
+            this.pb_tr_color.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_tr_color.Location = new System.Drawing.Point(83, 20);
+            this.pb_tr_color.Name = "pb_tr_color";
+            this.pb_tr_color.Size = new System.Drawing.Size(32, 32);
+            this.pb_tr_color.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_tr_color.TabIndex = 4;
+            this.pb_tr_color.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(12, 30);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 12);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "透明颜色：";
             // 
             // gp_shp
             // 
@@ -638,38 +670,6 @@
             this.cb_namefield.TabIndex = 4;
             this.cb_namefield.SelectedIndexChanged += new System.EventHandler(this.cb_namefield_SelectedIndexChanged);
             // 
-            // gp_img
-            // 
-            this.gp_img.Controls.Add(this.pb_tr_color);
-            this.gp_img.Controls.Add(this.label13);
-            this.gp_img.Location = new System.Drawing.Point(169, 62);
-            this.gp_img.Name = "gp_img";
-            this.gp_img.Size = new System.Drawing.Size(255, 311);
-            this.gp_img.TabIndex = 11;
-            this.gp_img.TabStop = false;
-            this.gp_img.Text = "图片设置";
-            this.gp_img.Visible = false;
-            // 
-            // pb_tr_color
-            // 
-            this.pb_tr_color.BackColor = System.Drawing.Color.Black;
-            this.pb_tr_color.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_tr_color.Location = new System.Drawing.Point(83, 20);
-            this.pb_tr_color.Name = "pb_tr_color";
-            this.pb_tr_color.Size = new System.Drawing.Size(32, 32);
-            this.pb_tr_color.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_tr_color.TabIndex = 4;
-            this.pb_tr_color.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(12, 30);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 12);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "透明颜色：";
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.cb_blocksize);
@@ -701,7 +701,7 @@
             this.cb_blocksize.Name = "cb_blocksize";
             this.cb_blocksize.Size = new System.Drawing.Size(121, 20);
             this.cb_blocksize.TabIndex = 17;
-            this.cb_blocksize.Text = "8192 * 8192";
+            this.cb_blocksize.Text = "4096";
             // 
             // label18
             // 
@@ -980,14 +980,14 @@
             this.gb_show_bl.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.gp_img.ResumeLayout(false);
+            this.gp_img.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_tr_color)).EndInit();
             this.gp_shp.ResumeLayout(false);
             this.gp_shp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_sp_style)).EndInit();
             this.gp_fields.ResumeLayout(false);
             this.gp_fields.PerformLayout();
-            this.gp_img.ResumeLayout(false);
-            this.gp_img.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tr_color)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);

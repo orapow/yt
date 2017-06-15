@@ -5,12 +5,13 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
+using X.App.Com;
 using X.Core.Cache;
 using X.Core.Utility;
 
 namespace X.App.Views.services
 {
-    public class tiler : xview
+    public class tiler : _svr
     {
         public string sn { get; set; }
         public int lv { get; set; }
@@ -34,34 +35,29 @@ namespace X.App.Views.services
 
             if (File.Exists(Context.Server.MapPath(path + "/cache/" + lv + "_" + x + "_" + y))) Context.Server.Transfer(path + "/cache/" + lv + "_" + x + "_" + y);
 
-            var blocks = CacheHelper.Get<List<Block>>("svr." + sn);
-            if (blocks == null)
-            {
-                var json = File.ReadAllText(Context.Server.MapPath("/svrs/" + sn + "/cfg.json"));
-                if (string.IsNullOrEmpty(json)) return null;
-                blocks = Serialize.FromJson<List<Block>>(json);
-                if (blocks == null) return null;
-            }
+            var blocks = CacheHelper.Get<List<x_block>>("svr." + sn + ".blocks");
+            if (blocks == null && svr != null) blocks = svr.x_block.ToList();
+            if (blocks == null) return null;
+            CacheHelper.Save("svr." + sn + ".blocks", blocks);
 
-            var b = blocks.FirstOrDefault(o => o.level == lv && x >= o.bound.X && y >= o.bound.Y && x <= o.bound.X + 15 && y <= o.bound.Y + 15);
+            var b = blocks.FirstOrDefault(o => o.level == lv && x >= o.x && y >= o.y && x <= o.x + 15 && y <= o.y + 15);
             if (b == null) return null;
 
             var bmp = Image.FromFile(Context.Server.MapPath(path + "/" + b.file));
 
             var img = new Bitmap(256, 256);
             var g = Graphics.FromImage(img);
-            g.DrawImage(bmp, 0, 0, new Rectangle((x - b.bound.X) * 256, (y - b.bound.Y) * 256, 256, 256), GraphicsUnit.Pixel);
+            g.DrawImage(bmp, 0, 0, new Rectangle((x - b.x.Value) * 256, (y - b.y.Value) * 256, 256, 256), GraphicsUnit.Pixel);
             g.Dispose();
 
             bmp.Dispose();
 
             var ms = new MemoryStream();
             img.Save(ms, ImageFormat.Png);
-            img.Save("c:\\temp\\s\\" + x + "_" + y + "_" + lv + ".png", ImageFormat.Png);
+            img.Save(Context.Server.MapPath(path + "/cache/" + lv + "_" + x + "_" + y), ImageFormat.Png);
             img.Dispose();
 
             return ms.ToArray();
-
 
         }
 

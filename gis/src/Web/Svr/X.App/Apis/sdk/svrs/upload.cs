@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using X.Web;
@@ -20,13 +21,27 @@ namespace X.App.Apis.sdk.svrs
         /// 3、配置
         /// </summary>
         public int tp { get; set; }
+        public string fname { get; set; }
         protected override XResp Execute()
         {
             var s = db.x_service.FirstOrDefault(o => o.name == name);
             if (s == null) throw new XExcep("T服务不存在");
 
             var path = Context.Server.MapPath("/svrs/" + name + "_new_" + s.service_id);
-
+            var file = "";
+            switch (tp)
+            {
+                case 1:
+                    file = path + "//图像//" + fname;
+                    break;
+                case 2:
+                    file = path + "//图形//" + fname;
+                    break;
+                case 3:
+                    file = path + "//" + fname;
+                    break;
+            }
+            File.WriteAllBytes(file, Convert.FromBase64String(data));
             return new XResp();
         }
     }

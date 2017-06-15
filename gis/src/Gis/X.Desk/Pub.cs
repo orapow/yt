@@ -15,6 +15,11 @@ namespace X.Desk
         public string SName { get; set; }
         public string Key { get; set; }
         public string Dir { get; set; }
+        /// <summary>
+        /// 1、新服务
+        /// 2、替换服务
+        /// 3、本地打包
+        /// </summary>
         public int Op { get; set; }
 
         public Pub()
@@ -62,11 +67,13 @@ namespace X.Desk
             if (cb_link1.SelectedIndex < 0) { MessageBox.Show("请选择一个链接", Text); return; }
             if (string.IsNullOrEmpty(tb_name.Text)) { MessageBox.Show("请输入服务名称", Text); return; }
 
-            SName = cb_dir.SelectedItem + "";
+            SName = tb_name.Text;
+            Path = cb_link1.SelectedItem + "";
+            Dir = cb_dir.SelectedItem + "";
             if (rb_newdir.Checked)
             {
                 SName = tb_newdir.Text;
-                var rsp = Sdk.CreateDir(SName);
+                var rsp = Sdk.NewDir(SName);
                 if (!rsp.issucc) { MessageBox.Show(rsp.msg, Text); return; }
             }
             if (string.IsNullOrEmpty(SName)) { MessageBox.Show("请选择或创建一个文件夹", Text); return; }
@@ -80,9 +87,10 @@ namespace X.Desk
 
             var s = lb_svrs.SelectedItem as Sdk.SvrsRsp.Svr;
 
+            Path = cb_link2.SelectedItem + "";
             SName = s.name;
             Dir = s.dir;
-            tx_key.Text = "";
+            tx_key.Text = s.key;
 
             tx_key.Enabled = false;
             tb_guide.SelectTab(4);
@@ -121,7 +129,7 @@ namespace X.Desk
             e.DrawBackground();
             e.DrawFocusRectangle();
             if (e.Index < 0) return;
-            e.Graphics.DrawString(lb.Items[e.Index].ToString(), e.Font, new SolidBrush(e.ForeColor), e.Bounds.Left + 9, e.Bounds.Top + 9);
+            e.Graphics.DrawString(lb.Items[e.Index].ToString(), e.Font, new SolidBrush(e.ForeColor), e.Bounds.Left + 2, e.Bounds.Top + 2);
         }
 
         private void bt_pre2_Click(object sender, EventArgs e)
@@ -131,6 +139,13 @@ namespace X.Desk
 
         private void bt_ok_Click(object sender, EventArgs e)
         {
+            Key = tx_key.Text;
+            if (string.IsNullOrEmpty(Key)) { MessageBox.Show("请输入服务密钥", Text); return; }
+            if (Op == 1)
+            {
+                var r = Sdk.NewSvr(SName, Key);
+                if (!r.issucc) MessageBox.Show("创建服务失败" + (string.IsNullOrEmpty(r.msg) ? "" : "，错误信息：" + r.msg));
+            }
             DialogResult = DialogResult.OK;
             Close();
         }

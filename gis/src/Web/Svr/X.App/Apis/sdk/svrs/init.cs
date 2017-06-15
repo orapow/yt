@@ -26,10 +26,9 @@ namespace X.App.Apis.sdk.svrs
             if (!Directory.Exists(path)) throw new XExcep("T服务初始化失败，没有找到数据");
 
             updateSvr(path, s);
-
             getLayers(path, s);
-
             getBlocks(path, s);
+            db.SubmitDBChanges();
 
             getShapes(path, s);
 
@@ -47,7 +46,7 @@ namespace X.App.Apis.sdk.svrs
             var svr = Serialize.FromJson<Svr>(Encoding.UTF8.GetString(data));
             if (svr == null) throw new XExcep("T服务数据识别失败");
 
-            if (cfg.version < svr.Version) throw new XExcep("T服务端版本过低，请升级！");
+            //if (cfg.version < svr.Version) throw new XExcep("T服务端版本过低，请升级！");
 
             s.blocksize = svr.BlockSize;
             s.cache = Serialize.ToJson(svr.Cached);
@@ -61,9 +60,9 @@ namespace X.App.Apis.sdk.svrs
 
         void getBlocks(string path, x_service s)
         {
-            if (!Directory.Exists(path + "/图像")) return;
+            if (!Directory.Exists(path + "/图像") || !File.Exists(path + "/图像/000.x")) return;
 
-            var data = Secret.XcDecode(File.ReadAllBytes(path + "/图像/cfg.x"), s.secret_key);
+            var data = Secret.XcDecode(File.ReadAllBytes(path + "/图像/000.x"), s.secret_key);
             if (data == null) return;
 
             var blocks = Serialize.FromJson<List<Block>>(Encoding.UTF8.GetString(data));
@@ -71,11 +70,17 @@ namespace X.App.Apis.sdk.svrs
 
             foreach (var b in blocks)
             {
-                File.Move(path + "/图像/" + b.file, path.Replace(name + "_new_" + s.service_id, name) + "/" + b.file);
-                s.x_block.Add(new x_block()
+                if (!File.Exists(path + "/图像/" + b.file)) continue;
+
+                data = File.ReadAllBytes(path + "/图像/" + b.file);
+                data = Secret.XcDecode(data, s.secret_key);
+                File.WriteAllBytes(path.Replace(name + "_new_" + s.service_id, name) + "/" + b.file, data);
+
+                db.x_block.InsertOnSubmit(new x_block()
                 {
                     file = b.file,
                     height = b.bound.Height,
+                    service_id = s.service_id,
                     width = b.bound.Width,
                     level = b.level,
                     x = b.bound.X,
@@ -90,7 +95,7 @@ namespace X.App.Apis.sdk.svrs
             var data = Secret.XcDecode(File.ReadAllBytes(path + "/lays.x"), s.secret_key);
             if (data == null) return;
 
-            var lays = Serialize.FromJson<List<Layer>>(Encoding.UTF8.GetString(data));
+            var lays = Serialize.FromJson<List<ShpLayer>>(Encoding.UTF8.GetString(data));
             if (lays == null) return;
 
             foreach (var l in lays)
@@ -99,19 +104,16 @@ namespace X.App.Apis.sdk.svrs
                 {
                     copy = l.Copyright,
                     desc = l.Desc,
+                    service_id = s.service_id,
                     extend = Serialize.ToJson(l.Extends),
                     name = l.Name,
                     type = l.Tp
                 };
-                if (l.Tp == 2)
-                {
-                    var shplay = l as ShpLayer;
-                    lay.drawstyle = Serialize.ToJson(shplay.Style);
-                    lay.fiedls = Serialize.ToJson(shplay.Fields);
-                    lay.id_field = shplay.IDField;
-                    lay.show_field = shplay.DiaplsyField;
-                }
-                s.x_layer.Add(lay);
+                lay.drawstyle = Serialize.ToJson(l.Style);
+                lay.fiedls = Serialize.ToJson(l.Fields);
+                lay.id_field = l.IDField;
+                lay.show_field = l.DiaplsyField;
+                db.x_layer.InsertOnSubmit(lay);
             }
         }
 
@@ -134,7 +136,9 @@ namespace X.App.Apis.sdk.svrs
                     {
                         lat = (decimal)sh.Extent.xCenter,
                         lng = (decimal)sh.Extent.yCenter,
+                        lno = sh.LayerNo,
                         name = sh.Name,
+                        service_id = s.service_id,
                         style = Serialize.ToJson(sh.Style),
                         type = getTp(sh.Tp)
                     };
@@ -142,10 +146,10 @@ namespace X.App.Apis.sdk.svrs
 
                     var pts = new List<PointF>();
                     foreach (var k in sh.Points.Keys) pts.AddRange(sh.Points[k]);
-                    g.points = Serialize.ToJson(pts);
-
-                    s.x_grid.Add(g);
+                    g.points = Serialize.ToJson(pts.Select(o => new { lng = o.X, lat = o.Y }));
+                    db.x_grid.InsertOnSubmit(g);
                 }
+                db.SubmitDBChanges();
             }
         }
 

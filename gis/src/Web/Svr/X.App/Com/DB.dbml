@@ -73,6 +73,7 @@
       <Column Name="grid_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="service_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="name" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="lno" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
       <Column Name="lng" Type="System.Decimal" DbType="Decimal(18,8)" CanBeNull="true" />
       <Column Name="lat" Type="System.Decimal" DbType="Decimal(18,8)" CanBeNull="true" />
       <Column Name="style" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />

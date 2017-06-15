@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -80,6 +81,7 @@
     <Compile Include="Views\services\detail.cs" />
     <Compile Include="Views\services\grid.cs" />
     <Compile Include="Views\services\tiler.cs" />
+    <Compile Include="Views\services\_svr.cs" />
     <Compile Include="Views\tiler\tdt.cs" />
     <Compile Include="Views\tiler\_t.cs" />
     <Compile Include="Views\xview.cs" />

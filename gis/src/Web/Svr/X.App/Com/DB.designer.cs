@@ -1576,6 +1576,8 @@ namespace X.App.Com
 		
 		private string _name;
 		
+		private string _lno;
+		
 		private System.Nullable<decimal> _lng;
 		
 		private System.Nullable<decimal> _lat;
@@ -1600,6 +1602,8 @@ namespace X.App.Com
     partial void Onservice_idChanged();
     partial void OnnameChanging(string value);
     partial void OnnameChanged();
+    partial void OnlnoChanging(string value);
+    partial void OnlnoChanged();
     partial void OnlngChanging(System.Nullable<decimal> value);
     partial void OnlngChanged();
     partial void OnlatChanging(System.Nullable<decimal> value);
@@ -1680,6 +1684,26 @@ namespace X.App.Com
 					this._name = value;
 					this.SendPropertyChanged("name");
 					this.OnnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lno", DbType="NVarChar(5)")]
+		public string lno
+		{
+			get
+			{
+				return this._lno;
+			}
+			set
+			{
+				if ((this._lno != value))
+				{
+					this.OnlnoChanging(value);
+					this.SendPropertyChanging();
+					this._lno = value;
+					this.SendPropertyChanged("lno");
+					this.OnlnoChanged();
 				}
 			}
 		}

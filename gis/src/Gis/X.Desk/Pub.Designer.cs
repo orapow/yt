@@ -112,11 +112,11 @@
             this.tb_guide.Controls.Add(this.tp_loc);
             this.tb_guide.Controls.Add(this.tp_key);
             this.tb_guide.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tb_guide.Location = new System.Drawing.Point(0, -22);
+            this.tb_guide.Location = new System.Drawing.Point(0, -23);
             this.tb_guide.Name = "tb_guide";
             this.tb_guide.Padding = new System.Drawing.Point(0, 0);
             this.tb_guide.SelectedIndex = 0;
-            this.tb_guide.Size = new System.Drawing.Size(442, 382);
+            this.tb_guide.Size = new System.Drawing.Size(442, 383);
             this.tb_guide.TabIndex = 6;
             // 
             // tp_tp
@@ -131,16 +131,15 @@
             this.tp_tp.Location = new System.Drawing.Point(4, 25);
             this.tp_tp.Name = "tp_tp";
             this.tp_tp.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_tp.Size = new System.Drawing.Size(434, 328);
+            this.tp_tp.Size = new System.Drawing.Size(434, 332);
             this.tp_tp.TabIndex = 0;
             this.tp_tp.Text = "发布类型";
             this.tp_tp.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox5.Location = new System.Drawing.Point(6, 277);
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Location = new System.Drawing.Point(6, 283);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(422, 10);
             this.groupBox5.TabIndex = 21;
@@ -149,7 +148,7 @@
             // bt_c1
             // 
             this.bt_c1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c1.Location = new System.Drawing.Point(353, 293);
+            this.bt_c1.Location = new System.Drawing.Point(353, 299);
             this.bt_c1.Name = "bt_c1";
             this.bt_c1.Size = new System.Drawing.Size(75, 26);
             this.bt_c1.TabIndex = 4;
@@ -160,7 +159,7 @@
             // bt_nt1
             // 
             this.bt_nt1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt1.Location = new System.Drawing.Point(272, 293);
+            this.bt_nt1.Location = new System.Drawing.Point(272, 299);
             this.bt_nt1.Name = "bt_nt1";
             this.bt_nt1.Size = new System.Drawing.Size(75, 26);
             this.bt_nt1.TabIndex = 3;
@@ -225,16 +224,15 @@
             this.tp_new.Location = new System.Drawing.Point(4, 25);
             this.tp_new.Name = "tp_new";
             this.tp_new.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_new.Size = new System.Drawing.Size(434, 328);
+            this.tp_new.Size = new System.Drawing.Size(434, 354);
             this.tp_new.TabIndex = 1;
             this.tp_new.Text = "新服务";
             this.tp_new.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Location = new System.Drawing.Point(6, 281);
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Location = new System.Drawing.Point(6, 305);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(422, 10);
             this.groupBox4.TabIndex = 21;
@@ -294,7 +292,7 @@
             // bt_c2
             // 
             this.bt_c2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c2.Location = new System.Drawing.Point(353, 297);
+            this.bt_c2.Location = new System.Drawing.Point(353, 321);
             this.bt_c2.Name = "bt_c2";
             this.bt_c2.Size = new System.Drawing.Size(75, 26);
             this.bt_c2.TabIndex = 8;
@@ -316,7 +314,7 @@
             // bt_pr1
             // 
             this.bt_pr1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pr1.Location = new System.Drawing.Point(191, 297);
+            this.bt_pr1.Location = new System.Drawing.Point(191, 321);
             this.bt_pr1.Name = "bt_pr1";
             this.bt_pr1.Size = new System.Drawing.Size(75, 26);
             this.bt_pr1.TabIndex = 6;
@@ -327,7 +325,7 @@
             // bt_nt2
             // 
             this.bt_nt2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt2.Location = new System.Drawing.Point(272, 297);
+            this.bt_nt2.Location = new System.Drawing.Point(272, 321);
             this.bt_nt2.Name = "bt_nt2";
             this.bt_nt2.Size = new System.Drawing.Size(75, 26);
             this.bt_nt2.TabIndex = 7;
@@ -382,7 +380,7 @@
             this.tp_ov.Controls.Add(this.label5);
             this.tp_ov.Location = new System.Drawing.Point(4, 25);
             this.tp_ov.Name = "tp_ov";
-            this.tp_ov.Size = new System.Drawing.Size(434, 328);
+            this.tp_ov.Size = new System.Drawing.Size(434, 332);
             this.tp_ov.TabIndex = 3;
             this.tp_ov.Text = "覆盖现有服务";
             this.tp_ov.UseVisualStyleBackColor = true;
@@ -391,7 +389,7 @@
             // 
             this.lb_svrs.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
             this.lb_svrs.FormattingEnabled = true;
-            this.lb_svrs.ItemHeight = 30;
+            this.lb_svrs.ItemHeight = 28;
             this.lb_svrs.Location = new System.Drawing.Point(23, 136);
             this.lb_svrs.Name = "lb_svrs";
             this.lb_svrs.Size = new System.Drawing.Size(392, 136);
@@ -400,9 +398,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Location = new System.Drawing.Point(6, 281);
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Location = new System.Drawing.Point(6, 283);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(422, 10);
             this.groupBox2.TabIndex = 20;
@@ -411,7 +408,7 @@
             // bt_c3
             // 
             this.bt_c3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c3.Location = new System.Drawing.Point(353, 297);
+            this.bt_c3.Location = new System.Drawing.Point(353, 299);
             this.bt_c3.Name = "bt_c3";
             this.bt_c3.Size = new System.Drawing.Size(75, 26);
             this.bt_c3.TabIndex = 4;
@@ -422,7 +419,7 @@
             // bt_pr2
             // 
             this.bt_pr2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pr2.Location = new System.Drawing.Point(191, 297);
+            this.bt_pr2.Location = new System.Drawing.Point(191, 299);
             this.bt_pr2.Name = "bt_pr2";
             this.bt_pr2.Size = new System.Drawing.Size(75, 26);
             this.bt_pr2.TabIndex = 2;
@@ -433,7 +430,7 @@
             // bt_nt3
             // 
             this.bt_nt3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt3.Location = new System.Drawing.Point(272, 297);
+            this.bt_nt3.Location = new System.Drawing.Point(272, 299);
             this.bt_nt3.Name = "bt_nt3";
             this.bt_nt3.Size = new System.Drawing.Size(75, 26);
             this.bt_nt3.TabIndex = 3;
@@ -491,16 +488,15 @@
             this.tp_loc.Controls.Add(this.label4);
             this.tp_loc.Location = new System.Drawing.Point(4, 25);
             this.tp_loc.Name = "tp_loc";
-            this.tp_loc.Size = new System.Drawing.Size(434, 353);
+            this.tp_loc.Size = new System.Drawing.Size(434, 332);
             this.tp_loc.TabIndex = 2;
             this.tp_loc.Text = "本地文件";
             this.tp_loc.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Location = new System.Drawing.Point(6, 302);
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Location = new System.Drawing.Point(6, 283);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(422, 10);
             this.groupBox3.TabIndex = 23;
@@ -509,7 +505,7 @@
             // bt_c4
             // 
             this.bt_c4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c4.Location = new System.Drawing.Point(353, 318);
+            this.bt_c4.Location = new System.Drawing.Point(353, 299);
             this.bt_c4.Name = "bt_c4";
             this.bt_c4.Size = new System.Drawing.Size(75, 26);
             this.bt_c4.TabIndex = 6;
@@ -520,7 +516,7 @@
             // bt_pr3
             // 
             this.bt_pr3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pr3.Location = new System.Drawing.Point(191, 318);
+            this.bt_pr3.Location = new System.Drawing.Point(191, 299);
             this.bt_pr3.Name = "bt_pr3";
             this.bt_pr3.Size = new System.Drawing.Size(75, 26);
             this.bt_pr3.TabIndex = 4;
@@ -531,7 +527,7 @@
             // bt_nt4
             // 
             this.bt_nt4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_nt4.Location = new System.Drawing.Point(272, 318);
+            this.bt_nt4.Location = new System.Drawing.Point(272, 299);
             this.bt_nt4.Name = "bt_nt4";
             this.bt_nt4.Size = new System.Drawing.Size(75, 26);
             this.bt_nt4.TabIndex = 5;
@@ -591,7 +587,7 @@
             this.tp_key.Location = new System.Drawing.Point(4, 25);
             this.tp_key.Name = "tp_key";
             this.tp_key.Padding = new System.Windows.Forms.Padding(3);
-            this.tp_key.Size = new System.Drawing.Size(434, 328);
+            this.tp_key.Size = new System.Drawing.Size(434, 332);
             this.tp_key.TabIndex = 4;
             this.tp_key.Text = "密钥";
             this.tp_key.UseVisualStyleBackColor = true;
@@ -599,7 +595,7 @@
             // bt_pre2
             // 
             this.bt_pre2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_pre2.Location = new System.Drawing.Point(191, 293);
+            this.bt_pre2.Location = new System.Drawing.Point(191, 299);
             this.bt_pre2.Name = "bt_pre2";
             this.bt_pre2.Size = new System.Drawing.Size(75, 26);
             this.bt_pre2.TabIndex = 31;
@@ -609,9 +605,8 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox7.Location = new System.Drawing.Point(6, 277);
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.Location = new System.Drawing.Point(6, 283);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(422, 10);
             this.groupBox7.TabIndex = 30;
@@ -620,7 +615,7 @@
             // bt_c5
             // 
             this.bt_c5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_c5.Location = new System.Drawing.Point(353, 293);
+            this.bt_c5.Location = new System.Drawing.Point(353, 299);
             this.bt_c5.Name = "bt_c5";
             this.bt_c5.Size = new System.Drawing.Size(75, 26);
             this.bt_c5.TabIndex = 29;
@@ -631,7 +626,7 @@
             // bt_ok
             // 
             this.bt_ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_ok.Location = new System.Drawing.Point(272, 293);
+            this.bt_ok.Location = new System.Drawing.Point(272, 299);
             this.bt_ok.Name = "bt_ok";
             this.bt_ok.Size = new System.Drawing.Size(75, 26);
             this.bt_ok.TabIndex = 28;

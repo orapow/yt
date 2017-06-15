@@ -40,17 +40,17 @@
         <classShapeMoniker Id="1da33573-90dc-49f9-94f3-58ae6fc0b39a" />
       </nodes>
     </associationConnector>
-    <classShape Id="4078bbb1-22b6-4eed-b387-6e23d1ed2779" absoluteBounds="3.5, 4.125, 2, 2.2914453124999996">
+    <classShape Id="0b000454-01e3-45ed-a084-bb9d7a07eb00" absoluteBounds="3.5, 4.125, 2, 2.4600651041666666">
       <DataClassMoniker Name="/DBDataContext/x_grid" />
       <nestedChildShapes>
-        <elementListCompartment Id="a04b2a76-4ff0-4d65-a011-d23d0ae7544b" absoluteBounds="3.515, 4.585, 1.9700000000000002, 1.7314453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="1b8080d5-5f00-44b9-bf4f-d1f5147bad1d" absoluteBounds="3.5149999999999997, 4.585, 1.9700000000000002, 1.9000651041666665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 5.35563781738281); (3.5 : 5.35563781738281)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.75 : 5.27365234375); (3.5 : 5.27365234375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBDataContext/x_service/x_service_x_grid" />
       <nodes>
         <classShapeMoniker Id="4ab24a7d-2d75-4260-b470-e6a1c855d517" />
-        <classShapeMoniker Id="4078bbb1-22b6-4eed-b387-6e23d1ed2779" />
+        <classShapeMoniker Id="0b000454-01e3-45ed-a084-bb9d7a07eb00" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

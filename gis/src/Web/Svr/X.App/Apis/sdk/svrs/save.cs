@@ -19,10 +19,10 @@ namespace X.App.Apis.sdk.svrs
             var s = db.x_service.FirstOrDefault(o => o.name == name);
             if (s != null) throw new XExcep("T服务名称已经存在");
 
-            s = new x_service() { name = name, secret_key = sec_key };
+            s = new x_service() { name = name, secret_key = sec_key, status = 2, version = cfg.version };
             db.x_service.InsertOnSubmit(s);
             db.SubmitDBChanges();
-           
+
             return new XResp() { msg = s.service_id + "" };
         }
     }

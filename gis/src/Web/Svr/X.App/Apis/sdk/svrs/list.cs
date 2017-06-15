@@ -19,6 +19,7 @@ namespace X.App.Apis.sdk.svrs
             {
                 id = o.service_id,
                 o.name,
+                key = o.secret_key,
                 o.dir,
                 o.status
             });
