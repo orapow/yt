@@ -483,8 +483,8 @@
             this.tabPage3.Controls.Add(this.bt_down);
             this.tabPage3.Controls.Add(this.bt_up);
             this.tabPage3.Controls.Add(this.lb_layers);
-            this.tabPage3.Controls.Add(this.gp_img);
             this.tabPage3.Controls.Add(this.gp_shp);
+            this.tabPage3.Controls.Add(this.gp_img);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -601,7 +601,7 @@
             this.pb_sp_style.Location = new System.Drawing.Point(195, 17);
             this.pb_sp_style.Name = "pb_sp_style";
             this.pb_sp_style.Size = new System.Drawing.Size(48, 48);
-            this.pb_sp_style.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_sp_style.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_sp_style.TabIndex = 3;
             this.pb_sp_style.TabStop = false;
             this.pb_sp_style.Click += new System.EventHandler(this.pb_sp_style_Click);

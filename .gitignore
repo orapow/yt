@@ -240,3 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/gis/src/Web/Svr/X.Ui/svrs
