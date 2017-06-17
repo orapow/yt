@@ -145,21 +145,21 @@ namespace X.Desk
             if (!Directory.Exists(path)) Directory.CreateDirectory(path);
 
             #region 生成
-            //outimg(img_lays, path);
-            //outshp(shp_lays, path);
-            //outlay(path);
-            //outsvr(path);
+            outimg(img_lays, path);
+            outshp(shp_lays, path);
+            outlay(path);
+            outsvr(path);
             #endregion
 
             if (op != 3)
             {
                 #region 发布
                 var be = Sdk.Begin(sname, op == 2);//预处理
-                //if (!be.issucc) { MessageBox.Show("预处理失败"); return; }
-                //if (Directory.Exists(path + "图像")) foreach (var f in Directory.GetFiles(path + "图像")) Sdk.Upload(1, sname, f);
-                //if (Directory.Exists(path + "图形")) foreach (var f in Directory.GetFiles(path + "图形")) Sdk.Upload(2, sname, f);
-                //Sdk.Upload(3, sname, path + "lays.x");
-                //Sdk.Upload(3, sname, path + "svr.x");
+                if (!be.issucc) { MessageBox.Show("预处理失败"); return; }
+                if (Directory.Exists(path + "图像")) foreach (var f in Directory.GetFiles(path + "图像")) Sdk.Upload(1, sname, f);
+                if (Directory.Exists(path + "图形")) foreach (var f in Directory.GetFiles(path + "图形")) Sdk.Upload(2, sname, f);
+                Sdk.Upload(3, sname, path + "lays.x");
+                Sdk.Upload(3, sname, path + "svr.x");
                 Sdk.Init(sname);//初始化
                 Sdk.End(sname);//清理
                 #endregion
@@ -222,7 +222,7 @@ namespace X.Desk
         /// <param name="path"></param>
         void outshp(List<ShpLayer> lays, string path)
         {
-            var shp_path = path + "\\图形\\";
+            var shp_path = path + "图形\\";
             if (!Directory.Exists(shp_path)) Directory.CreateDirectory(shp_path);
             var i = 1;
             var list = new List<ShpLayer.Shape>();
@@ -267,7 +267,7 @@ namespace X.Desk
             g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
 
-            var img_path = path + "\\图像\\";
+            var img_path = path + "图像\\";
             if (!Directory.Exists(img_path)) Directory.CreateDirectory(img_path);
 
             var i = 1;
@@ -295,7 +295,7 @@ namespace X.Desk
                         list.Add(b);
                         using (var ms = new MemoryStream())
                         {
-                            img.Save(ms, ImageFormat.Jpeg);
+                            img.Save(ms, ImageFormat.Png);
                             File.WriteAllBytes(img_path + b.file, Secret.XcEncode(ms.ToArray(), tb_key.Text));
                         }
                     }
@@ -317,6 +317,7 @@ namespace X.Desk
             if (opst.ShowDialog() == DialogResult.OK)
             {
                 lay.Style = opst.DrawStyle;
+                pb_sp_style.Image = opst.DrawStyle.Demo;
                 foreach (var p in lay.Shapes) p.Style = opst.DrawStyle;
             }
         }

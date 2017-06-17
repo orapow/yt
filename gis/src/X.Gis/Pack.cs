@@ -125,6 +125,8 @@ namespace X.Gis
         public Color BorderColor { get; set; }
         public int FillTran { get; set; }
         public Color FillColor { get; set; }
+        [X.Json.JsonIgnore]
+        public Image Demo { get; set; }
     }
     public class Extend
     {

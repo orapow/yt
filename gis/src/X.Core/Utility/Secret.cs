@@ -11,8 +11,7 @@ namespace X.Core.Utility
         #region Xc
         static byte[] getXcKey(string k)
         {
-            var key = Core.Utility.Secret.MD5(Encoding.UTF8.GetString(new byte[] { 43, 56, 48, 120, 99, 46, 99, 111, 109, 43 }) + k);
-            Console.WriteLine("key->" + key);
+            var key = SHA512(Encoding.UTF8.GetString(new byte[] { 43, 56, 48, 120, 99, 46, 99, 111, 109, 43 }) + k);
             return Encoding.UTF8.GetBytes(key);
         }
 
@@ -27,14 +26,9 @@ namespace X.Core.Utility
             try
             {
                 var k1 = getXcKey(k);
-                var k2 = data.Take(32);
-                if (!Enumerable.SequenceEqual(k1, k2)) throw new Exception("Decode Error");
-
-                var dt = data.Skip(32).ToArray();
-
                 var i = 0;
-                for (var j = 0; j < dt.Length; j++) dt[j] = (byte)(dt[j] ^ k1[i++ % k1.Length]);
-                return dt;
+                for (var j = 0; j < data.Length; j++) data[j] = (byte)(data[j] ^ k1[i++ % k1.Length]);
+                return data;
             }
             catch { return null; }
         }
@@ -50,10 +44,8 @@ namespace X.Core.Utility
             {
                 var key = getXcKey(k);
                 var i = 0;
-                var dts = data.ToList();
-                for (var j = 0; j < dts.Count; j++) dts[j] = (byte)(dts[j] ^ key[i++ % key.Length]);
-                dts.InsertRange(0, key.ToList());
-                return dts.ToArray();
+                for (var j = 0; j < data.LongLength; j++) data[j] = (byte)(data[j] ^ key[i++ % key.Length]);
+                return data;
             }
             catch { return null; }
         }
@@ -168,7 +160,8 @@ namespace X.Core.Utility
         /// <summary>
         /// SHA256函数
         /// </summary>
-        /// /// <param name="str">原始字符串</param>/// <returns>SHA256结果</returns>
+        /// <param name="str">原始字符串</param>
+        /// <returns>SHA256结果</returns>
         public static string SHA256(string str)
         {
             byte[] SHA256Data = Encoding.UTF8.GetBytes(str);
