@@ -1,0 +1,3578 @@
+
+时间：2017-06-17 21:33:46,348 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"接口不存在 poi.load","code":"0x0002"} 
+时间：381 
+
+时间：2017-06-17 21:34:16,863 
+级别：ERROR 
+出错类：Error property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Error(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:46) - 
+错误：{"issucc":false,"msg":"接口不存在 poi.load","code":"0x0002"} 
+时间：30895 
+
+时间：2017-06-17 21:34:16,978 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31011 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:16,978 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31011 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:16,989 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31021 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:16,994 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31027 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,003 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31036 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,006 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31039 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,010 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31042 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,010 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31043 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,025 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31058 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,031 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31064 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,031 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31064 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,036 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31069 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,060 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31093 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,066 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31098 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,067 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31099 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,071 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31103 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,086 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31119 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,104 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31137 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,126 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31159 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,137 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31170 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,197 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31229 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,220 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31253 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,225 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31258 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,226 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31259 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:17,230 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：31263 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,731 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34764 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,732 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34765 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,739 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34772 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,740 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34773 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,747 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34779 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,799 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34832 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,799 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34832 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,799 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34832 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,806 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34838 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,822 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34855 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,822 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34855 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,827 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34860 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,827 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34860 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,841 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34874 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,841 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34874 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,841 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34874 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,846 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34878 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,862 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34895 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:20,867 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：34899 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,016 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35049 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,022 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35054 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,022 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35054 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,026 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35058 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,030 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35063 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,030 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35063 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,044 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35077 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,044 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35077 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,044 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35077 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,050 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35083 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,051 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35083 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,058 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35091 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,063 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35095 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,063 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35096 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,063 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35096 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,067 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35100 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:21,072 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：35104 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,153 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36185 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,153 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36185 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,160 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36192 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,163 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36196 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,167 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36200 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,376 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36408 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,379 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36411 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,382 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36415 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,392 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36425 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:22,397 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：36430 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,418 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37451 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,418 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37451 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,423 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37456 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,429 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37462 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,431 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37463 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,514 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37546 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,515 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37547 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,515 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37547 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,515 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37547 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,527 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37560 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,607 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37640 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,607 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37640 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,614 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37647 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,627 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37660 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,674 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37707 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,674 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37707 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,675 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37707 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,680 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37712 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,680 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37712 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,683 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37716 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,687 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37719 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,691 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37724 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,695 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37727 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,696 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37729 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,699 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37731 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,699 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37732 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,828 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37861 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,828 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37861 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,849 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37881 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:23,849 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：37881 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,453 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38485 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,458 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38490 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,458 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38490 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,462 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38494 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,462 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38494 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,464 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38496 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,670 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38703 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,670 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38703 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,670 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38703 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,677 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38710 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:24,677 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：38710 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,117 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39150 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,118 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39151 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,118 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39151 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,124 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39157 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,145 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39178 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,217 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39249 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,217 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39249 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,217 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39250 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,217 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39249 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,295 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39327 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,301 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39334 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,301 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39334 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,312 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39345 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,326 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39359 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,333 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39366 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,389 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39421 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,389 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39421 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,399 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39432 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,399 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39432 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,408 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39441 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,415 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39447 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,419 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39451 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,420 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39452 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,424 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39457 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,432 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39465 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\587.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,434 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39466 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,435 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39468 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,439 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39472 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,535 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39568 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,598 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39630 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,608 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39640 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\588.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,910 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39943 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,914 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39946 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,914 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39946 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,919 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39952 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,941 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39973 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,941 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39973 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,945 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39978 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,949 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39982 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,961 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39994 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,961 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39994 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,961 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：39994 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,975 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40008 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,975 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40008 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,975 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40008 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,980 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40013 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,987 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40020 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,993 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40026 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,994 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40026 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,998 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40030 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:25,998 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40031 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,007 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40040 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,008 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40040 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,012 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40045 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,013 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40046 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,017 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40050 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,018 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40051 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,026 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40058 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,026 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40058 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,030 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40062 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,030 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40063 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,178 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40211 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,179 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40211 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,179 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40211 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,179 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40211 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,186 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40218 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,187 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40220 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,193 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40225 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,193 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40225 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,198 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40231 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,199 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40231 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,203 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40236 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,203 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40236 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,212 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40245 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,212 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40245 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,212 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40245 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,220 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40252 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,220 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40252 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,224 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40256 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,228 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40261 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,229 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40261 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,232 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40265 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,233 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40266 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,236 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40269 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,246 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40279 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,263 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40295 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:26,266 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：40299 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,419 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41451 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,421 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41454 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,428 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41460 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,429 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41462 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,438 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41471 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,678 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41710 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,678 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41710 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,679 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41711 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,683 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41715 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:27,684 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：41716 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\598.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,050 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42083 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,051 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42084 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,051 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42084 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,057 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42089 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,070 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42103 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,070 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42103 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,071 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42103 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,078 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42111 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,083 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42116 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,083 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42116 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,087 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42120 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,089 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42122 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,101 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42133 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,101 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42133 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,101 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42133 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,101 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42133 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,114 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42146 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,114 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42146 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,114 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42146 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,114 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42146 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,312 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42344 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,314 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42346 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,315 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42348 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,317 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42349 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,319 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42351 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,329 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42362 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,330 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42362 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,330 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42362 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,333 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42365 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,336 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42369 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,341 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42374 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,344 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42377 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,346 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42378 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,349 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42382 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,349 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42382 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,349 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42382 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,350 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42383 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,353 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42385 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,357 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42390 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:28,360 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：42392 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,604 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43636 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,604 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43636 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,611 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43643 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,612 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43644 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,620 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43652 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,699 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43731 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,699 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43732 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,704 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43736 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,704 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43736 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,717 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43750 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,865 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43898 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,865 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43898 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,893 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43925 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,893 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43925 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,899 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43932 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,899 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43932 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,901 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43933 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,905 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43938 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,905 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43938 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:29,920 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：43953 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,530 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46563 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,532 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46564 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,535 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46567 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,535 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46567 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,538 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46571 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,541 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46573 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,541 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46573 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,543 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46576 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,567 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46599 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,568 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46600 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,572 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46604 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,572 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46604 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,577 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46609 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,579 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46612 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,580 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46613 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,581 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46614 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:32,582 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：46615 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:34:36,217 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：50250 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:35:51,134 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：125167 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:35:52,697 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：126730 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:35:52,771 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：126804 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:35:59,974 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：134007 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:36:00,025 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：134057 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:36:00,025 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：134057 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:37:43,811 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：237843 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:37:43,812 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：237844 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:37:43,815 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：237847 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31
+
+时间：2017-06-17 21:37:43,818 
+级别：FATAL 
+出错类：X.Web.XApp property: [(null)] 
+出错位置：X.Core.Plugin.Loger.Fatal(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:68) - 
+错误：致命错误 
+时间：237851 
+System.IO.FileNotFoundException: D:\Pro\yt\gis\src\Web\Svr\X.Ui\svrs\tn\606.x
+   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 X.App.Views.services.tiler.GetResponse() 位置 D:\Pro\yt\gis\src\Web\Svr\X.App\Views\services\tiler.cs:行号 46
+   在 X.Web.XApp.ProcessRequest(HttpContext c) 位置 D:\Pro\yt\gis\src\Web\X.Web\XApp.cs:行号 31

@@ -48,7 +48,7 @@ namespace X.App.Com
     #endregion
 		
 		public DBDataContext() : 
-				base(global::X.App.Properties.Settings.Default.x_linkConnectionString1, mappingSource)
+				base(global::X.App.Properties.Settings.Default.yt_gisConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

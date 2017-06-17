@@ -13,7 +13,6 @@ namespace X.App.Views.services
 {
     public class tiler : _svr
     {
-        public string sn { get; set; }
         public int lv { get; set; }
         public int x { get; set; }
         public int y { get; set; }
@@ -24,6 +23,7 @@ namespace X.App.Views.services
                 return "sn-lv-x-y";
             }
         }
+
         public override byte[] GetResponse()
         {
             InitView();

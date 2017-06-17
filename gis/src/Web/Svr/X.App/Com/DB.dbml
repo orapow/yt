@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="yt.gis" Class="DBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=10.0.6.254\X;Initial Catalog=yt.gis;User ID=sa" SettingsObjectName="X.App.Properties.Settings" SettingsPropertyName="x_linkConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\X;Initial Catalog=yt.gis;Persist Security Info=True;User ID=sa" SettingsObjectName="X.App.Properties.Settings" SettingsPropertyName="yt_gisConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.x_block" Member="x_block">
     <Type Name="x_block">
       <Column Name="block_id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

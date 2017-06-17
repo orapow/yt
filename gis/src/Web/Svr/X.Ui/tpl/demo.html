@@ -182,8 +182,7 @@
             map.enableHandleMouseScroll();
             var l2_5 = {};
             l2_5.getTileUrl = function (x, y, z) {
-                console.log(z+","+map.getZoom());
-                return "/services/s1/tiler/" + z + "/" + x + "/" + y; //111005,215227
+                return "/services/tn/tiler/" + z + "/" + x + "/" + y; //111005,215227
             }
             //创建自定义图层对象
             var lay = new YTileLayer(l2_5);
