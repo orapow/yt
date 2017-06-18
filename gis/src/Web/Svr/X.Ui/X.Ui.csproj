@@ -63,9 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="dat\cfg.x" />
-    <None Include="dat\urls.x" />
+    <Content Include="dat\urls.x" />
     <Content Include="App.ashx" />
-    <None Include="dat\codes.x" />
+    <Content Include="dat\codes.x" />
     <Content Include="res\img\1.jpg" />
     <Content Include="res\img\map\1.jpg" />
     <Content Include="res\img\map\2.jpg" />
@@ -194,6 +194,7 @@
     <None Include="Properties\PublishProfiles\x.bw.pubxml" />
     <None Include="Properties\PublishProfiles\x.erp.pubxml" />
     <None Include="Properties\PublishProfiles\xc.site.pubxml" />
+    <None Include="Properties\PublishProfiles\yt.gis.svr.pubxml" />
     <None Include="Properties\PublishProfiles\yt.gis.web.pubxml" />
     <None Include="Properties\PublishProfiles\zfw.web.flash.pubxml" />
     <Content Include="res\img\map\bg.psd" />

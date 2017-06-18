@@ -32,5 +32,16 @@ namespace X.App.Properties {
                 return ((string)(this["x_linkConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\X;Initial Catalog=yt.gis;Persist Security Info=True;User ID=sa;Pass" +
+            "word=sa123")]
+        public string yt_gisConnectionString {
+            get {
+                return ((string)(this["yt_gisConnectionString"]));
+            }
+        }
     }
 }
