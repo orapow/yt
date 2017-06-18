@@ -284,7 +284,7 @@ namespace X.Desk
                 {
                     for (var x = -img.Width - (int)(256.0 * w); x < full.Width; x += img.Width)
                     {
-                        g.Clear(Color.Transparent);
+                        g.Clear(Color.White);
                         foreach (Layer l in lays) Utils.DrawImage(l, new RectangleF(x, y, img.Width, img.Height), full, lv, g);
                         var b = new Block()
                         {

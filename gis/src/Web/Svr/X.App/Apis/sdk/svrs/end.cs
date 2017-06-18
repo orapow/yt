@@ -22,8 +22,6 @@ namespace X.App.Apis.sdk.svrs
                 var path = Context.Server.MapPath("/svrs/" + name);
                 if (Directory.Exists(path + "_old_" + s.service_id)) Directory.Delete(path + "_old_" + s.service_id);
                 if (Directory.Exists(path + "_new_" + s.service_id)) Directory.Delete(path + "_new_" + s.service_id);
-                if (Directory.Exists(path + "_new_" + s.service_id + "/图形")) Directory.Delete(path + "_new_" + s.service_id + "/图形");
-                if (Directory.Exists(path + "_new_" + s.service_id + "/图像")) Directory.Delete(path + "_new_" + s.service_id + "/图像");
             }
             catch { }
 

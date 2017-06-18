@@ -39,9 +39,9 @@ namespace X.Desk
 
         public static void DrawImage(Layer lay, RectangleF rect, RectangleF full, int lv, Graphics g)
         {
+            var rg_lay = GetRect(lay.Extends, lv);
             if (lay.Tp == 1)
             {
-                var rg_lay = GetRect(lay.Extends, lv);
                 var px = (int)((rg_lay.X - full.X) * 256 - rect.X);
                 var py = (int)((rg_lay.Y - full.Y) * 256 - rect.Y);
 
@@ -65,10 +65,12 @@ namespace X.Desk
                     var _pts = new List<PointF>();
                     foreach (var k in s.Points.Keys)
                     {
-                        var ps = getPoints(s.Points[k], full.X, full.Y, rect.X, rect.Y, lv);
+                        var ps = getPoints(s.Points[k], full.X, full.Y, rect.X, rect.Y, lv).Where(o => o.X > -rect.Width * 0.5 && o.Y > -rect.Height * 0.5 && o.X < rect.Width * 1.5 && o.Y < rect.Height * 1.5).ToList();
+                        if (ps.Count() == 0) continue;
                         pts.AddRange(ps);
                         _pts.Add(ps[0]);
                     }
+                    if (pts.Count == 0) continue;
                     if (s.Tp == 3 || s.Tp == 13)
                     {
                         if (l.Style.BorderWidth > 0)
