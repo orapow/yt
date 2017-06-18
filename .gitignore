@@ -241,3 +241,6 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /gis/src/Web/Svr/X.Ui/svrs
+/gis/doc/temp
+/gis/doc/蚌埠怀远县
+/gis/doc

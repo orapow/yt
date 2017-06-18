@@ -1,7 +1,0 @@
-
-时间：2017-06-17 19:00:36,123 
-级别：ERROR 
-出错类：Error property: [(null)] 
-出错位置：X.Core.Plugin.Loger.Error(D:\Pro\yt\gis\src\X.Core\Plugin\Loger.cs:46) - 
-错误：{"issucc":false,"msg":"未知错误代码(T配置数据解密失败)","code":"T配置数据解密失败"} 
-时间：126195365 

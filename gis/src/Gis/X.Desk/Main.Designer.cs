@@ -76,7 +76,7 @@
             this.tmi_edit = new System.Windows.Forms.ToolStripMenuItem();
             this.tmi_split4 = new System.Windows.Forms.ToolStripSeparator();
             this.tmi_prop = new System.Windows.Forms.ToolStripMenuItem();
-            this.map1 = new AxInterop.MapWinGIS.AxMap();
+            this.map1 = new AxMapWinGIS.AxMap();
             this.tlb_tip = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tpb_prog = new System.Windows.Forms.ToolStripStatusLabel();
@@ -546,7 +546,7 @@
             this.MainMenuStrip = this.ms_top;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "YtTiler 切图软件 V1.2";
+            this.Text = "YtGis 桌面程序 V2.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
             this.ms_top.ResumeLayout(false);
@@ -607,7 +607,7 @@
         private System.Windows.Forms.ToolStripMenuItem tmi_edit;
         private System.Windows.Forms.ToolStripStatusLabel tpb_prog;
         private System.Windows.Forms.ToolStripStatusLabel tsl_time;
-        private AxInterop.MapWinGIS.AxMap map1;
+        private AxMapWinGIS.AxMap map1;
         private System.Windows.Forms.Timer tr_time;
         private System.Windows.Forms.ToolStripMenuItem 天地图ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;

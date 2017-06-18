@@ -1,4 +1,4 @@
-﻿using Interop.MapWinGIS;
+﻿using MapWinGIS;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -348,7 +348,7 @@ namespace X.Desk
             }
             else
             {
-                var img = new Interop.MapWinGIS.Image();
+                var img = new MapWinGIS.Image();
                 img.Open(tn.file);
                 var r = false;
                 img.SetNoDataValue(0, ref r);

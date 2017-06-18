@@ -22,7 +22,7 @@ namespace X.Desk
         {
             base.OnLoad(e);
             cfg = Config.LoadConfig();
-            lb_links.Items.AddRange(cfg.Links.ToArray());
+            if (cfg.Links != null) lb_links.Items.AddRange(cfg.Links.ToArray());
         }
 
         protected override void OnClosing(CancelEventArgs e)

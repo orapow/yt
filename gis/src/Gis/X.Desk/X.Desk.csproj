@@ -33,7 +33,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -73,19 +73,20 @@
     <ApplicationIcon>copyright_logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AxInterop.MapWinGIS, Version=4.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="AxInterop.MapWinGIS, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\lib\AxInterop.MapWinGIS.dll</HintPath>
+      <HintPath>C:\Program Files\MapWindow GIS Lite\AxInterop.MapWinGIS.dll</HintPath>
     </Reference>
-    <Reference Include="Interop.MapWinGIS">
-      <HintPath>..\..\..\lib\Interop.MapWinGIS.dll</HintPath>
+    <Reference Include="Interop.MapWinGIS, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\MapWindow GIS Lite\Interop.MapWinGIS.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\lib\stdole.dll</HintPath>
+      <HintPath>C:\Program Files\MapWindow GIS Lite\stdole.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -196,7 +197,6 @@
     <EmbeddedResource Include="Links.resx">
       <DependentUpon>Links.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

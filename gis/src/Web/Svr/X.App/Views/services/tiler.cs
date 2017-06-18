@@ -31,9 +31,10 @@ namespace X.App.Views.services
 
             Context.Response.ContentType = "image/png";
 
-            var path = "/svrs/" + sn + "";
+            var path = Context.Server.MapPath("/svrs/" + sn + "");
+            if (!Directory.Exists(path + "\\cache")) Directory.CreateDirectory(path + "\\cache");
 
-            if (File.Exists(Context.Server.MapPath(path + "/cache/" + lv + "_" + x + "_" + y))) Context.Server.Transfer(path + "/cache/" + lv + "_" + x + "_" + y);
+            if (File.Exists(path + "/cache/" + lv + "_" + x + "_" + y)) return File.ReadAllBytes(path + "/cache/" + lv + "_" + x + "_" + y);
 
             var blocks = CacheHelper.Get<List<x_block>>("svr." + sn + ".blocks");
             if (blocks == null && svr != null) blocks = svr.x_block.ToList();
@@ -43,7 +44,7 @@ namespace X.App.Views.services
             var b = blocks.FirstOrDefault(o => o.level == lv && x >= o.x && y >= o.y && x <= o.x + 15 && y <= o.y + 15);
             if (b == null) return null;
 
-            var bmp = Image.FromFile(Context.Server.MapPath(path + "/" + b.file));
+            var bmp = Image.FromFile(path + "/" + b.file);
 
             var img = new Bitmap(256, 256);
             var g = Graphics.FromImage(img);
@@ -54,7 +55,7 @@ namespace X.App.Views.services
 
             var ms = new MemoryStream();
             img.Save(ms, ImageFormat.Png);
-            img.Save(Context.Server.MapPath(path + "/cache/" + lv + "_" + x + "_" + y), ImageFormat.Png);
+            if (img != null && img.PixelFormat != PixelFormat.DontCare) img.Save(path + "/cache/" + lv + "_" + x + "_" + y, ImageFormat.Png);
             img.Dispose();
 
             return ms.ToArray();

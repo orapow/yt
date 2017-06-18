@@ -141,47 +141,115 @@ namespace X.Desk
                 else if (sl.OutPut == "图形") shp_lays.Add(l as ShpLayer);
             }
 
-            var path = Application.StartupPath + "\\" + tb_svr_name.Text + "\\";
-            if (!Directory.Exists(path)) Directory.CreateDirectory(path);
+            var path = Application.StartupPath + "\\_new_\\";
+            var pass = false;//跳过生成
+            if (Directory.Exists(path) && MessageBox.Show("存在未发布的服务包，是否立即发布？", Text, MessageBoxButtons.YesNo) == DialogResult.Yes) pass = true;
 
-            #region 生成
-            outimg(img_lays, path);
-            outshp(shp_lays, path);
-            outlay(path);
-            outsvr(path);
-            #endregion
+            pc = new Proc();
 
-            if (op != 3)
+            new Thread(o =>
             {
-                #region 发布
-                var be = Sdk.Begin(sname, op == 2);//预处理
-                if (!be.issucc) { MessageBox.Show("预处理失败"); return; }
-                if (Directory.Exists(path + "图像")) foreach (var f in Directory.GetFiles(path + "图像")) Sdk.Upload(1, sname, f);
-                if (Directory.Exists(path + "图形")) foreach (var f in Directory.GetFiles(path + "图形")) Sdk.Upload(2, sname, f);
-                Sdk.Upload(3, sname, path + "lays.x");
-                Sdk.Upload(3, sname, path + "svr.x");
-                Sdk.Init(sname);//初始化
-                Sdk.End(sname);//清理
-                #endregion
-            }
-            else
-            {
-                #region 打包
-                var pi = new ProcessStartInfo(Application.StartupPath + "\\rar.exe");
-                pi.Arguments = " a -ep1 -p" + tb_key.Text + " " + this.path + "\\" + sname + ".rar " + path.TrimEnd('\\');
-                pi.CreateNoWindow = true;
-                pi.WindowStyle = ProcessWindowStyle.Hidden;
-                Process.Start(pi);
-                #endregion
-            }
+                if (!pass)
+                {
+                    #region 生成
+                    pc.SetT1("正在生成图像和图形");
+                    if (Directory.Exists(path)) Directory.Delete(path, true);
+                    Directory.CreateDirectory(path);
+                    pc.SetP1(10);
+                    outimg(img_lays, path);
+                    pc.SetP1(20);
+                    outshp(shp_lays, path);
+                    pc.SetP1(30);
+                    outlay(path);
+                    pc.SetP1(40);
+                    outsvr(path);
+                    #endregion
+                }
 
-            MessageBox.Show("发布完成", Text);
+                pc.SetP1(50);
 
-        }
+                if (op != 3)
+                {
+                    pc.SetT1("正在上传");
+                    #region 发布
+                    pc.SetT2("上传预处理");
+                    var be = Sdk.Begin(sname, op == 2);//预处理
+                    if (!be.issucc) { MessageBox.Show("预处理失败"); return; }
+                    if (Directory.Exists(path + "图像"))
+                    {
+                        var files = Directory.GetFiles(path + "图像");
+                        var i = 0;
+                        pc.SetR2(1, files.Count());
+                        foreach (var f in files)
+                        {
+                            pc.SetT2("正在上传文件：" + f + " " + ++i + "/" + files.Count());
+                            pc.SetP2(i, 10);
+                            Sdk.Upload(1, sname, f);
+                        }
+                    }
+                    if (Directory.Exists(path + "图形"))
+                    {
+                        var files = Directory.GetFiles(path + "图形");
+                        var i = 0;
+                        pc.SetR2(1, files.Count());
+                        foreach (var f in Directory.GetFiles(path + "图形"))
+                        {
+                            pc.SetT2("正在上传文件：" + f + " " + ++i + "/" + files.Count());
+                            pc.SetP2(i, 10);
+                            Sdk.Upload(2, sname, f);
+                        }
+                    }
+                    pc.SetT2("正在上传图层配置");
+                    pc.SetP1(60);
+                    Sdk.Upload(3, sname, path + "lays.x");
+                    pc.SetT2("正在上传服务配置");
+                    pc.SetP1(70);
+                    Sdk.Upload(3, sname, path + "svr.x");
+                    pc.SetT2("正在初始化服务");
+                    pc.SetP1(80);
+                    Sdk.Init(sname);//初始化
+                    pc.SetT2("正在请清临时文件");
+                    pc.SetP1(100);
+                    Sdk.End(sname);//清理
+                    #endregion
 
-        void showProc(string t1, string t2, int p1, int p2)
-        {
-            if (pc == null) return;
+                    Directory.Delete(path, true);
+                }
+                else
+                {
+                    #region 打包
+                    pc.SetT1("正在打包");
+                    var fc = Directory.GetFiles(path + "\\图像").Count() + Directory.GetFiles(path + "\\图形").Count();
+                    pc.SetR2(1, fc + 4);
+                    Directory.Move(path, path.Replace("_new_", sname));
+                    var pi = new ProcessStartInfo(Application.StartupPath + "\\rar.exe");
+                    pi.Arguments = " a -ep1 -p" + tb_key.Text + " " + this.path + "\\" + sname + ".rar " + path.Replace("_new_", sname).TrimEnd('\\');
+                    pi.CreateNoWindow = true;
+                    pi.WindowStyle = ProcessWindowStyle.Hidden;
+                    pi.RedirectStandardOutput = true;
+                    pi.UseShellExecute = false;
+                    var p = new Process();
+                    var i = 1;
+                    p.OutputDataReceived += (s, v) => { if (string.IsNullOrEmpty(v.Data)) return; if (v.Data.IndexOf("OK") > 0) pc.SetP2(i++, 50); pc.SetT2(v.Data.Split('\b')[0]); };
+                    p.StartInfo = pi;
+                    p.Start();
+                    p.BeginOutputReadLine();
+                    p.WaitForExit();
+                    #endregion
+                    Directory.Delete(path.Replace("_new_", sname), true);
+                }
+                pc.End();
+                Invoke(new Action(() =>
+                {
+                    MessageBox.Show("服务发布完成", Text);
+                    Close();
+                }));
+            }).Start();
+
+            pc.ShowDialog();
+
+            //timer1.Enabled = false;
+            //MessageBox.Show("发布完成", Text);
         }
 
         /// <summary>
@@ -190,7 +258,11 @@ namespace X.Desk
         /// <param name="path"></param>
         void outlay(string path)
         {
-            File.WriteAllBytes(path + "lays.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(lb_layers.Items)), tb_key.Text));
+            pc.SetT2("正在输出图层配置文件");
+            Invoke(new Action(() =>
+            {
+                File.WriteAllBytes(path + "lays.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(lb_layers.Items)), tb_key.Text));
+            }));
         }
 
         /// <summary>
@@ -199,21 +271,25 @@ namespace X.Desk
         /// <param name="path"></param>
         void outsvr(string path)
         {
-            var svr = new Svr()
+            pc.SetT2("正在输出服务配置文件");
+            Invoke(new Action(() =>
             {
-                BlockSize = int.Parse(cb_blocksize.Text),
-                Cached = new Svr.Cache() { MaxMem = int.Parse(tb_ch_max.Text), MinMem = int.Parse(tb_cb_min.Text), UseMemory = cb_ch_mem.Checked, UserFile = cb_ch_file.Checked },
-                Dir = dir,
-                DocumentInfo = new DocumentInfo() { Author = tb_author.Text, Category = "", Comments = tb_summary.Text, Desc = tb_remark.Text, Subject = "", Title = "" },
-                FullExtend = extends,
-                InitialExtend = new Extend(),
-                Key = "",
-                Name = tb_svr_name.Text,
-                Version = 2,
-                WaterMarked = new Svr.WaterMark() { Enabel = true, Img = pb_wmimg.Image, Transparent = tb_wmtran.Value },
-                MapTile = new Svr.TileInfo() { DPI = 72, Format = "Jpg", Height = 256, Quality = 75, Width = 256 }
-            };
-            File.WriteAllBytes(path + "svr.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(svr)), tb_key.Text));
+                var svr = new Svr()
+                {
+                    BlockSize = int.Parse(cb_blocksize.Text),
+                    Cached = new Svr.Cache() { MaxMem = int.Parse(tb_ch_max.Text), MinMem = int.Parse(tb_cb_min.Text), UseMemory = cb_ch_mem.Checked, UserFile = cb_ch_file.Checked },
+                    Dir = dir,
+                    DocumentInfo = new DocumentInfo() { Author = tb_author.Text, Category = "", Comments = tb_summary.Text, Desc = tb_remark.Text, Subject = "", Title = "" },
+                    FullExtend = extends,
+                    InitialExtend = new Extend(),
+                    Key = "",
+                    Name = tb_svr_name.Text,
+                    Version = 2,
+                    WaterMarked = new Svr.WaterMark() { Enabel = true, Img = pb_wmimg.Image, Transparent = tb_wmtran.Value },
+                    MapTile = new Svr.TileInfo() { DPI = 72, Format = "Jpg", Height = 256, Quality = 75, Width = 256 }
+                };
+                File.WriteAllBytes(path + "svr.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(svr)), tb_key.Text));
+            }));
         }
         /// <summary>
         /// 输出图形
@@ -227,8 +303,11 @@ namespace X.Desk
             var i = 1;
             var list = new List<ShpLayer.Shape>();
             var lno = 1;
+            pc.SetR2(1, lays.Count);
             foreach (var l in lays)
             {
+                pc.SetT2("正在输出图形：" + l.File);
+                pc.SetP2(lays.IndexOf(l), 10);
                 int p = 1;
                 do
                 {
@@ -277,21 +356,32 @@ namespace X.Desk
                 var full = Utils.GetRect(extends, lv);
                 if (full.Width < 512 || full.Height < 512) break;
 
+
                 var w = full.X - (int)full.X;
                 var h = full.Y - (int)full.Y;
+
+                var ct = (int)Math.Ceiling(((full.Height - (-img.Height - (int)(256.0 * h))) / img.Height)) * (int)Math.Ceiling(((full.Width - (-img.Width - (int)(256.0 * w))) / img.Width));
+                var c = 0;
+
+                pc.SetR2(1, ct);
 
                 for (var y = -img.Height - (int)(256.0 * h); y < full.Height; y += img.Height)
                 {
                     for (var x = -img.Width - (int)(256.0 * w); x < full.Width; x += img.Width)
                     {
-                        g.Clear(Color.Transparent);
-                        foreach (Layer l in lays) Utils.DrawImage(l, new RectangleF(x, y, img.Width, img.Height), full, lv, g);
                         var b = new Block()
                         {
                             file = i++.ToString("000") + ".x",
                             level = lv,
                             bound = new Rectangle((int)(full.X + x / 256.0), (int)(full.Y + y / 256.0), 15, 15)
                         };
+
+                        pc.SetT2("正在输出图像：文件->" + b.file + " 层级->" + lv + " 图块->" + ++c + "/" + ct);
+                        pc.SetP2(c, 2);
+
+                        g.Clear(Color.Transparent);
+                        foreach (Layer l in lays) Utils.DrawImage(l, new RectangleF(x, y, img.Width, img.Height), full, lv, g);
+
                         list.Add(b);
                         using (var ms = new MemoryStream())
                         {
@@ -306,6 +396,7 @@ namespace X.Desk
             g.Dispose();
             img.Dispose();
 
+            pc.SetT2("正在输出图像块配置");
             File.WriteAllBytes(img_path + "000.x", Secret.XcEncode(Encoding.UTF8.GetBytes(Serialize.ToJson(list)), tb_key.Text));
         }
 

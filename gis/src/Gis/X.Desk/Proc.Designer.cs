@@ -39,9 +39,11 @@
             // pb_all
             // 
             this.pb_all.Location = new System.Drawing.Point(96, 30);
+            this.pb_all.Minimum = 1;
             this.pb_all.Name = "pb_all";
             this.pb_all.Size = new System.Drawing.Size(294, 13);
             this.pb_all.TabIndex = 0;
+            this.pb_all.Value = 1;
             // 
             // label1
             // 
@@ -79,10 +81,9 @@
             // 
             // lb_cur
             // 
-            this.lb_cur.AutoSize = true;
             this.lb_cur.Location = new System.Drawing.Point(94, 111);
             this.lb_cur.Name = "lb_cur";
-            this.lb_cur.Size = new System.Drawing.Size(107, 12);
+            this.lb_cur.Size = new System.Drawing.Size(296, 50);
             this.lb_cur.TabIndex = 1;
             this.lb_cur.Text = "正在处理 图层1...";
             // 
@@ -90,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 190);
+            this.ClientSize = new System.Drawing.Size(455, 203);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lb_cur);
             this.Controls.Add(this.lb_all);

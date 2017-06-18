@@ -1,4 +1,4 @@
-﻿using Interop.MapWinGIS;
+﻿using MapWinGIS;
 using System;
 using System.Diagnostics;
 using System.Drawing;
